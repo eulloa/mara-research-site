@@ -3,18 +3,20 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="p-24">
+    <header className="px-48 py-8">
       <div className="flex">
         <ul className="flex-1 flex justify-start">
-          <li className="pr-4">Bio</li>
-          <li className="pr-4">News</li>
-          <li className="pr-4">Events</li>
+          <li className="pr-8">Bio</li>
+          <li className="pr-8">News</li>
+          <li className="pr-8">Events</li>
           <li>
-            <Link href="/cv.pdf" target="_blank">CV</Link>
+            <Link className="hover:underline" href="/cv.pdf" target="_blank">
+              CV
+            </Link>
           </li>
         </ul>
         <ul className="flex-1 flex justify-end">
-          <li className="pr-4">
+          <li className="pr-8">
             <Link
               href="https://www.linkedin.com/in/mara-ulloa/"
               target="_blank"
@@ -27,7 +29,7 @@ export const Header = () => {
               />
             </Link>
           </li>
-          <li className="pr-4">
+          <li className="pr-8">
             <Link href="https://github.com/Mara16" target="_blank">
               <Image
                 alt="Github"
