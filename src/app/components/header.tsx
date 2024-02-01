@@ -3,12 +3,15 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="px-48 py-8">
+    <header className="px-4 md:px-48 py-8">
       <div className="flex">
         <ul className="flex-1 flex justify-start">
-          <li className="pr-8">Bio</li>
-          <li className="pr-8">News</li>
-          <li className="pr-8">Events</li>
+          <li className="pr-8">
+            <a className="hover:underline" href="#news">News</a>
+          </li>
+          <li className="pr-8">
+            <a className="hover:underline" href="#events">Events</a>
+          </li>
           <li>
             <Link className="hover:underline" href="/cv.pdf" target="_blank">
               CV
