@@ -14,13 +14,39 @@ export const Bio = () => {
               National Science Foundation GRFP Fellow
             </a>
           </span>{" "}
-          and third-year PhD student in the department of Computer Science (CSI)
-          at Northwestern University (NU) in the Robert R. McCormick School of
-          Engineering and Applied Science. As a member of the Personalized &
-          Adaptive Technology for Health (NU-Path) lab, my PhD work is mentored
-          by Dr. Maia L. Jacobs.
+          and third-year PhD student in the department of{" "}
+          <span className="underline">
+            <a
+              href="https://www.mccormick.northwestern.edu/computer-science/"
+              target="_blank"
+            >
+              Computer Science
+            </a>
+          </span>
+          (CSI) at{" "}
+          <span className="underline">
+            <a href="https://www.northwestern.edu/" target="_blank">
+              Northwestern University
+            </a>
+          </span>
+          (NU) in the Robert R. McCormick School of Engineering and Applied
+          Science. As a member of the{" "}
+          <span className="underline">
+            <a href="https://sites.northwestern.edu/nupath/" target="_blank">
+              Personalized & Adaptive Technology for Health
+            </a>
+          </span>
+          (NU-Path) lab, my PhD work is mentored by{" "}
+          <span className="underline">
+            <a
+              href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/jacobs-maia.html"
+              target="_blank"
+            >
+              Dr. Maia L. Jacobs.
+            </a>
+          </span>
         </p>
-        <p className="mt-4 leading-7">
+        <p className="mt-4 leading-7 p-2 bg-[#e3edf7]">
           My research interests span across the fields of Human-Computer
           Interaction (HCI), Preventive Medicine, and Artificial Intelligence
           (AI), convering to explore the interplay between technology design and
@@ -33,9 +59,22 @@ export const Bio = () => {
           insights into real-world settings.
         </p>
         <p className="mt-4 leading-7">
-          I am currently working with the Center for Advancing Safety of Machine
-          Intelligence (CASMI) in my department to Co-Design Patient-Facing
-          Machine Learning for Prenatal Stress Reduction.
+          I am currently working with the{" "}
+          <span className="underline">
+            <a href="https://casmi.northwestern.edu/" target="_blank">
+              Center for Advancing Safety of Machine Intelligence
+            </a>
+          </span>{" "}
+          (CASMI) in my department to{" "}
+          <span className="underline">
+            <a
+              href="https://casmi.northwestern.edu/research/projects/prenatal-stress-reduction.html"
+              target="_blank"
+            >
+              Co-Design Patient-Facing Machine Learning for Prenatal Stress
+              Reduction.
+            </a>
+          </span>
         </p>
       </div>
     </div>
