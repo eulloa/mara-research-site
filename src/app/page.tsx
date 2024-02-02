@@ -1,9 +1,10 @@
-import { Bio, Events, News } from "@/components";
+import { Audio, Bio, Events, News } from "@/components";
 
 export default function Home() {
   return (
     <>
       <Bio />
+      <Audio />
       <News />
       <Events />
     </>
