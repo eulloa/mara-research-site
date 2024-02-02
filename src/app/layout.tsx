@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
   description: "Mara Ulloa's research website",
+  keywords: [
+    "Obsmara, Obsmara Ulloa, Mara Ulloa, HCI researcher, PhD student, participatory research, community-based, CS PhD Student, CS Student, Computer Science student, Northwestern PhD student",
+  ],
   title: "Mara Ulloa - CS PhD Student, Northwestern University",
 };
 
