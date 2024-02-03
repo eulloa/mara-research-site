@@ -9,7 +9,7 @@ const onClick = () => {
 
 export const Audio = () => (
   <div className="flex">
-    <div className="flex flex-1 mt-4 justify-center">
+    <div className="flex flex-1 mt-4 justify-center dark:text-white">
       <audio>
         <source src="audio/name.ogg" type="audio/ogg" />
         <source src="audio/name.mp3" type="audio/mpeg" />

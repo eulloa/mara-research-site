@@ -15,8 +15,6 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  colorScheme: "dark",
-  themeColor: "dark",
   initialScale: 1,
   width: "device-width",
   maximumScale: 1,
@@ -30,9 +28,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"
+        />
+      </head>
       <body className={inter.className}>
         <Header />
-        <main className="flex min-h-screen flex-col justify-between px-4 md:px-48">
+        <main className="flex min-h-screen flex-col justify-between px-4 md:px-48 bg-eggshell dark:bg-blue">
           {children}
         </main>
       </body>

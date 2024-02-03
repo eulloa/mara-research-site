@@ -1,16 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ThemeSwitcher } from "@/components";
 
 export const Header = () => {
   return (
-    <header className="px-4 md:px-48 py-8">
+    <header className="px-4 md:px-48 py-8 bg-eggshell dark:bg-blue dark:text-white">
       <div className="flex">
         <ul className="flex-1 flex justify-start">
           <li className="pr-8">
-            <a className="hover:underline" href="#news">News</a>
+            <a className="hover:underline" href="#news">
+              News
+            </a>
           </li>
           <li className="pr-8">
-            <a className="hover:underline" href="#events">Events</a>
+            <a className="hover:underline" href="#events">
+              Events
+            </a>
           </li>
           <li>
             <Link className="hover:underline" href="/cv.pdf" target="_blank">
@@ -42,7 +47,7 @@ export const Header = () => {
               />
             </Link>
           </li>
-          <li>
+          <li className="pr-8">
             <Link href="https://twitter.com/mara_ulloa__" target="_blank">
               <Image
                 alt="Twitter"
@@ -51,6 +56,9 @@ export const Header = () => {
                 height="25"
               />
             </Link>
+          </li>
+          <li>
+            <ThemeSwitcher />
           </li>
         </ul>
       </div>

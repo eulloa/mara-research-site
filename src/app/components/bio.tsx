@@ -1,6 +1,6 @@
 export const Bio = () => {
   return (
-    <div className="flex gap-x-10">
+    <div className="flex gap-x-10 dark:text-white">
       <div className="flex-1 bg-[url('/img/bio.jpg')] bg-center bg-cover bg-no-repeat rounded-lg"></div>
       <div className="flex-1">
         <h1 className="text-3xl">Hi, I'm Mara Ulloa</h1>
