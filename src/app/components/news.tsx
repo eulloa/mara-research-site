@@ -147,7 +147,7 @@ export const News = () => (
             href="https://hci.northwestern.edu/"
             target="_blank"
           >
-            NU's Center for Human-Computer Interaction + Design conference
+            NU&apos;s Center for Human-Computer Interaction + Design conference
           </a>
         </li>
         <li>
