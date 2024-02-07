@@ -8,8 +8,8 @@ const onClick = () => {
 };
 
 export const Audio = () => (
-  <div className="flex">
-    <div className="flex flex-1 mt-4 justify-center dark:text-white">
+  <div className="block lg:flex">
+    <div className="flex flex-1 lg:mt-4 justify-start lg:justify-center dark:text-white">
       <audio>
         <source src="audio/name.ogg" type="audio/ogg" />
         <source src="audio/name.mp3" type="audio/mpeg" />
@@ -23,7 +23,9 @@ export const Audio = () => (
           alt="Mara Ulloa name"
         />
       </button>
-      <span className="text-stone-500">/ MAHR-ah - OOh - YO-ah /</span>
+      <span className="text-stone-500 text-xs font-thin">
+        / MAHR-ah - OOh - YO-ah /
+      </span>
     </div>
     <div className="flex-1"></div>
   </div>
