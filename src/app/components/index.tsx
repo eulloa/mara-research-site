@@ -1,6 +1,9 @@
 export * from "./audio";
 export * from "./bio";
 export * from "./events";
+export * from "./github";
+export * from "./linkedIn";
 export * from "./news";
+export * from "./speaker";
 export * from "./themeSwitcher";
-
+export * from "./twitter";
