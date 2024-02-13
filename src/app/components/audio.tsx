@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { Speaker } from "@/components";
 
 const onClick = () => {
   const audio = document.querySelector("audio");
@@ -16,12 +16,7 @@ export const Audio = () => (
         Your browser does not support the audio element.
       </audio>
       <button className="inline-block mr-6" onClick={onClick}>
-        <Image
-          src="img/speaker.svg"
-          width="20"
-          height="20"
-          alt="Mara Ulloa name"
-        />
+        <Speaker />
       </button>
       <span className="text-stone-500 text-xs font-thin">
         / MAHR-ah - OOh - YO-ah /

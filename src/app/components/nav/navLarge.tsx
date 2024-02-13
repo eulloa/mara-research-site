@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { ThemeSwitcher } from "@/components";
+import { Github, LinkedIn, ThemeSwitcher, Twitter } from "@/components";
 
 export const NavLarge = () => {
   return (
@@ -27,27 +26,17 @@ export const NavLarge = () => {
       <ul className="flex-1 flex justify-center md:justify-end">
         <li className="pr-8">
           <Link href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
-            <Image
-              alt="Linked In"
-              src="/img/linkedin.svg"
-              width="25"
-              height="25"
-            />
+            <LinkedIn />
           </Link>
         </li>
         <li className="pr-8">
           <Link href="https://github.com/Mara16" target="_blank">
-            <Image alt="Github" src="/img/github.svg" width="25" height="25" />
+            <Github />
           </Link>
         </li>
         <li className="pr-8">
           <Link href="https://twitter.com/mara_ulloa__" target="_blank">
-            <Image
-              alt="Twitter"
-              src="/img/twitter.svg"
-              width="25"
-              height="25"
-            />
+            <Twitter />
           </Link>
         </li>
         <li>
