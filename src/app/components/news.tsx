@@ -1,14 +1,14 @@
 export const News = () => (
   <div
     id="news"
-    className="mt-10 bg-black rounded-lg rounded-e-lg h-[400px] overflow-y-scroll"
+    className="mt-10 bg-lightBlue dark:bg-black rounded-lg rounded-e-lg h-[400px] overflow-y-scroll"
   >
-    <div className="terminal-header rounded-t-lg bg-[#2d2c29] flex sticky top-0 z-10 p-2">
+    <div className="terminal-header rounded-t-lg bg-darkBlue dark:bg-[#2d2c29] flex sticky top-0 z-10 p-2">
       <div className="h-[1rem] w-[1rem] rounded-[1rem] bg-[#e9685c] mr-2 relative hover:after:content-['\0078'] after:absolute after:top-[-25%] after:left-[22%]"></div>
       <div className="h-[1rem] w-[1rem] rounded-[1rem] bg-[#f5be4f] mr-2 relative hover:after:content-['\2578'] after:absolute after:bottom-[-18%] after:right-[5%]"></div>
       <div className="h-[1rem] w-[1rem] rounded-[1rem] bg-[#61c554] relative hover:after:content-['\02D0'] after:absolute after:right-[30%] after:bottom-[-15%]"></div>
     </div>
-    <div className="content p-6 text-white leading-8">
+    <div className="content p-6 dark:text-white leading-8">
       <ul className="news">
         <li>
           &#128105;&#127995;&#8205;&#127979; 11/2023 Attended the{" "}
