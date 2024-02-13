@@ -36,7 +36,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Header />
-        <main className="flex min-h-screen flex-col justify-between px-4 md:px-48 bg-eggshell dark:bg-blue">
+        <main className="flex min-h-screen flex-col justify-between px-4 md:px-48 bg-eggshell dark:bg-navy">
           {children}
         </main>
       </body>

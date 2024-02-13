@@ -11,7 +11,7 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
   return (
     <nav
       style={{ top: `${top}px` }}
-      className="absolute md:flex bottom-0 right-0 left-0 md:static dark:text-white align-middle bg-eggshell dark:bg-blue h-screen"
+      className="absolute md:flex bottom-0 right-0 left-0 md:static dark:text-white align-middle bg-eggshell dark:bg-navy h-screen"
     >
       <div
         style={{ transform: `translateY(calc(-50% - ${top}px))` }}
