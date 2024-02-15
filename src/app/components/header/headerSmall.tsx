@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import Image from "next/image";
-import { Audio } from "@/components";
+import { Audio, Close, Open } from "@/components";
 import { TClasses } from "@/types";
 import { NavSmall } from "@/app/components/nav";
 
@@ -26,19 +25,12 @@ export const HeaderSmall = ({ classes }: TClasses): React.ReactNode => {
     <>
       <div className={classes}>
         <div className="flex">
-          <div className="flex-1">
+          <div className="flex-2">
             <h1 className="text-2xl">Mara Ulloa</h1>
             <Audio />
           </div>
           <div className="flex flex-1 justify-end">
-            <button onClick={toggle}>
-              <Image
-                src={open ? "/img/close.svg" : "/img/open.svg"}
-                width="50"
-                height="50"
-                alt="Toggle mobile nav"
-              />
-            </button>
+            <button onClick={toggle}>{open ? <Close /> : <Open />}</button>
           </div>
         </div>
       </div>
