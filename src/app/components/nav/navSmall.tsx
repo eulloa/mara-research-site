@@ -17,7 +17,7 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
         style={{ transform: `translateY(calc(-50% - ${top}px))` }}
         className="relative top-1/2"
       >
-        <ul className="md:flex-1 md:flex justify-start mb-8">
+        <ul className="md:flex-1 md:flex justify-start mb-20">
           <li className="md:pr-8 mb-8">
             <a className="flex justify-center" href="#news">
               <button onClick={onClick}>News</button>

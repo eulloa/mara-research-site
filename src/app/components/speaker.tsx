@@ -1,10 +1,10 @@
 export const Speaker = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="25"
+    width="15"
     zoomAndPan="magnify"
     viewBox="0 0 810 809.999993"
-    height="25"
+    height="15"
     preserveAspectRatio="xMidYMid meet"
     version="1.0"
   >
