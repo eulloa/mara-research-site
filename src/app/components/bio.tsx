@@ -25,20 +25,20 @@ export const Bio = () => {
             >
               Computer Science
             </a>
-          </span>
-          (CSI) at{" "}
+          </span>{" "}
+          (CS) at{" "}
           <span className="underline">
             <a href="https://www.northwestern.edu/" target="_blank">
               Northwestern University
             </a>
-          </span>
+          </span>{" "}
           (NU) in the Robert R. McCormick School of Engineering and Applied
           Science. As a member of the{" "}
           <span className="underline">
             <a href="https://sites.northwestern.edu/nupath/" target="_blank">
               Personalized & Adaptive Technology for Health
             </a>
-          </span>
+          </span>{" "}
           (NU-Path) lab, my PhD work is mentored by{" "}
           <span className="underline">
             <a
@@ -49,7 +49,7 @@ export const Bio = () => {
             </a>
           </span>
         </p>
-        <p className="mt-4 leading-7 p-2 bg-[#e3edf7]">
+        <p className="mt-4 leading-7 p-2 bg-[#e3edf7] text-black">
           My research interests span across the fields of Human-Computer
           Interaction (HCI), Preventive Medicine, and Artificial Intelligence
           (AI), convering to explore the interplay between technology design and

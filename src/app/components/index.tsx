@@ -3,6 +3,7 @@ export * from "./bio";
 export * from "./close";
 export * from "./events";
 export * from "./github";
+export * from "./header";
 export * from "./linkedIn";
 export * from "./news";
 export * from "./open";
