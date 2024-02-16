@@ -1,22 +1,25 @@
 import Link from "next/link";
-import { Github, LinkedIn, Scholar, ThemeSwitcher, Twitter } from "@/components";
+import {
+  Github,
+  LinkedIn,
+  Scholar,
+  ThemeSwitcher,
+  Twitter,
+} from "@/components";
 
 type TNavSmall = {
   onClick: () => void;
 };
 
 export const NavSmall = ({ onClick }: TNavSmall) => {
-  const top = document.querySelector("header")?.clientHeight as number;
+  const top = window?.scrollY;
 
   return (
     <nav
       style={{ top: `${top}px` }}
-      className="absolute md:flex bottom-0 right-0 left-0 md:static dark:text-white align-middle bg-eggshell dark:bg-navy h-screen"
+      className="absolute md:flex bottom-0 right-0 left-0 md:static dark:text-white align-middle bg-eggshell dark:bg-navy h-screen z-10"
     >
-      <div
-        style={{ transform: `translateY(calc(-50% - ${top}px))` }}
-        className="relative top-1/2"
-      >
+      <div className="relative top-1/2 translate-y-[-50%]">
         <ul className="md:flex-1 md:flex justify-start mb-20">
           <li className="md:pr-8 mb-8">
             <a className="flex justify-center" href="#news">
