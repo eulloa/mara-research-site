@@ -6,6 +6,7 @@ export * from "./github";
 export * from "./linkedIn";
 export * from "./news";
 export * from "./open";
+export * from "./scholar";
 export * from "./speaker";
 export * from "./themeSwitcher";
 export * from "./twitter";

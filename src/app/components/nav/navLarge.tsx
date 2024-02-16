@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Github, LinkedIn, ThemeSwitcher, Twitter } from "@/components";
+import { Github, LinkedIn, Scholar, ThemeSwitcher, Twitter } from "@/components";
 
 export const NavLarge = () => {
   return (
@@ -27,6 +27,11 @@ export const NavLarge = () => {
         <li className="pr-8">
           <Link href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
             <LinkedIn />
+          </Link>
+        </li>
+        <li className="pr-8">
+          <Link href="https://scholar.google.com/citations?hl=en&user=2rXe1OcAAAAJ" target="_blank">
+            <Scholar />
           </Link>
         </li>
         <li className="pr-8">
