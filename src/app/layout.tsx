@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/app/components/header"
+import { Header } from "@/app/components/header";
 import { BackToTop, Footer } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,7 +35,7 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-eggshell dark:bg-navy`}>
         <Header />
         <main className="flex min-h-screen flex-col justify-between px-4 md:px-48 bg-eggshell dark:bg-navy">
           {children}
