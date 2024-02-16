@@ -1,3 +1,3 @@
 export type TClasses = {
-  classes: string;
+  classes?: string;
 };

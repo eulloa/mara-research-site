@@ -1,14 +1,15 @@
 "use client";
 
 import { Speaker } from "@/components";
+import { TClasses } from "@/types";
 
 const onClick = () => {
   const audio = document.querySelector("audio");
   audio?.play();
 };
 
-export const Audio = () => (
-  <div className="block lg:flex">
+export const Audio = ({ classes }: TClasses) => (
+  <div className={`block lg:flex ${classes}`}>
     <div className="flex flex-1 lg:mt-4 justify-start lg:justify-center dark:text-white">
       <audio>
         <source src="audio/name.ogg" type="audio/ogg" />

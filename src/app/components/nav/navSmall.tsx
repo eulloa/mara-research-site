@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, LinkedIn, ThemeSwitcher, Twitter } from "@/components";
+import { Github, LinkedIn, Scholar, ThemeSwitcher, Twitter } from "@/components";
 
 type TNavSmall = {
   onClick: () => void;
@@ -45,6 +45,14 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
               target="_blank"
             >
               <LinkedIn />
+            </Link>
+          </li>
+          <li className="pr-8">
+            <Link
+              href="https://scholar.google.com/citations?hl=en&user=2rXe1OcAAAAJ"
+              target="_blank"
+            >
+              <Scholar />
             </Link>
           </li>
           <li className="pr-8">
