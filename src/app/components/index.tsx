@@ -1,4 +1,5 @@
 export * from "./audio";
+export * from "./backToTop";
 export * from "./bio";
 export * from "./close";
 export * from "./events";

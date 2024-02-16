@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/app/components/header"
-import { Footer } from "@/components";
+import { BackToTop, Footer } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +41,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );
