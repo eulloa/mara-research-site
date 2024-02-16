@@ -21,6 +21,7 @@ const RenderPhoto = ({
     <Image
       fill
       src={photo}
+      priority={false}
       placeholder="blur"
       blurDataURL="/img/placeholder.png"
       {...{ alt, title, sizes, className, onClick }}
