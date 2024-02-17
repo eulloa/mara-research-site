@@ -27,6 +27,11 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
             </a>
           </li>
           <li className="md:pr-8 mb-8">
+            <a className="flex justify-center" href="#publications">
+              <button onClick={onClick}>Publications</button>
+            </a>
+          </li>
+          <li className="md:pr-8 mb-8">
             <a className="flex justify-center" href="#events">
               <button onClick={onClick}>Events</button>
             </a>

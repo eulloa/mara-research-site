@@ -39,7 +39,7 @@ export const Events = ({ images }: IEvents) => {
 
   return (
     <div className="mt-8" id="events">
-      <h1 className="dark:text-white mb-4">Events</h1>
+      <h1 className="dark:text-white mb-4 text-lg font-bold">Events</h1>
       <PhotoAlbum
         layout="rows"
         photos={images.map((img) => ({

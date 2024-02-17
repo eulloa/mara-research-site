@@ -49,7 +49,7 @@ export const Bio = () => {
             </a>
           </span>
         </p>
-        <p className="mt-4 leading-7 p-2 bg-[#e3edf7] text-black">
+        <p className="mt-4 leading-7 p-2 bg-lightBlue text-black">
           My research interests span across the fields of Human-Computer
           Interaction (HCI), Preventive Medicine, and Artificial Intelligence
           (AI), convering to explore the interplay between technology design and
