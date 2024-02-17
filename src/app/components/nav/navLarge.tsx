@@ -13,6 +13,11 @@ export const NavLarge = () => {
           </a>
         </li>
         <li className="md:pr-8">
+          <a className="hover:underline block text-center" href="#publications">
+            Publications
+          </a>
+        </li>
+        <li className="md:pr-8">
           <a className="hover:underline" href="#events">
             Events
           </a>

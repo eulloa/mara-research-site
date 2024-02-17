@@ -9,6 +9,7 @@ export * from "./header";
 export * from "./linkedIn";
 export * from "./news";
 export * from "./open";
+export * from "./publications";
 export * from "./scholar";
 export * from "./speaker";
 export * from "./themeSwitcher";

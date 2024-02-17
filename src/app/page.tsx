@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { Audio, Bio, Events, News } from "@/components";
+import { Audio, Bio, Events, News, Publications } from "@/components";
 
 const getImages = () => {
   const dir = path.resolve("./public/img/events");
@@ -41,6 +41,7 @@ export default function Home() {
       <Bio />
       <Audio classes="hidden" />
       <News />
+      <Publications />
       <Events images={images} />
     </>
   );

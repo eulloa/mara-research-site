@@ -1,6 +1,6 @@
 export const News = () => (
   <div className="mt-10" id="news">
-    <h1 className="mb-4 dark:text-white">News</h1>
+    <h1 className="mb-4 dark:text-white text-lg font-bold">News</h1>
     <div className="bg-lightBlue dark:bg-black rounded-lg rounded-e-lg h-[400px] overflow-y-scroll">
       <div className="terminal-header rounded-t-lg bg-darkBlue dark:bg-[#2d2c29] flex sticky top-0 z-10 p-2">
         <div className="h-[1rem] w-[1rem] rounded-[1rem] bg-[#e9685c] mr-2 relative hover:after:content-['\0078'] after:absolute after:top-[-25%] after:left-[22%]"></div>
@@ -9,7 +9,7 @@ export const News = () => (
       </div>
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news">
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 11/2023 Attended the{" "}
             <a
               className="underline"
@@ -21,7 +21,7 @@ export const News = () => (
             </a>{" "}
             in Chicago, IL
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 10/2023 Presented at the{" "}
             <a
               className="underline"
@@ -40,7 +40,7 @@ export const News = () => (
             </a>{" "}
             in Minneapolis, MN
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 10/2023 Served as a JEDI
             Ambassador at{" "}
             <a
@@ -52,7 +52,7 @@ export const News = () => (
             </a>{" "}
             in Canc&uacute;n, Mexico
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 07/2023 Served as a panelist in
             the{" "}
             <a
@@ -64,7 +64,7 @@ export const News = () => (
             </a>{" "}
             Graduate School Panel
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 06/2023 Served as a volunteer at
             the{" "}
             <a
@@ -76,7 +76,7 @@ export const News = () => (
             </a>{" "}
             conference in Chicago, IL
           </li>
-          <li>
+          <li className="mb-4">
             &#127891; 06/2023 Received a Master of Science (MS) degree in
             Computer Science from{" "}
             <a
@@ -87,7 +87,7 @@ export const News = () => (
               Northwestern
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 04/2023 Served as a panelist in
             the{" "}
             <a
@@ -99,7 +99,7 @@ export const News = () => (
             </a>{" "}
             Alumni Forum
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 04/2023 Presented at the{" "}
             <a
               className="underline"
@@ -110,7 +110,7 @@ export const News = () => (
             </a>{" "}
             in San Francisco, CA
           </li>
-          <li>
+          <li className="mb-4">
             &#127942; 03/2023 Awarded the{" "}
             <a
               className="underline"
@@ -120,7 +120,7 @@ export const News = () => (
               National Science Foundation Graduate Research Fellowship
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 02/2023 Attended the{" "}
             <a
               className="underline"
@@ -131,7 +131,7 @@ export const News = () => (
             </a>{" "}
             at NIU
           </li>
-          <li>
+          <li className="mb-4">
             &#128221; 11/2022 First-authored{" "}
             <a
               className="underline"
@@ -142,7 +142,7 @@ export const News = () => (
               in Healthcare
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 10/2022 Presented at{" "}
             <a
               className="underline"
@@ -153,7 +153,7 @@ export const News = () => (
               conference
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#127942; 09/2022 Awarded the{" "}
             <a
               className="underline"
@@ -163,15 +163,15 @@ export const News = () => (
               Segal Design Cluster Fellowship
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 09/2022 Attended the Tapia
             Conference in Washington, DC
           </li>
-          <li>
+          <li className="mb-4">
             &#127942; 07/2022 Awarded the Social Justice Mini-Grant from
             Northwestern
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 07/2022 Served as a panelist in
             the{" "}
             <a
@@ -183,7 +183,7 @@ export const News = () => (
             </a>{" "}
             Navigating Graduate School Event
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 03/2022 Started my PhD Internship
             with{" "}
             <a
@@ -194,7 +194,7 @@ export const News = () => (
               We All Code
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 09/2021 Started my PhD studies in
             CS at{" "}
             <a
@@ -205,7 +205,7 @@ export const News = () => (
               Northwestern University
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#127891; 05/2021 Graduated with a Bachelor of Science (BS) degree
             in Computer Science from{" "}
             <a
@@ -216,8 +216,10 @@ export const News = () => (
               NEIU
             </a>
           </li>
-          <li>&#127942; 01/2021 Awarded the NEIU CS Scholarship</li>
-          <li>
+          <li className="mb-4">
+            &#127942; 01/2021 Awarded the NEIU CS Scholarship
+          </li>
+          <li className="mb-4">
             &#127942; 11/2020 Awarded the{" "}
             <a
               className="underline"
@@ -227,15 +229,15 @@ export const News = () => (
               Abraham Lincoln Civic Engagement Award
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 07/2020 Presented at the UCLA
             National McNair Conference
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 07/2020 Presented at the The
             National Center for Atmospheric Research Presentations
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 05/2020 Started my internship
             with{" "}
             <a
@@ -246,7 +248,7 @@ export const News = () => (
               The National Center for Atmospheric Research (NCAR)
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 10/2019 Attended and presented at
             the{" "}
             <a
@@ -258,15 +260,15 @@ export const News = () => (
             </a>{" "}
             in Honolulu, HI
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 09/2019 Presented at the 11th
             Annual NEIU Student Symposium
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 08/2019 Started leading
             programming workshops with the NEIU CS department
           </li>
-          <li>
+          <li className="mb-4">
             &#128105;&#127995;&#8205;&#127979; 05/2019 Started my summer
             research internship at{" "}
             <a
@@ -277,7 +279,7 @@ export const News = () => (
               Northeastern Illinois University (NEIU) SCSE
             </a>
           </li>
-          <li>
+          <li className="mb-4">
             &#127942; 09/2018 Awarded The National TheDream.US Scholarship
           </li>
         </ul>
