@@ -14,11 +14,7 @@ export const HeaderSmall = ({ classes }: TClasses): React.ReactNode => {
   };
 
   useEffect(() => {
-    if (open) {
-      document.body.classList.add("overflow-y-hidden");
-    } else {
-      document.body.classList.remove("overflow-y-hidden");
-    }
+    document.body.classList.toggle("overflow-y-hidden");
   }, [open]);
 
   return (
