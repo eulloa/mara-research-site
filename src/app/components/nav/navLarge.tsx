@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { Github, LinkedIn, Scholar, ThemeSwitcher, Twitter } from "@/components";
+import {
+  Github,
+  LinkedIn,
+  Scholar,
+  ThemeSwitcher,
+  Twitter,
+} from "@/components";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export const NavLarge = () => {
   return (
@@ -23,7 +30,12 @@ export const NavLarge = () => {
           </a>
         </li>
         <li>
-          <Link className="hover:underline" href="/cv.pdf" target="_blank">
+          <Link
+            className="hover:underline"
+            href="/cv.pdf"
+            target="_blank"
+            onClick={() => sendGAEvent({ event: "CVClicked" })}
+          >
             CV
           </Link>
         </li>
@@ -35,7 +47,10 @@ export const NavLarge = () => {
           </Link>
         </li>
         <li className="pr-8">
-          <Link href="https://scholar.google.com/citations?hl=en&user=2rXe1OcAAAAJ" target="_blank">
+          <Link
+            href="https://scholar.google.com/citations?hl=en&user=2rXe1OcAAAAJ"
+            target="_blank"
+          >
             <Scholar />
           </Link>
         </li>
