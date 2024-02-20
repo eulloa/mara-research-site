@@ -6,6 +6,7 @@ import {
   ThemeSwitcher,
   Twitter,
 } from "@/components";
+import { sendGAEvent } from "@next/third-parties/google";
 
 type TNavSmall = {
   onClick: () => void;
@@ -44,7 +45,10 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
             <Link
               className="hover:underline block text-center"
               href="/cv.pdf"
-              onClick={onClick}
+              onClick={() => {
+                onClick();
+                sendGAEvent({ event: "CVClicked" });
+              }}
               target="_blank"
             >
               CV
