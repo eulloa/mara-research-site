@@ -34,7 +34,9 @@ export const NavLarge = () => {
             className="hover:underline"
             href="/cv.pdf"
             target="_blank"
-            onClick={() => sendGAEvent({ event: "select_content", value: "CV" })}
+            onClick={() =>
+              sendGAEvent({ event: "select_content", value: "CV" })
+            }
           >
             CV
           </Link>
@@ -42,12 +44,17 @@ export const NavLarge = () => {
       </ul>
       <ul className="flex-1 flex justify-center md:justify-end">
         <li className="pr-8">
-          <Link href="https://www.linkedin.com/in/mara-ulloa/" target="_blank">
+          <Link
+            className="LinkedIn"
+            href="https://www.linkedin.com/in/mara-ulloa/"
+            target="_blank"
+          >
             <LinkedIn />
           </Link>
         </li>
         <li className="pr-8">
           <Link
+            className="GoogleScholar"
             href="https://scholar.google.com/citations?hl=en&user=2rXe1OcAAAAJ"
             target="_blank"
           >
@@ -55,16 +62,24 @@ export const NavLarge = () => {
           </Link>
         </li>
         <li className="pr-8">
-          <Link href="https://github.com/Mara16" target="_blank">
+          <Link
+            className="Github"
+            href="https://github.com/Mara16"
+            target="_blank"
+          >
             <Github />
           </Link>
         </li>
         <li className="pr-8">
-          <Link href="https://twitter.com/mara_ulloa__" target="_blank">
+          <Link
+            className="Twitter"
+            href="https://twitter.com/mara_ulloa__"
+            target="_blank"
+          >
             <Twitter />
           </Link>
         </li>
-        <li>
+        <li className="ThemeSwitcher">
           <ThemeSwitcher />
         </li>
       </ul>
