@@ -10,6 +10,28 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li>
+            &#128105;&#127995;&#8205;&#127979; 04/2024 Will be attending the{" "}
+            <a
+              className="underline"
+              href="https://cra.org/cra-wp/grad-cohort-ideals/"
+              target="_blank"
+            >
+              2024 CRA-WP Grad Cohort Workshop for IDEALS
+            </a>{" "}
+            in Minneapolis, MN
+          </li>
+          <li>
+            &#128105;&#127995;&#8205;&#127979; 11/2023 Gave a talk on public
+            scholarship & building impactful research as an alum of{" "}
+            <a
+              className="underline"
+              href="https://engage.northwestern.edu/programs/geo/"
+              target="_blank"
+            >
+              The Graduate Engagement Opportunities (GEO) Community Practicum
+            </a>
+          </li>
+          <li>
             &#128105;&#127995;&#8205;&#127979; 11/2023 Attended the{" "}
             <a
               className="underline"
