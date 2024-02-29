@@ -15,16 +15,17 @@ type IEvents = {
 const RenderPhoto = ({
   photo,
   wrapperStyle,
-  imageProps: { alt, title, sizes, className, onClick },
+  imageProps: { alt, title, sizes, onClick },
 }: RenderPhotoProps) => (
   <div style={{ ...wrapperStyle, position: "relative" }}>
     <Image
+      className="hover:opacity-50"
       fill
       src={photo}
       priority={false}
       placeholder="blur"
       blurDataURL="/img/placeholder.png"
-      {...{ alt, title, sizes, className, onClick }}
+      {...{ alt, title, sizes, onClick }}
     />
   </div>
 );
