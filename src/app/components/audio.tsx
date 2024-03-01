@@ -16,9 +16,9 @@ export const Audio = ({ classes }: TClasses) => (
         <source src="audio/name.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      <button className="inline-block mr-6" onClick={onClick}>
+      <a className="speaker inline-block mr-6 cursor-pointer" onClick={onClick}>
         <Speaker />
-      </button>
+      </a>
       <span className="text-stone-500 text-xs font-thin">
         / MAHR-ah - OOh - YO-ah /
       </span>
