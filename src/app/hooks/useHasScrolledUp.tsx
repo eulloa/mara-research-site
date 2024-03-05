@@ -12,6 +12,13 @@ export const useHasScrolledUp = (): boolean => {
   });
 
   const handleScroll = () => {
+    if (document.body.getBoundingClientRect().top >= -89) {
+      return {
+        scrollDirection: Direction.UP,
+        scrollPos: document.body.getBoundingClientRect().top,
+      };
+    }
+
     setScrollStatus((prev) => {
       return {
         scrollDirection:
