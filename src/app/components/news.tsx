@@ -10,6 +10,29 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li>
+            &#128105;&#127995;&#8205;&#127979; 06/2024 Will be presenting
+            ongoing research on the design of patient-facing machine learning
+            (ML) at{" "}
+            <a className="underline" href="https://isrii.org/" target="_blank">
+              The International Society for Research on Internet Interventions
+              (ISRII)
+            </a>{" "}
+            in Limerick, Ireland
+          </li>
+          <li>
+            &#128105;&#127995;&#8205;&#127979; 05/2024 Will begin collaborating
+            on user experience (UX) research initiatives with{" "}
+            <a
+              className="underline"
+              href="https://www.nsf.gov/"
+              target="_blank"
+            >
+              The National Science Foundation&apos;s (NSF) National Center for
+              Atmospheric Research (NCAR)
+            </a>{" "}
+            in Boulder, Colorado
+          </li>
+          <li>
             &#128105;&#127995;&#8205;&#127979; 04/2024 Will be attending the{" "}
             <a
               className="underline"
