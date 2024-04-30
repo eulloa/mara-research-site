@@ -5,13 +5,20 @@ enum Direction {
   UP = "UP",
 }
 
-export const useHasScrolledUp = (): boolean => {
+export const useHasScrolledUp = (target: number = 0): boolean => {
   const [scrollStatus, setScrollStatus] = useState({
     scrollDirection: Direction.UP,
     scrollPos: 0,
   });
 
   const handleScroll = () => {
+    if (target && document.body.getBoundingClientRect().top >= target) {
+      return {
+        scrollDirection: Direction.UP,
+        scrollPos: document.body.getBoundingClientRect().top,
+      };
+    }
+
     setScrollStatus((prev) => {
       return {
         scrollDirection:

@@ -5,8 +5,9 @@ import { HeaderLarge } from "@/app/components/header/headerLarge";
 import { useHasScrolledUp } from "@/hooks";
 
 export const Header = () => {
-  const large = useHasScrolledUp() ? "top-0" : "top-[-89px]";
-  const small = useHasScrolledUp() ? "top-0" : "top-[-80px]";
+  // TODO: fix hardcoded values
+  const large = useHasScrolledUp(-89) ? "top-0" : "top-[-89px]";
+  const small = useHasScrolledUp(-80) ? "top-0" : "top-[-80px]";
 
   return (
     <header>
