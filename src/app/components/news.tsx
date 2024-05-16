@@ -20,11 +20,11 @@ export const News = () => (
             in Limerick, Ireland
           </li>
           <li>
-            &#128105;&#127995;&#8205;&#127979; 05/2024 Will begin collaborating
+            &#128105;&#127995;&#8205;&#127979; 05/2024 Started collaborating
             on user experience (UX) research initiatives with{" "}
             <a
               className="underline"
-              href="https://www.nsf.gov/"
+              href="https://ncar.ucar.edu"
               target="_blank"
             >
               The National Science Foundation&apos;s (NSF) National Center for
@@ -33,7 +33,7 @@ export const News = () => (
             in Boulder, Colorado
           </li>
           <li>
-            &#128105;&#127995;&#8205;&#127979; 04/2024 Will be attending the{" "}
+            &#128105;&#127995;&#8205;&#127979; 04/2024 Attended the{" "}
             <a
               className="underline"
               href="https://cra.org/cra-wp/grad-cohort-ideals/"
