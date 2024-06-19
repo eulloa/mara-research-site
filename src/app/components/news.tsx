@@ -10,10 +10,10 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li>
-            &#128105;&#127995;&#8205;&#127979; 06/2024 Will be presenting
+            &#128105;&#127995;&#8205;&#127979; 06/2024 Presented
             ongoing research on the design of patient-facing machine learning
             (ML) at{" "}
-            <a className="underline" href="https://isrii.org/" target="_blank">
+            <a className="underline" href="https://mhealth.jmir.org/2024/1/e50826" target="_blank">
               The International Society for Research on Internet Interventions
               (ISRII)
             </a>{" "}
