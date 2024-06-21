@@ -5,8 +5,14 @@ export const Publications = () => (
       <article>
         <span className="dark:text-white">
           Cruz, S., Lu, C., <span className="font-bold">Ulloa M.,</span>{" "}
-          Redding, A., Hester, J., Jacobs, M. &ldquo;Perceptions of Wearable
-          Health Tools Post-COVID 19 in Low-income Latine Communities&rdquo;{" "}
+          Redding, A., Hester, J., Jacobs, M. &ldquo;
+					<a
+						className="underline"
+						href="https://mhealth.jmir.org/2024/1/e50826"
+						target="_blank"
+					>
+						Perceptions of Wearable Health Tools Post the COVID-19 Emergency in Low-Income Latin Communities: Qualitative Study&rdquo;
+					</a>{" "}
           <span className="italic">JMIR mHealth and uHealth (JMU).</span> USA,
           January 26, 2024.
         </span>

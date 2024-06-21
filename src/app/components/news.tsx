@@ -129,7 +129,7 @@ export const News = () => (
               href="https://www.mccormick.northwestern.edu/computer-science/"
               target="_blank"
             >
-              Northwestern
+              Northwestern University
             </a>
           </li>
           <li>
@@ -174,7 +174,7 @@ export const News = () => (
             >
               Preparing Future Faculty of Color Conference
             </a>{" "}
-            at NIU
+            at Northern Illinois University (NIU) 
           </li>
           <li>
             &#128221; 11/2022 First-authored{" "}
@@ -288,7 +288,7 @@ export const News = () => (
               href="https://ncar.ucar.edu/"
               target="_blank"
             >
-              The National Center for Atmospheric Research (NCAR)
+              NSF The National Center for Atmospheric Research (NCAR)
             </a>
           </li>
           <li>
