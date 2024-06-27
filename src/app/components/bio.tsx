@@ -14,10 +14,10 @@ export const Bio = () => {
               href="https://new.nsf.gov/funding/opportunities/nsf-graduate-research-fellowship-program-grfp"
               target="_blank"
             >
-              National Science Foundation GRFP Fellow
+              National Science Foundation GRFP Fellow,
             </a>
           </span>{" "}
-          and third-year PhD student in the department of{" "}
+          an HCI researcher, and a third-year PhD student in the department of{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/computer-science/"
