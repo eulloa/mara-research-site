@@ -14,7 +14,7 @@ export const Publications = () => (
 						Perceptions of Wearable Health Tools Post the COVID-19 Emergency in Low-Income Latin Communities: Qualitative Study&rdquo;
 					</a>{" "}
           <span className="italic">JMIR mHealth and uHealth (JMU).</span> USA,
-          January 26, 2024.
+          August 5, 2024.
         </span>
       </article>
       <article>
