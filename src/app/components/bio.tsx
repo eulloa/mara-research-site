@@ -17,7 +17,7 @@ export const Bio = () => {
               National Science Foundation GRFP Fellow,
             </a>
           </span>{" "}
-          an HCI researcher, and a third-year PhD student in the department of{" "}
+          a Human-Computer Interaction (HCI) Researcher, and a third-year PhD Student in the department of{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/computer-science/"
@@ -50,8 +50,8 @@ export const Bio = () => {
           </span>
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-black">
-          My research interests span across the fields of Human-Computer
-          Interaction (HCI), Preventive Medicine, and Artificial Intelligence
+          My research interests span across the fields of
+          HCI, Preventive Medicine, and Artificial Intelligence
           (AI), converging to explore the interplay between technology design and
           personalized health tools.
         </p>
