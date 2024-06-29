@@ -16,7 +16,7 @@ type IEvents = {
 const RenderPhoto = ({
   photo,
   wrapperStyle,
-  imageProps: { alt, title, sizes, onClick },
+  imageProps: { alt, title, sizes, onClick: handleClick },
 }: RenderPhotoProps) => (
   <div style={{ ...wrapperStyle, position: "relative" }}>
     <Image
@@ -26,7 +26,12 @@ const RenderPhoto = ({
       priority={false}
       placeholder="blur"
       blurDataURL="/img/placeholder.png"
-      {...{ alt, title, sizes, onClick }}
+      onClick={(e) => {
+        if (handleClick) {
+          handleClick(e);
+        }
+      }}
+      {...{ alt, title, sizes }}
     />
   </div>
 );
@@ -52,7 +57,10 @@ export const Events = ({ images }: IEvents) => {
         onClick={({ index: current }) => {
           setIndex(current);
           setOpen(!open);
-          sendGAEvent({ event: "photo_album_click", value: current });
+          sendGAEvent({
+            event: "photo_album_click",
+            value: images?.[current]?.description || current,
+          });
         }}
         renderPhoto={RenderPhoto}
       />
