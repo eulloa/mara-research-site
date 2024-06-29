@@ -14,10 +14,10 @@ export const Bio = () => {
               href="https://new.nsf.gov/funding/opportunities/nsf-graduate-research-fellowship-program-grfp"
               target="_blank"
             >
-              National Science Foundation GRFP Fellow,
+              U.S. National Science Foundation GRFP Fellow,
             </a>
           </span>{" "}
-          a Human-Computer Interaction (HCI) Researcher, and a third-year PhD Student in the department of{" "}
+          Human-Computer Interaction (HCI) Researcher, and third-year PhD Student in the department of{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/computer-science/"
@@ -39,7 +39,7 @@ export const Bio = () => {
               Personalized & Adaptive Technology for Health
             </a>
           </span>{" "}
-          (NU-Path) lab, my PhD work is mentored by{" "}
+          (NU-PATH) lab, my PhD work is mentored by{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/jacobs-maia.html"
