@@ -7,6 +7,7 @@ import Lightbox, { SlideImage } from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
+import { sendGAEvent } from "@next/third-parties/google";
 
 type IEvents = {
   images: SlideImage[];
@@ -51,6 +52,7 @@ export const Events = ({ images }: IEvents) => {
         onClick={({ index: current }) => {
           setIndex(current);
           setOpen(!open);
+          sendGAEvent({ event: "photo_album_click", value: current });
         }}
         renderPhoto={RenderPhoto}
       />
