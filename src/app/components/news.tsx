@@ -1,3 +1,13 @@
+"use client";
+
+import { MouseEvent } from "react";
+import { sendGAEvent } from "@next/third-parties/google";
+
+const handleClick = (e: MouseEvent) => {
+  const target = e?.target as HTMLUListElement;
+  sendGAEvent({ event: "news_list_item", value: target?.innerText });
+};
+
 export const News = () => (
   <div className="mt-10" id="news">
     <h1 className="mb-4 dark:text-white text-lg font-bold">News</h1>
@@ -9,19 +19,22 @@ export const News = () => (
       </div>
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
-          <li>
-            &#128105;&#127995;&#8205;&#127979; 06/2024 Presented
-            ongoing research on the design of patient-facing machine learning
-            (ML) at{" "}
-            <a className="underline" href="https://mhealth.jmir.org/2024/1/e50826" target="_blank">
+          <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 06/2024 Presented ongoing
+            research on the design of patient-facing machine learning (ML) at{" "}
+            <a
+              className="underline"
+              href="https://mhealth.jmir.org/2024/1/e50826"
+              target="_blank"
+            >
               The International Society for Research on Internet Interventions
               (ISRII)
             </a>{" "}
             in Limerick, Ireland
           </li>
-          <li>
-            &#128105;&#127995;&#8205;&#127979; 05/2024 Started collaborating
-            on user experience (UX) research initiatives with{" "}
+          <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 05/2024 Started collaborating on
+            user experience (UX) research initiatives with{" "}
             <a
               className="underline"
               href="https://ncar.ucar.edu"
@@ -32,7 +45,7 @@ export const News = () => (
             </a>{" "}
             in Boulder, Colorado
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 04/2024 Attended the{" "}
             <a
               className="underline"
@@ -43,7 +56,7 @@ export const News = () => (
             </a>{" "}
             in Minneapolis, MN
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 11/2023 Gave a talk on public
             scholarship & building impactful research as an alum of{" "}
             <a
@@ -54,7 +67,7 @@ export const News = () => (
               The Graduate Engagement Opportunities (GEO) Community Practicum
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 11/2023 Attended the{" "}
             <a
               className="underline"
@@ -66,7 +79,7 @@ export const News = () => (
             </a>{" "}
             in Chicago, IL
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 10/2023 Presented at the{" "}
             <a
               className="underline"
@@ -85,7 +98,7 @@ export const News = () => (
             </a>{" "}
             in Minneapolis, MN
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 10/2023 Served as a JEDI
             Ambassador at{" "}
             <a
@@ -97,7 +110,7 @@ export const News = () => (
             </a>{" "}
             in Canc&uacute;n, Mexico
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 07/2023 Served as a panelist in
             the{" "}
             <a
@@ -109,7 +122,7 @@ export const News = () => (
             </a>{" "}
             Graduate School Panel
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 06/2023 Served as a volunteer at
             the{" "}
             <a
@@ -121,7 +134,7 @@ export const News = () => (
             </a>{" "}
             conference in Chicago, IL
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#127891; 06/2023 Received a Master of Science (MS) degree in
             Computer Science from{" "}
             <a
@@ -132,7 +145,7 @@ export const News = () => (
               Northwestern University
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 04/2023 Served as a panelist in
             the{" "}
             <a
@@ -144,7 +157,7 @@ export const News = () => (
             </a>{" "}
             Alumni Forum
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 04/2023 Presented at the{" "}
             <a
               className="underline"
@@ -155,7 +168,7 @@ export const News = () => (
             </a>{" "}
             in San Francisco, CA
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#127942; 03/2023 Awarded the{" "}
             <a
               className="underline"
@@ -165,7 +178,7 @@ export const News = () => (
               National Science Foundation Graduate Research Fellowship
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 02/2023 Attended the{" "}
             <a
               className="underline"
@@ -174,9 +187,9 @@ export const News = () => (
             >
               Preparing Future Faculty of Color Conference
             </a>{" "}
-            at Northern Illinois University (NIU) 
+            at Northern Illinois University (NIU)
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128221; 11/2022 First-authored{" "}
             <a
               className="underline"
@@ -187,7 +200,7 @@ export const News = () => (
               in Healthcare
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 10/2022 Presented at{" "}
             <a
               className="underline"
@@ -198,7 +211,7 @@ export const News = () => (
               conference
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#127942; 09/2022 Awarded the{" "}
             <a
               className="underline"
@@ -208,15 +221,15 @@ export const News = () => (
               Segal Design Cluster Fellowship
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 09/2022 Attended the Tapia
             Conference in Washington, DC
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#127942; 07/2022 Awarded the Social Justice Mini-Grant from
             Northwestern
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 07/2022 Served as a panelist in
             the{" "}
             <a
@@ -228,7 +241,7 @@ export const News = () => (
             </a>{" "}
             Navigating Graduate School Event
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 03/2022 Started my PhD Internship
             with{" "}
             <a
@@ -239,7 +252,7 @@ export const News = () => (
               We All Code
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 09/2021 Started my PhD studies in
             CS at{" "}
             <a
@@ -250,7 +263,7 @@ export const News = () => (
               Northwestern University
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#127891; 05/2021 Graduated with a Bachelor of Science (BS) degree
             in Computer Science from{" "}
             <a
@@ -261,8 +274,10 @@ export const News = () => (
               NEIU
             </a>
           </li>
-          <li>&#127942; 01/2021 Awarded the NEIU CS Scholarship</li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
+            &#127942; 01/2021 Awarded the NEIU CS Scholarship
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#127942; 11/2020 Awarded the{" "}
             <a
               className="underline"
@@ -272,15 +287,15 @@ export const News = () => (
               Abraham Lincoln Civic Engagement Award
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 07/2020 Presented at the UCLA
             National McNair Conference
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 07/2020 Presented at the The
             National Center for Atmospheric Research Presentations
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 05/2020 Started my internship
             with{" "}
             <a
@@ -291,7 +306,7 @@ export const News = () => (
               NSF The National Center for Atmospheric Research (NCAR)
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 10/2019 Attended and presented at
             the{" "}
             <a
@@ -303,15 +318,15 @@ export const News = () => (
             </a>{" "}
             in Honolulu, HI
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 09/2019 Presented at the 11th
             Annual NEIU Student Symposium
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 08/2019 Started leading
             programming workshops with the NEIU CS department
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 05/2019 Started my summer
             research internship at{" "}
             <a
@@ -322,7 +337,7 @@ export const News = () => (
               Northeastern Illinois University (NEIU) SCSE
             </a>
           </li>
-          <li>
+          <li onClick={(e) => handleClick(e)}>
             &#127942; 09/2018 Awarded The National TheDream.US Scholarship
           </li>
         </ul>
