@@ -1,5 +1,11 @@
 "use client";
+
+import { MutableRefObject, useRef } from "react";
+
 export const News = () => {
+  const papersRef = useRef<HTMLButtonElement>(null);
+  const updatesRef = useRef<HTMLButtonElement>(null);
+
   const toggle = (section: string): void => {
     const newsSection = document.querySelector(`.news-section.${section}`);
 
@@ -15,6 +21,14 @@ export const News = () => {
     }
   };
 
+  const sectionToggle = (
+    ref1: MutableRefObject<HTMLButtonElement>,
+    ref2: MutableRefObject<HTMLButtonElement>
+  ): void => {
+    ref1?.current?.classList.add("border");
+    ref2?.current?.classList.remove("border");
+  };
+
   return (
     <div className="mt-10" id="news">
       <h1 className="mb-4 dark:text-white text-lg font-bold">News</h1>
@@ -25,19 +39,37 @@ export const News = () => {
             <div className="h-[1rem] w-[1rem] rounded-[1rem] bg-[#f5be4f] mr-2 relative hover:after:content-['\2578'] after:absolute after:bottom-[-18%] after:right-[5%]"></div>
             <div className="h-[1rem] w-[1rem] rounded-[1rem] bg-[#61c554] relative hover:after:content-['\02D0'] after:absolute after:right-[30%] after:bottom-[-15%]"></div>
           </div>
-          <div className="flex flex-1 gap-x-3">
-            <button
-              className="dark:text-white"
-              onClick={() => toggle("papers")}
-            >
-              Papers
-            </button>
-            <button
-              className="dark:text-white"
-              onClick={() => toggle("updates")}
-            >
-              Updates
-            </button>
+          <div className="flex flex-1 gap-x-3 justify-end">
+            <div>
+              <button
+                className="dark:text-white"
+                onClick={() => {
+                  sectionToggle(
+                    papersRef as MutableRefObject<HTMLButtonElement>,
+                    updatesRef as MutableRefObject<HTMLButtonElement>
+                  );
+                  toggle("papers");
+                }}
+                ref={papersRef}
+              >
+                X
+              </button>
+            </div>
+            <div>
+              <button
+                className="dark:text-white"
+                onClick={() => {
+                  sectionToggle(
+                    updatesRef as MutableRefObject<HTMLButtonElement>,
+                    papersRef as MutableRefObject<HTMLButtonElement>
+                  );
+                  toggle("updates");
+                }}
+                ref={updatesRef}
+              >
+                O
+              </button>
+            </div>
           </div>
         </div>
         <div className="content p-6 dark:text-white leading-8">
