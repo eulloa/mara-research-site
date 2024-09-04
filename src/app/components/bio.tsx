@@ -17,7 +17,7 @@ export const Bio = () => {
               U.S. National Science Foundation GRFP Fellow,
             </a>
           </span>{" "}
-          Human-Computer Interaction (HCI) Researcher, and third-year PhD Student in the department of{" "}
+          Human-Computer Interaction (HCI) Researcher, and fourth-year PhD Student in the department of{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/computer-science/"
@@ -50,34 +50,10 @@ export const Bio = () => {
           </span>
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-black">
-          My research interests span across the fields of
-          HCI, Preventive Medicine, and Artificial Intelligence
-          (AI), converging to explore the interplay between technology design and
-          personalized health tools.
+					I specialize in using HCI methodologies to design and evaluate user-centered technologies.
         </p>
         <p className="mt-4 leading-7">
-          The objective of my work is to design novel strategies and
-          interventions that apply user-centered design to address usability,
-          safety, and ethical challenges when implementing machine learning
-          insights into real-world settings.
-        </p>
-        <p className="mt-4 leading-7">
-          I am currently working with the{" "}
-          <span className="underline">
-            <a href="https://casmi.northwestern.edu/" target="_blank">
-              Center for Advancing Safety of Machine Intelligence
-            </a>
-          </span>{" "}
-          (CASMI) in my department to{" "}
-          <span className="underline">
-            <a
-              href="https://casmi.northwestern.edu/research/projects/prenatal-stress-reduction.html"
-              target="_blank"
-            >
-              Co-Design Patient-Facing Machine Learning for Prenatal Stress
-              Reduction.
-            </a>
-          </span>
+					My research focuses on co-designing machine learning solutions for healthcare, emphasizing the end user&apos;s perspective. One of my current projects in this space involves working with the <span className="underline"><a href="https://casmi.northwestern.edu/" target="_blank">Center for Advancing Safety of Machine Intelligence (CASMI)</a></span> to <span className="underline"><a href="https://casmi.northwestern.edu/research/projects/prenatal-stress-reduction.html" target="_blank">Co-Design Patient-Facing Machine Learning for Prenatal Stress Reduction.</a></span>
         </p>
       </div>
     </div>
