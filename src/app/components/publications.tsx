@@ -4,15 +4,29 @@ export const Publications = () => (
     <div className="space-y-8">
       <article>
         <span className="dark:text-white">
+          <span className="font-bold">Ulloa M.,</span> Kamali N., Fernandes G.,
+          Soyemi, E., Beltzer M., Alshufara, N., Jacobs, M.
+          &ldquo;Patients&rsquo; Expectations of ML-driven JITAI Support for
+          Maternal Stress Management&rdquo;{" "}
+          <span className="italic">
+            CHI conference on human factors in computing systems.
+          </span>{" "}
+          Yokohama, Japan, April 26 - May 1, 2025{" "}
+          <span className="font-bold">[UNDER REVIEW]</span>
+        </span>
+      </article>
+      <article>
+        <span className="dark:text-white">
           Cruz, S., Lu, C., <span className="font-bold">Ulloa M.,</span>{" "}
           Redding, A., Hester, J., Jacobs, M. &ldquo;
-					<a
-						className="underline"
-						href="https://mhealth.jmir.org/2024/1/e50826"
-						target="_blank"
-					>
-						Perceptions of Wearable Health Tools Post the COVID-19 Emergency in Low-Income Latin Communities: Qualitative Study&rdquo;
-					</a>{" "}
+          <a
+            className="underline"
+            href="https://mhealth.jmir.org/2024/1/e50826"
+            target="_blank"
+          >
+            Perceptions of Wearable Health Tools Post the COVID-19 Emergency in
+            Low-Income Latin Communities: Qualitative Study&rdquo;
+          </a>{" "}
           <span className="italic">JMIR mHealth and uHealth (JMU).</span> USA,
           August 5, 2024.
         </span>

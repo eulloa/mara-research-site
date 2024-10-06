@@ -20,6 +20,24 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 08/2024 Presented on the{" "}
+            <a
+              className="underline"
+              href="https://youtu.be/pbnEhFHh6TY?si=9bNVYPWZvIXaRc3v&t=74"
+              target="_blank"
+            >
+              User Experience (UX) of Advanced 3D Data Visualization Software
+            </a>{" "} at{" "}
+            <a
+              className="underline"
+              href="https://ncar.ucar.edu/"
+              target="_blank"
+            >
+              The National Science Foundation&rsquo;s (NSF) National Center for Atmospheric Research (NCAR)
+            </a>{" "}
+            in Boulder, Colorado
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 06/2024 Presented ongoing
             research on the design of patient-facing machine learning (ML) at{" "}
             <a
