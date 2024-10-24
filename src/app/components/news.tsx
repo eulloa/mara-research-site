@@ -20,6 +20,10 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
+            &#127942; 10/2024 I passed my CS PhD Qualifying Examination and
+            advanced from PhD Student to PhD Candidate
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 08/2024 Presented on the{" "}
             <a
               className="underline"
@@ -27,13 +31,15 @@ export const News = () => (
               target="_blank"
             >
               User Experience (UX) of Advanced 3D Data Visualization Software
-            </a>{" "} at{" "}
+            </a>{" "}
+            at{" "}
             <a
               className="underline"
               href="https://ncar.ucar.edu/"
               target="_blank"
             >
-              The National Science Foundation&rsquo;s (NSF) National Center for Atmospheric Research (NCAR)
+              The National Science Foundation&rsquo;s (NSF) National Center for
+              Atmospheric Research (NCAR)
             </a>{" "}
             in Boulder, Colorado
           </li>
