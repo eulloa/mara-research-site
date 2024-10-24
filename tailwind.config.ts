@@ -22,6 +22,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        roboto: ['var(--font-roboto']
+      },
+      fontWeight: {
+        normal: '400',
+        medium: '500',
+        bold: '600'
+      }
     },
   },
   plugins: [],

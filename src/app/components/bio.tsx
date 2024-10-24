@@ -5,7 +5,7 @@ export const Bio = () => {
     <div className="block gap-x-10 dark:text-white lg:flex">
       <div className="flex-1 bg-[url('/img/bio.jpg')] bg-center bg-cover bg-no-repeat rounded-lg max-[1024px]:h-[500px] lg:h-auto"></div>
       <div className="flex-1">
-        <h1 className="hidden md:block text-3xl">Hi, I&apos;m Mara Ulloa</h1>
+        <h1 className="font-bold hidden md:block text-3xl">Hi, I&apos;m Mara Ulloa</h1>
         <Audio classes="hidden md:block lg:hidden" />
         <p className="mt-4 leading-7">
           I am a{" "}
@@ -17,7 +17,7 @@ export const Bio = () => {
               U.S. National Science Foundation GRFP Fellow,
             </a>
           </span>{" "}
-          Human-Computer Interaction (HCI) Researcher, and fourth-year PhD Student in the department of{" "}
+          Human-Computer Interaction (HCI) Researcher, and fourth-year PhD Candidate in the department of{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/computer-science/"
