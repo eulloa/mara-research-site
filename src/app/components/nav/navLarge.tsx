@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import {
+  Bluesky,
   Github,
   LinkedIn,
   Scholar,
@@ -77,6 +78,15 @@ export const NavLarge = () => {
             target="_blank"
           >
             <Twitter />
+          </Link>
+        </li>
+        <li className="pr-8">
+          <Link
+            className="BlueSky"
+            href="https://twitter.com/mara_ulloa__"
+            target="_blank"
+          >
+            <Bluesky />
           </Link>
         </li>
         <li className="ThemeSwitcher">
