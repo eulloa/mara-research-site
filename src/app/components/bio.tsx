@@ -49,7 +49,7 @@ export const Bio = () => {
             </a>
           </span>
         </p>
-        <p className="mt-4 leading-7 p-2 bg-lightBlue text-black">
+        <p className="mt-4 leading-7 p-2 bg-lightBlue dark:text-white rounded-lg">
 					I specialize in using HCI methodologies to design and evaluate user-centered technologies.
         </p>
         <p className="mt-4 leading-7">

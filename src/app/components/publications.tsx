@@ -1,13 +1,18 @@
+import { Spotlight } from "@/components";
+
 export const Publications = () => (
   <div className="mt-8" id="publications">
     <h1 className="dark:text-white mb-4 text-lg font-bold">Publications</h1>
     <div className="space-y-8">
       <article>
         <span className="dark:text-white">
-          <span className="font-bold">Ulloa M.,</span> Kamali N., Fernandes G.,
-          Soyemi, E., Beltzer M., Alshufara, N., Jacobs, M.
-          &ldquo;Patients&rsquo; Expectations of ML-driven JITAI Support for
-          Maternal Stress Management&rdquo;{" "}
+          <Spotlight
+            className="bg-lightBlue rounded-lg p-1"
+            message="Ulloa M."
+          />
+          , Kamali N., Fernandes G., Soyemi, E., Beltzer M., Alshufara, N.,
+          Jacobs, M. &ldquo;Patients&rsquo; Expectations of ML-driven JITAI
+          Support for Maternal Stress Management&rdquo;{" "}
           <span className="italic">
             CHI conference on human factors in computing systems.
           </span>{" "}
@@ -17,8 +22,12 @@ export const Publications = () => (
       </article>
       <article>
         <span className="dark:text-white">
-          Cruz, S., Lu, C., <span className="font-bold">Ulloa M.,</span>{" "}
-          Redding, A., Hester, J., Jacobs, M. &ldquo;
+          Cruz, S., Lu, C.,{" "}
+          <Spotlight
+            message="Ulloa M."
+            className="bg-lightBlue rounded-lg p-1"
+          />
+          , Redding, A., Hester, J., Jacobs, M. &ldquo;
           <a
             className="underline"
             href="https://mhealth.jmir.org/2024/1/e50826"
@@ -33,8 +42,11 @@ export const Publications = () => (
       </article>
       <article>
         <span className="dark:text-white">
-          <span className="font-bold">Ulloa, M.,</span> Rothrock, B., Ahmad F.,
-          Jacobs, M.{" "}
+          <Spotlight
+            message="Ulloa M."
+            className="bg-lightBlue rounded-lg p-1"
+          />
+          , Rothrock, B., Ahmad F., Jacobs, M.{" "}
           <a
             className="underline"
             href="https://www.frontiersin.org/articles/10.3389/fcomp.2022.1045704/full"
