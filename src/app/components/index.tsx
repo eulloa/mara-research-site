@@ -12,5 +12,6 @@ export * from "./open";
 export * from "./publications";
 export * from "./scholar";
 export * from "./speaker";
+export * from "./spotlight";
 export * from "./themeSwitcher";
 export * from "./twitter";
