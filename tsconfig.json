@@ -28,6 +28,9 @@
       "@/components": [
         "./src/app/components"
       ],
+      "@/components/projects": [
+        "./src/app/components/projects"
+      ],
       "@/enums": [
         "./src/app/enums"
       ],
