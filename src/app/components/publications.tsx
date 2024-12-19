@@ -7,16 +7,16 @@ export const Publications = () => (
       <article>
         <span className="dark:text-white">
           <Spotlight
-            className="bg-lightBlue rounded-lg p-1"
+            className="bg-lightBlue rounded-lg p-1 text-navy"
             message="Ulloa M."
           />
           , Kamali N., Fernandes G., Soyemi, E., Beltzer M., Alshufara, N.,
           Jacobs, M. &ldquo;Patients&rsquo; Expectations of ML-driven JITAI
           Support for Maternal Stress Management&rdquo;{" "}
-          <span className="italic">
+          {/* <span className="italic">
             CHI conference on human factors in computing systems.
           </span>{" "}
-          Yokohama, Japan, April 26 - May 1, 2025{" "}
+          Yokohama, Japan, April 26 - May 1, 2025{" "} */}
           <span className="font-bold">[UNDER REVIEW]</span>
         </span>
       </article>
@@ -25,7 +25,7 @@ export const Publications = () => (
           Cruz, S., Lu, C.,{" "}
           <Spotlight
             message="Ulloa M."
-            className="bg-lightBlue rounded-lg p-1"
+            className="bg-lightBlue rounded-lg p-1 text-navy"
           />
           , Redding, A., Hester, J., Jacobs, M. &ldquo;
           <a
@@ -44,7 +44,7 @@ export const Publications = () => (
         <span className="dark:text-white">
           <Spotlight
             message="Ulloa M."
-            className="bg-lightBlue rounded-lg p-1"
+            className="bg-lightBlue rounded-lg p-1 text-navy"
           />
           , Rothrock, B., Ahmad F., Jacobs, M.{" "}
           <a
