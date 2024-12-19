@@ -26,7 +26,10 @@ export const HeaderSmall = ({ classes }: TClasses): React.ReactNode => {
       <div className={classes}>
         <div className="flex">
           <div className="flex-2">
-            <h1 className="text-2xl">Mara Ulloa</h1>
+            <h1 className="text-xl font-bold">
+              Mara Ulloa{" "}
+              <span className="font-light text-gray">HCI Researcher</span>
+            </h1>
             <Audio />
           </div>
           <div className="flex flex-1 justify-end">

@@ -8,22 +8,22 @@ import { BackToTop, Footer } from "@/components";
 const futura = localFont({
   src: [
     {
-      path: '../../public/font/futura_pt_book.ttf',
-      weight: '400',
-      style: 'normal'
+      path: "../../public/font/futura_pt_book.ttf",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../../public/font/futura_pt_bold.ttf',
-      weight: '500',
-      style: 'medium'
+      path: "../../public/font/futura_pt_bold.ttf",
+      weight: "500",
+      style: "medium",
     },
     {
-      path: '../../public/font/futura_pt_heavy.ttf',
-      weight: '600',
-      style: 'bold'
+      path: "../../public/font/futura_pt_heavy.ttf",
+      weight: "600",
+      style: "bold",
     },
-  ]
-})
+  ],
+});
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -58,8 +58,8 @@ export default function RootLayout({
         <Header />
         <main className="flex min-h-screen flex-col justify-between px-4 md:px-48 bg-eggshell dark:bg-navy">
           {children}
+          <Footer />
         </main>
-        <Footer />
         <BackToTop />
         <GoogleAnalytics gaId="G-44TH6ZEKWM" />
       </body>

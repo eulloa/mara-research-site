@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ThemeOptions } from "@/enums";
 
-export const ThemeSwitcher = () => {
+export const ThemeSwitcher = ({ className }: { className?: string }) => {
   const [theme, setTheme] = useState<string>(ThemeOptions.DARK);
   const [icon, setIcon] = useState<string>("fa-sun");
 
@@ -19,7 +19,7 @@ export const ThemeSwitcher = () => {
   };
 
   return (
-    <button onClick={updateTheme}>
+    <button className={className} onClick={updateTheme}>
       <i className={`fas ${icon}`}></i>
     </button>
   );
