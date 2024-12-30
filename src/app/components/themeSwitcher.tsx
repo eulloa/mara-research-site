@@ -1,37 +1,26 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import {
-  getThemeFromStorage,
-  setStorageItem,
-  setThemeFromStorage,
-} from "@/helpers";
+import { useState } from "react";
 import { ThemeOptions } from "@/enums";
 
 export const ThemeSwitcher = () => {
-  const [iconClass, setIconClass] = useState<string>(
-    getThemeFromStorage() === ThemeOptions.LIGHT ? "fa-moon" : "fa-sun"
-  );
-
-  useEffect(() => {
-    setThemeFromStorage();
-  }, []);
+  const [theme, setTheme] = useState<string>(ThemeOptions.DARK);
+  const [icon, setIcon] = useState<string>("fa-sun");
 
   const updateTheme = () => {
-    const theme = getThemeFromStorage();
-
-    setStorageItem(
-      "theme",
-      theme === ThemeOptions.LIGHT ? ThemeOptions.DARK : ThemeOptions.LIGHT
+    setTheme((prevTheme) =>
+      prevTheme === ThemeOptions.DARK ? ThemeOptions.LIGHT : ThemeOptions.DARK
     );
 
-    setThemeFromStorage();
-    setIconClass(theme === ThemeOptions.LIGHT ? "fa-sun" : "fa-moon");
+    setIcon(theme === ThemeOptions.LIGHT ? "fa-sun" : "fa-moon");
+
+    document.documentElement.classList.toggle("dark");
+    document.documentElement.classList.toggle("light");
   };
 
   return (
     <button onClick={updateTheme}>
-      <i className={`fas ${iconClass}`}></i>
+      <i className={`fas ${icon}`}></i>
     </button>
   );
 };
