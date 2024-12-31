@@ -31,9 +31,7 @@ export const NavLarge = () => {
             className="hover:underline"
             href="/cv.pdf"
             target="_blank"
-            onClick={() =>
-              sendGAEvent({ event: "select_content", value: "CV" })
-            }
+            onClick={() => sendGAEvent("click", "cv_clicked", { value: "CV" })}
           >
             CV
           </Link>

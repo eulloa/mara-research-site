@@ -5,7 +5,7 @@ import { sendGAEvent } from "@next/third-parties/google";
 
 const handleClick = (e: MouseEvent) => {
   const target = e?.target as HTMLUListElement;
-  sendGAEvent({ event: "news_list_item", value: target?.innerText });
+  sendGAEvent("event", "news_list_item", { value: target?.innerText });
 };
 
 export const News = () => (
