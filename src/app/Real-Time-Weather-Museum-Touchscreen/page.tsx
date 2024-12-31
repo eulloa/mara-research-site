@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import { Metadata } from "next";
+import {
+  AdvancedHeartFailureDetection,
+  DataVisualizationSoftware,
+  PrenatalStressReduction,
+  SelectedProjects,
+} from "@/components/portfolio";
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -80,6 +86,11 @@ export default function Page() {
           height={300}
         />
       </div>
+      <SelectedProjects id="selected-projects" label="Selected Projects">
+        <PrenatalStressReduction />
+        <DataVisualizationSoftware />
+        <AdvancedHeartFailureDetection />
+      </SelectedProjects>
     </div>
   );
 }

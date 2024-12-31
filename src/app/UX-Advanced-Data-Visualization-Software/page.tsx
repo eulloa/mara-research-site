@@ -3,6 +3,12 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Presentation } from "@/components";
+import {
+  PrenatalStressReduction,
+  AdvancedHeartFailureDetection,
+  MuseumTouchscreen,
+  SelectedProjects,
+} from "@/components/portfolio";
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -82,6 +88,11 @@ export default function Page() {
           height={300}
         />
       </div>
+      <SelectedProjects id="selected-projects" label="Selected Projects">
+        <PrenatalStressReduction />
+        <AdvancedHeartFailureDetection />
+        <MuseumTouchscreen />
+      </SelectedProjects>
     </div>
   );
 }
