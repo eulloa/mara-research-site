@@ -12,14 +12,18 @@ export const ThemeSwitcher = ({ className }: { className?: string }) => {
       prevTheme === ThemeOptions.DARK ? ThemeOptions.LIGHT : ThemeOptions.DARK
     );
 
-    setIcon(theme === ThemeOptions.LIGHT ? "fa-sun" : "fa-moon");
+    setIcon(() => (theme === ThemeOptions.LIGHT ? "fa-sun" : "fa-moon"));
 
     document.documentElement.classList.toggle("dark");
     document.documentElement.classList.toggle("light");
   };
 
+  const classes = [`theme-switcher-mode: ${theme}`, className]
+    .filter((cssClass) => cssClass)
+    .join(" ");
+
   return (
-    <button className={className} onClick={updateTheme}>
+    <button className={classes} onClick={updateTheme}>
       <i className={`fas ${icon}`}></i>
     </button>
   );
