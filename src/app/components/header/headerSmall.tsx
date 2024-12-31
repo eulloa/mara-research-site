@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { createPortal } from "react-dom";
 import { Audio, Close, Open } from "@/components";
 import { TClasses } from "@/types";
@@ -26,10 +27,12 @@ export const HeaderSmall = ({ classes }: TClasses): React.ReactNode => {
       <div className={classes}>
         <div className="flex">
           <div className="flex-2">
-            <h1 className="text-xl font-bold">
-              Mara Ulloa{" "}
-              <span className="font-light text-gray">HCI Researcher</span>
-            </h1>
+            <Link href="/">
+              <h1 className="text-xl font-bold">
+                Mara Ulloa{" "}
+                <span className="font-light text-gray">HCI Researcher</span>
+              </h1>
+            </Link>
             <Audio />
           </div>
           <div className="flex flex-1 justify-end">
