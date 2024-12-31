@@ -1,12 +1,7 @@
 import Link from "next/link";
-import {
-  Github,
-  LinkedIn,
-  Scholar,
-  ThemeSwitcher,
-  Twitter,
-} from "@/components";
+import { Socials } from "@/components";
 import { sendGAEvent } from "@next/third-parties/google";
+import { ThemeSwitcher } from "@/components";
 
 type TNavSmall = {
   onClick: () => void;
@@ -23,23 +18,25 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
       <div className="relative top-1/2 translate-y-[-50%]">
         <ul className="justify-center mb-20">
           <li className="mb-8">
-            <a className="flex justify-center" href="#news" onClick={onClick}>
-              News
-            </a>
+            <Link
+              className="flex justify-center"
+              href="/"
+              onClick={() => {
+                document.body.classList.remove("overflow-y-hidden");
+                onClick();
+              }}
+            >
+              About
+            </Link>
           </li>
           <li className="mb-8">
-            <a
+            <Link
               className="flex justify-center"
-              href="#publications"
+              href="/#portfolio"
               onClick={onClick}
             >
-              Publications
-            </a>
-          </li>
-          <li className="mb-8">
-            <a className="flex justify-center" href="#events" onClick={onClick}>
-              Events
-            </a>
+              Portfolio
+            </Link>
           </li>
           <li>
             <Link
@@ -55,47 +52,9 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
             </Link>
           </li>
         </ul>
-        <ul className="mt-4 flex-1 flex justify-center">
-          <li className="pr-8">
-            <Link
-              className="LinkedIn"
-              href="https://www.linkedin.com/in/mara-ulloa/"
-              target="_blank"
-            >
-              <LinkedIn />
-            </Link>
-          </li>
-          <li className="pr-8">
-            <Link
-              className="GoogleScholar"
-              href="https://scholar.google.com/citations?hl=en&user=2rXe1OcAAAAJ"
-              target="_blank"
-            >
-              <Scholar />
-            </Link>
-          </li>
-          <li className="pr-8">
-            <Link
-              className="Github"
-              href="https://github.com/Mara16"
-              target="_blank"
-            >
-              <Github />
-            </Link>
-          </li>
-          <li className="pr-8">
-            <Link
-              className="Twitter"
-              href="https://twitter.com/mara_ulloa__"
-              target="_blank"
-            >
-              <Twitter />
-            </Link>
-          </li>
-          <li className="ThemeSwitcher">
-            <ThemeSwitcher />
-          </li>
-        </ul>
+        <Socials className="mt-4 flex-1 flex justify-center">
+          <ThemeSwitcher className="pl-8" />
+        </Socials>
       </div>
     </nav>
   );

@@ -11,6 +11,7 @@ export * from "./news";
 export * from "./open";
 export * from "./publications";
 export * from "./scholar";
+export * from "./socials";
 export * from "./speaker";
 export * from "./spotlight";
 export * from "./themeSwitcher";

@@ -10,10 +10,12 @@ const config: Config = {
   theme: {
     colors: {
       black: "#000000",
-      navy: "#171d25",
       darkBlue: "#687295",
       eggshell: "#d6dbdc",
+      gray: "#909298",
       lightBlue: "#adC2dc",
+      navy: "#171d25",
+      red: "#FA0808",
       white: "#ffffff"
     },
     extend: {
