@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Presentation } from "@/components";
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -57,20 +58,11 @@ export default function Page() {
           ⚠️ Dec 2024: Under construction, more details to come soon
         </p>
       </div>
-      <div className="mt-8 rounded-lg">
+      <div className="mt-8 rounded-lg presentation">
         <h1 className="dark:text-white mb-4 font-bold">
           Final podium presentation of the project at NSF NCAR in Boulder, CO
         </h1>
-        <iframe
-          className="rounded-lg"
-          width="345"
-          height="315"
-          src="https://www.youtube.com/embed/pbnEhFHh6TY?si=amSxfbgJap-kcF-3&amp;start=74"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+        <Presentation />
       </div>
       <div className="mt-8 rounded-lg">
         <h1 className="dark:text-white mb-4 font-bold">
