@@ -1,6 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
+import {
+  PrenatalStressReduction,
+  DataVisualizationSoftware,
+  MuseumTouchscreen,
+  SelectedProjects,
+} from "@/components/portfolio";
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -61,6 +67,11 @@ export default function Page() {
           ⚠️ Jan 2025: Under construction, more details to come soon
         </p>
       </div>
+      <SelectedProjects id="selected-projects" label="Selected Projects">
+        <PrenatalStressReduction />
+        <DataVisualizationSoftware />
+        <MuseumTouchscreen />
+      </SelectedProjects>
     </div>
   );
 }
