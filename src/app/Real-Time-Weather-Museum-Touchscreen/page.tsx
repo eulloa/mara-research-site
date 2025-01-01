@@ -46,7 +46,7 @@ export default function Page() {
           Administration (NOAA) scientific community
         </p>
         <p className="text-red">
-          ⚠️ Dec 2024: Under construction, more details to come soon
+          ⚠️ Jan 2025: Under construction, more details to come soon
         </p>
       </div>
       <div className="mt-8 rounded-lg">
