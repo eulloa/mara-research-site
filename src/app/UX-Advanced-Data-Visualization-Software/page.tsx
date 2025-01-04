@@ -9,6 +9,7 @@ import {
   MuseumTouchscreen,
   SelectedProjects,
 } from "@/components/portfolio";
+import { Sponsors, uxAdvancedDataVisualization } from "@/components/sponsors";
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -93,6 +94,11 @@ export default function Page() {
         <AdvancedHeartFailureDetection />
         <MuseumTouchscreen />
       </SelectedProjects>
+      <Sponsors
+        sponsors={uxAdvancedDataVisualization}
+        title="Collaborators & sponsors" 
+        url="/img/sponsors/ux-data-visualization.png"
+      />
     </div>
   );
 }
