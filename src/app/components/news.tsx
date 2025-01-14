@@ -3,6 +3,8 @@
 import { MouseEvent } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
 
+import Link from "next/link";
+
 const handleClick = (e: MouseEvent) => {
   const target = e?.target as HTMLUListElement;
   sendGAEvent("event", "news_list_item", { value: target?.innerText });
@@ -19,6 +21,19 @@ export const News = () => (
       </div>
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
+          <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 1/2025 I am teaching a workshop
+            on Technology-Facilitated Abuse (TFA) & Methods for Designing
+            Trauma-Informed Technologies with the{" "}
+            <Link
+              className="underline"
+              href="https://www.hci.northwestern.edu/"
+              target="_blank"
+            >
+              Center for Human-Computer Interaction + Design Center
+            </Link>{" "}
+            at Northwestern University
+          </li>
           <li onClick={(e) => handleClick(e)}>
             &#127942; 10/2024 I passed my CS PhD Qualifying Examination and
             advanced from PhD Student to PhD Candidate
