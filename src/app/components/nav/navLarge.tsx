@@ -9,9 +9,11 @@ export const NavLarge = () => {
     <nav className="flex">
       <div className="flex-1 flex justify-start">
         <Link href="/">
-          <h1 className="dark:text-white font-bold">
-            Mara Ulloa{" "}
-            <span className="font-light text-gray">HCI Researcher</span>
+          <h1>
+            <span className="dark:text-white font-bold text-xl">
+              Mara Ulloa{" "}
+            </span>
+            <span className="font-light text-gray text-base">HCI Researcher</span>
           </h1>
         </Link>
       </div>
@@ -22,9 +24,9 @@ export const NavLarge = () => {
           </Link>
         </li>
         <li className="md:pr-8">
-          <a className="hover:underline block text-center" href="#portfolio">
+          <Link className="hover:underline block text-center" href="/#portfolio">
             Portfolio
-          </a>
+          </Link>
         </li>
         <li className="md:pr-8">
           <Link

@@ -4,7 +4,7 @@ export const Publications = () => (
   <div className="mt-8" id="publications">
     <h1 className="dark:text-white mb-4 text-lg font-bold">Publications</h1>
     <div className="space-y-8">
-      <article>
+      {/* <article>
         <span className="dark:text-white">
           <Spotlight
             className="bg-lightBlue rounded-lg p-1 text-navy"
@@ -13,13 +13,13 @@ export const Publications = () => (
           , Kamali N., Fernandes G., Soyemi, E., Beltzer M., Alshufara, N.,
           Jacobs, M. &ldquo;Patients&rsquo; Expectations of ML-driven JITAI
           Support for Maternal Stress Management&rdquo;{" "}
-          {/* <span className="italic">
+          <span className="italic">
             CHI conference on human factors in computing systems.
           </span>{" "}
-          Yokohama, Japan, April 26 - May 1, 2025{" "} */}
+          Yokohama, Japan, April 26 - May 1, 2025{" "}
           <span className="font-bold">[UNDER REVIEW]</span>
         </span>
-      </article>
+      </article> */}
       <article>
         <span className="dark:text-white">
           Cruz, S., Lu, C.,{" "}

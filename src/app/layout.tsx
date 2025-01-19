@@ -56,7 +56,7 @@ export default function RootLayout({
       </head>
       <body className={`${futura.className} bg-eggshell dark:bg-navy`}>
         <Header />
-        <main className="flex min-h-screen flex-col justify-between px-4 md:px-48 bg-eggshell dark:bg-navy">
+        <main className="flex min-h-screen flex-col justify-between px-4 md:px-48 bg-eggshell dark:bg-navy mt-[120px]">
           {children}
           <Footer />
         </main>

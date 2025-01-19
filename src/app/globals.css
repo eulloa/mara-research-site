@@ -10,7 +10,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  padding-top: 89px;
 }
 
 html.dark ~ .fa-sun {
