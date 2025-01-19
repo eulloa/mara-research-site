@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
-import { Github, LinkedIn, Scholar, Twitter } from "@/components";
+import { Bluesky, Github, LinkedIn, Scholar, Twitter } from "@/components";
 
 export const Socials = ({
   children,
@@ -38,13 +38,22 @@ export const Socials = ({
           <Github />
         </Link>
       </li>
-      <li>
+      <li className="pr-8">
         <Link
           className="Twitter"
           href="https://twitter.com/mara_ulloa__"
           target="_blank"
         >
           <Twitter />
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="BlueSky"
+          href="https://google.com"
+          target="_blank"
+        >
+          <Bluesky />
         </Link>
       </li>
       {children && <li>{children}</li>}
