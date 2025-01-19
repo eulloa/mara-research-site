@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="mt-8">
+    <div id="project" className="mt-8">
       <h1 className="text-2xl font-semibold dark:text-white mb-4">
         Understanding the User Experience (UX) of Advanced 3D Data Visualization
         Software

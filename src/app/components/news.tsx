@@ -22,7 +22,7 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
-            &#128105;&#127995;&#8205;&#127979; 1/2025 I am teaching a workshop
+            &#128105;&#127995;&#8205;&#127979; 01/2025 I am teaching a workshop
             on Technology-Facilitated Abuse (TFA) & Methods for Designing
             Trauma-Informed Technologies with the{" "}
             <Link
@@ -30,7 +30,7 @@ export const News = () => (
               href="https://www.hci.northwestern.edu/"
               target="_blank"
             >
-              Center for Human-Computer Interaction + Design Center
+              Center for Human-Computer Interaction + Design
             </Link>{" "}
             at Northwestern University
           </li>

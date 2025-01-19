@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="mt-8">
+    <div id="project" className="mt-8">
       <h1 className="text-2xl font-semibold dark:text-white mb-4">
         Co-Designing Patient Facing Machine Learning for Prenatal Stress
         Reduction
