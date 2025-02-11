@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const handleClick = (e: MouseEvent) => {
   const target = e?.target as HTMLUListElement;
-  sendGAEvent("event", "news_list_item", { value: target?.innerText });
+  sendGAEvent("event", target?.innerText);
 };
 
 export const News = () => (
