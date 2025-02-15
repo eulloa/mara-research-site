@@ -34,6 +34,17 @@ export const News = () => (
             human-centered computing
           </li>
           <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 04/2025 I am attending the{" "}
+            <Link
+              className="underline"
+              href="https://cra.org/cra-wp/grad-cohort-for-women/"
+              target="_blank"
+            >
+              2025 CRA-WP Grad Cohort for Women & Grad Cohort for IDEALS
+            </Link>{" "}
+            in Denver, CO
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 03/2025 I am attending the{" "}
             <Link
               className="underline"
@@ -43,17 +54,6 @@ export const News = () => (
               2025 Women in Science Conference
             </Link>{" "}
             at NEIU in Chicago, IL
-          </li>
-          <li onClick={(e) => handleClick(e)}>
-            &#128105;&#127995;&#8205;&#127979; 03/2025 I am attending the{" "}
-            <Link
-              className="underline"
-              href="https://cra.org/cra-wp/grad-cohort-for-women/"
-              target="_blank"
-            >
-              2025 CRA-WP Grad Cohort for Women & Grad Cohort for IDEALS
-            </Link>{" "}
-            in Denver, CO
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 01/2025 I am teaching a workshop
