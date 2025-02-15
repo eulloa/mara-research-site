@@ -13,7 +13,9 @@ export const NavLarge = () => {
             <span className="dark:text-white font-bold text-xl">
               Mara Ulloa{" "}
             </span>
-            <span className="font-light text-gray text-base">HCI Researcher</span>
+            <span className="font-light text-gray text-base">
+              HCI Researcher
+            </span>
           </h1>
         </Link>
       </div>
@@ -24,7 +26,10 @@ export const NavLarge = () => {
           </Link>
         </li>
         <li className="md:pr-8">
-          <Link className="hover:underline block text-center" href="/#portfolio">
+          <Link
+            className="hover:underline block text-center"
+            href="/#portfolio"
+          >
             Portfolio
           </Link>
         </li>
@@ -33,7 +38,7 @@ export const NavLarge = () => {
             className="hover:underline"
             href="/cv.pdf"
             target="_blank"
-            onClick={() => sendGAEvent("click", "cv_clicked", { value: "CV" })}
+            onClick={() => sendGAEvent("event", "cv_clicked")}
           >
             CV
           </Link>
