@@ -44,10 +44,7 @@ export const NavSmall = ({ onClick }: TNavSmall) => {
               href="/cv.pdf"
               onClick={() => {
                 onClick();
-                sendGAEvent("click", "cv_clicked", {
-                  event: "select_content",
-                  value: "CV",
-                });
+                sendGAEvent("click", "cv_clicked");
               }}
               target="_blank"
             >
