@@ -64,7 +64,7 @@ export default function Page() {
           </Link>
         </p>
         <p className="text-red">
-          ⚠️ Jan 2025: Under construction, more details to come soon
+          ⚠️ Under construction, more details to come soon
         </p>
       </div>
       <SelectedProjects id="selected-projects" label="Selected Projects">

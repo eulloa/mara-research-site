@@ -26,13 +26,7 @@ export const Bio = () => {
               Computer Science
             </a>
           </span>{" "}
-          (CS) at{" "}
-          <span className="underline">
-            <a href="https://www.northwestern.edu/" target="_blank">
-              Northwestern University
-            </a>
-          </span>{" "}
-          (NU). My work is advised by{" "}
+          (CS) at Northwestern University (NU). My work is advised by{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/jacobs-maia.html"
@@ -41,22 +35,22 @@ export const Bio = () => {
               Maia L. Jacobs
             </a>
           </span>{" "}
-          in the{" "}
-          <span className="underline">
-            <a href="https://sites.northwestern.edu/nupath/" target="_blank">
-              Personalized & Adaptive Technology for Health
-            </a>
-          </span>{" "}
-          (NU-PATH) lab.{" "}
+          in the Personalized & Adaptive Technology for Health (NU-PATH) lab.{" "}
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
-          I specialize in using HCI methods to design and evaluate user-centered
-          technologies.
+          I specialize in using Human-Computer Interaction (HCI) methodologies
+          to design and evaluate human-centered Artificial
+          Intelligence(AI)/Machine Learning(ML).
         </p>
         <p className="mt-4 leading-7">
-          My research focuses on co-designing machine learning solutions for
-          healthcare, emphasizing the end user&apos;s perspective. One of my
-          current projects in this space involves working with the{" "}
+          My interdisciplinary doctoral research focuses on developing and
+          applying participatory design methods to co-design ML across different
+          healthcare contexts, emphasizing the perspective of the end user.
+        </p>
+        <p className="mt-4 leading-7">
+          More specifically, I investigate how ML-driven interventions for
+          mitigating prenatal stress can be designed from the perspective of the
+          pregnant person. This involves working with the{" "}
           <span className="underline">
             <a href="https://casmi.northwestern.edu/" target="_blank">
               Center for Advancing Safety of Machine Intelligence (CASMI)
@@ -71,7 +65,15 @@ export const Bio = () => {
               Co-Design Patient-Facing Machine Learning for Prenatal Stress
               Reduction.
             </a>
-          </span>
+          </span>{" "}
+          I also investigate the use of ML and conversational agents to support
+          community members throughout their cancer journey.
+        </p>
+        <p className="mt-4 leading-7">
+          <span className="font-bold">Research interests/experience:</span>{" "}
+          Human-Computer Interaction; artificial intelligence/machine learning +
+          design; UX; digital interventions; behavioral science, participatory
+          design methods
         </p>
       </div>
     </div>
