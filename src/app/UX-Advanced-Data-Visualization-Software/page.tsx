@@ -61,7 +61,7 @@ export default function Page() {
           presentations
         </p>
         <p className="text-red">
-          ⚠️ Jan 2025: Under construction, more details to come soon
+          ⚠️ Under construction, more details to come soon
         </p>
       </div>
       <div className="mt-8 rounded-lg presentation">
