@@ -22,16 +22,15 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
-            &#128105;&#127995;&#8205;&#127979; 04/2025 I am giving a talk at{" "}
+            &#127881; 04/2025 I am working as an Applied Research Scientist with{" "}
             <Link
               className="underline"
-              href="https://www.berea.edu/"
+              href="https://www.microsoft.com/en-us/research/"
               target="_blank"
             >
-              Berea College
+              Microsoft
             </Link>{" "}
-            on my PhD experience and insights into pursuing a research career in
-            human-centered computing
+            in Redmond, WA
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 04/2025 I am attending the{" "}
@@ -369,8 +368,7 @@ export const News = () => (
             National Center for Atmospheric Research Presentations
           </li>
           <li onClick={(e) => handleClick(e)}>
-            &#128105;&#127995;&#8205;&#127979; 05/2020 Started my internship
-            with{" "}
+            &#127881; 05/2020 Started my internship with{" "}
             <a
               className="underline"
               href="https://ncar.ucar.edu/"
