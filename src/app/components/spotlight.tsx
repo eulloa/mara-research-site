@@ -5,9 +5,9 @@ interface Spotlight {
   className?: string;
   message: string;
   options?: {
-    href: string;
+    href?: string;
     target?: Target;
-    type: "a";
+    type?: "a" | "span";
   };
 }
 
@@ -18,31 +18,29 @@ export const Spotlight = (props: Spotlight): JSX.Element | null => {
   const options = props?.options;
   const defaultClasses = "bg-lightBlue rounded-lg";
 
-  if (options?.type === "a") {
-    if (!options.href) {
+  const type = options?.type;
+  const isAnchor = type === "a";
+
+  if (isAnchor) {
+    if (!options?.href) {
       console.error(
         "Error: HTML anchor elements must receive a valid href attribute"
       );
-
-      return Component;
     }
-
-    Component = React.createElement(
-      "a",
-      {
-        className: className || defaultClasses,
-        href: options.href,
-        target: options.target || Target.SELF,
-      },
-      message
-    );
-  } else {
-    Component = React.createElement(
-      "span",
-      { className: className || defaultClasses },
-      message
-    );
   }
+
+  Component = React.createElement(
+    options?.type as string,
+    {
+      className: className ?? defaultClasses,
+      href: isAnchor ? options?.href : null,
+      target: isAnchor ? options?.target ?? Target.BLANK : null,
+    },
+    message
+  );
 
   return Component;
 };
+
+Spotlight.displayName = "Spotlight";
+

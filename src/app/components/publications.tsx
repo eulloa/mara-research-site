@@ -24,8 +24,9 @@ export const Publications = () => (
         <span className="dark:text-white">
           Cruz, S., Lu, C.,{" "}
           <Spotlight
-            message="Ulloa M."
             className="bg-lightBlue rounded-lg p-1 text-navy"
+            message="Ulloa, M."
+            options={{ type: "span" }}
           />
           , Redding, A., Hester, J., Jacobs, M. &ldquo;
           <a
@@ -43,8 +44,9 @@ export const Publications = () => (
       <article>
         <span className="dark:text-white">
           <Spotlight
-            message="Ulloa M."
             className="bg-lightBlue rounded-lg p-1 text-navy"
+            message="Ulloa, M."
+            options={{ type: "span" }}
           />
           , Rothrock, B., Ahmad F., Jacobs, M.{" "}
           <a
