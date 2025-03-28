@@ -2,6 +2,16 @@
 
 import { useState } from "react";
 import { ThemeOptions } from "@/enums";
+import { sendGAEvent } from "@next/third-parties/google";
+
+/**
+ * Sends GA event on theme switch
+ * @param {string} theme
+ */
+const analytics = (prevTheme: string): void => {
+  const nextTheme = prevTheme === ThemeOptions.LIGHT ? ThemeOptions.DARK : ThemeOptions.LIGHT;
+  sendGAEvent("event", `Switching from ${prevTheme} theme to ${nextTheme} theme`);
+}
 
 export const ThemeSwitcher = ({ className }: { className?: string }) => {
   const [theme, setTheme] = useState<string>(ThemeOptions.DARK);
@@ -16,6 +26,8 @@ export const ThemeSwitcher = ({ className }: { className?: string }) => {
 
     document.documentElement.classList.toggle("dark");
     document.documentElement.classList.toggle("light");
+
+    analytics(theme);
   };
 
   const classes = [`theme-switcher-mode: ${theme}`, className]
