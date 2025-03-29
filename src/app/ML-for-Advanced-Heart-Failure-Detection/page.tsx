@@ -7,6 +7,7 @@ import {
   MuseumTouchscreen,
   SelectedProjects,
 } from "@/components/portfolio";
+import { heartFailureDetection, Sponsors } from "@/components/sponsors";
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -67,11 +68,20 @@ export default function Page() {
           ⚠️ Under construction, more details to come soon
         </p>
       </div>
-      <SelectedProjects id="selected-projects" label="Selected Projects">
-        <PrenatalStressReduction />
-        <DataVisualizationSoftware />
-        <MuseumTouchscreen />
-      </SelectedProjects>
+      <div className="mt-16">
+        <Sponsors
+          sponsors={heartFailureDetection}
+          title="Collaborators & Sponsors"
+          url="/img/sponsors/ml-cardiology.png"
+        />
+      </div>
+      <div className="mt-16">
+        <SelectedProjects id="selected-projects" label="Selected Projects">
+          <PrenatalStressReduction />
+          <DataVisualizationSoftware />
+          <MuseumTouchscreen />
+        </SelectedProjects>
+      </div>
     </div>
   );
 }
