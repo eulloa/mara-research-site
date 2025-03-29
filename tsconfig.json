@@ -31,6 +31,9 @@
       "@/components/portfolio": [
         "./src/app/components/portfolio"
       ],
+      "@/components/newsItems": [
+        "./src/app/components/newsItems"
+      ],
       "@/enums": [
         "./src/app/enums"
       ],
