@@ -31,6 +31,9 @@
       "@/components/portfolio": [
         "./src/app/components/portfolio"
       ],
+      "@/components/sponsors": [
+        "./src/app/components/sponsors"
+      ],
       "@/enums": [
         "./src/app/enums"
       ],
