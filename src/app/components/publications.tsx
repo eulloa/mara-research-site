@@ -22,6 +22,42 @@ export const Publications = () => (
       </article> */}
       <article>
         <span className="dark:text-white">
+          <Spotlight
+            className="bg-lightBlue rounded-lg p-1 text-navy"
+            message="Ulloa, M."
+            options={{ type: "span" }}
+          />
+          , Kamali, N., Fernandes, G., Soyemi, M., Beltzer, M., Alshufara, N., Jacobs, M.{" "}
+          <a
+            className="underline"
+            target="_blank"
+          >
+            &lsquo;Patients&rsquo; Expectations of ML-driven JITAI Support for Maternal Stress Management&rsquo;
+          </a>{" "}
+          <span>[UNDER REVIEW]</span>
+        </span>
+      </article>
+      <article>
+        <span className="dark:text-white">
+          Miller C., Choudhuri R,{" "}
+          <Spotlight
+            className="bg-lightBlue rounded-lg p-1 text-navy"
+            message="Ulloa, M."
+            options={{ type: "span" }}
+          />
+          , Haniyur S., DeLine R., Storey M., Murphy-Hill E., Bird C., Butler J.{" "}
+          <a
+            className="underline"
+            href="https://arxiv.org/abs/2507.21280"
+            target="_blank"
+          >
+            &lsquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&rsquo;
+          </a>{" "}
+          <span>[UNDER REVIEW]</span>
+        </span>
+      </article>
+      <article>
+        <span className="dark:text-white">
           Cruz, S., Lu, C.,{" "}
           <Spotlight
             className="bg-lightBlue rounded-lg p-1 text-navy"
