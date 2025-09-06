@@ -4,14 +4,16 @@ import {
   DataVisualizationSoftware,
   AdvancedHeartFailureDetection,
   MuseumTouchscreen,
+  Microsoft,
   SelectedProjects,
 } from "@/components/portfolio";
 
 export const Portfolio = () => (
   <SelectedProjects id="portfolio" label="Portfolio">
     <PrenatalStressReduction />
-    <DataVisualizationSoftware />
+    <Microsoft />
     <AdvancedHeartFailureDetection />
+    <DataVisualizationSoftware />
     <MuseumTouchscreen />
   </SelectedProjects>
 );

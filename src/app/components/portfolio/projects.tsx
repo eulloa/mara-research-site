@@ -36,3 +36,13 @@ export const PrenatalStressReduction = () => (
     url="portfolio/pregnant_person.png"
   />
 );
+
+export const Microsoft = () => (
+    <Project
+      href="/Microsoft-Research#project"
+      label="Product Managers&rsquo; Integration of"
+      subLabel="Generative AI into Knowledge Work"
+      url="portfolio/microsoft.png"
+    />
+);
+
