@@ -13,7 +13,9 @@ export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
   description: "Mara Ulloa's research website",
   keywords: [
-    "Knowledge Work, Generative AI, Microsoft, Microsoft Research, Mara Ulloa, Statistical and Qualitative, Statistical Method, Qualitative Method, Understanding People, Software Engineering, Product Management, Product Managers, Developers"
+    "Knowledge Work, Generative AI, Microsoft, Microsoft Research, Mara Ulloa, Statistical and Qualitative," +
+    "Statistical Method, Qualitative Method, Understanding People, Software Engineering, Product Management," +
+    "Product Managers, Developers, productivity, AI literacy, generative AI literacy"
   ],
   title:
     "Mara Ulloa: Microsoft Research"
