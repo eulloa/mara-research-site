@@ -15,5 +15,5 @@ export const BackToTop = () => {
     >
       &#11014;&#65039;
     </button>
-  ) : null;
+  ) : false;
 };

@@ -1,40 +1,44 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 enum Direction {
   DOWN = "DOWN",
   UP = "UP",
 }
 
-export const useHasScrolledUp = (target: number = 0): boolean => {
+export const useHasScrolledUp = (target: number): boolean => {
   const [scrollStatus, setScrollStatus] = useState({
     scrollDirection: Direction.UP,
     scrollPos: 0,
   });
 
-  const handleScroll = () => {
-    if (target && document.body.getBoundingClientRect().top >= target) {
-      return {
+  const handleScroll = useCallback(() => {
+    const top = document.body.getBoundingClientRect().top;
+
+    if (top >= target) {
+      setScrollStatus({
         scrollDirection: Direction.UP,
-        scrollPos: document.body.getBoundingClientRect().top,
-      };
+        scrollPos: top 
+      });
+
+      return;
     }
 
     setScrollStatus((prev) => {
       return {
         scrollDirection:
-          document.body.getBoundingClientRect().top > prev.scrollPos
+          top > prev.scrollPos
             ? Direction.UP
             : Direction.DOWN,
-        scrollPos: document.body.getBoundingClientRect().top,
+        scrollPos: top,
       };
     });
-  };
+  }, [target]);
 
   useEffect(() => {
     window?.addEventListener("scroll", handleScroll);
 
     return () => window?.removeEventListener("scroll", handleScroll);
-  });
+  }, [handleScroll, scrollStatus]);
 
   return scrollStatus.scrollDirection === Direction.UP ? true : false;
 };
