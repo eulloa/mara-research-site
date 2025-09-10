@@ -40,5 +40,5 @@ export const useHasScrolledUp = (target: number): boolean => {
     return () => window?.removeEventListener("scroll", handleScroll);
   }, [handleScroll, scrollStatus]);
 
-  return scrollStatus.scrollDirection === Direction.UP ? true : false;
+  return scrollStatus.scrollDirection === Direction.UP;
 };
