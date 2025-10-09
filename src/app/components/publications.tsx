@@ -27,6 +27,25 @@ export const Publications = () => (
             message="Ulloa, M."
             options={{ type: "span" }}
           />
+          ,  Butler J., Haniyur S., Miller C., Amos B., Sarkar, A., Storey M.{" "}
+          <a
+            className="underline"
+            href="https://arxiv.org/abs/2510.02504"
+            target="_blank"
+          >
+            Product Manager Practices for Delegating Work to Generative AI:&lsquo;Accountability
+            must not be delegated to non-human actors&rsquo;
+          </a>{" "}
+          <span>[UNDER REVIEW]</span>
+        </span>
+      </article>
+      <article>
+        <span className="dark:text-white">
+          <Spotlight
+            className="bg-lightBlue rounded-lg p-1 text-navy"
+            message="Ulloa, M."
+            options={{ type: "span" }}
+          />
           , Kamali, N., Fernandes, G., Soyemi, M., Beltzer, M., Alshufara, N., Jacobs, M.{" "}
           <a
             className="underline"

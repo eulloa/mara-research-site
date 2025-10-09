@@ -54,6 +54,15 @@ export default function Page() {
             <li>Produced a framework to depict how PMs delegate tasks to GenAI, currently being used to augment PM GenAI literacy</li>
             <li>Currently authoring academic papers to disseminate findings and implications of this research</li>
         </ul>
+        <h1 className="font-semibold">Research Paper</h1>
+        <a
+            className="underline"
+            href="https://arxiv.org/abs/2510.02504"
+            target="_blank"
+        >
+            Product Manager Practices for Delegating Work to Generative AI:{' '}&lsquo;Accountability
+            must not be delegated to non-human actors&rsquo;
+        </a>{" "}
         <p className="text-red">
           ⚠️ Under construction, more details to come soon
         </p>

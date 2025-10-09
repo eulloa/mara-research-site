@@ -40,40 +40,23 @@ export const Bio = () => {
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
           I specialize in using Human-Computer Interaction (HCI) methodologies
           to design and evaluate human-centered Artificial
-          Intelligence(AI)/Machine Learning(ML).
+          Intelligence(AI).
         </p>
         <p className="mt-4 leading-7">
-          My interdisciplinary doctoral research focuses on developing and
+          I have worked with Microsoft on GenAI for Software Development; Northwestern
+          University on AI (broadly) for healthcare; The NSF National Center for Atmospheric
+          Research on UX for data visualization software.
+        </p>
+        <p className="mt-4 leading-7">
+          My ongoing interdisciplinary doctoral research focuses on developing and
           applying participatory design methods to co-design ML across different
-          healthcare contexts, emphasizing the perspective of the end user.
-        </p>
-        <p className="mt-4 leading-7">
-          More specifically, I investigate how ML-driven interventions for
-          mitigating prenatal stress can be designed from the perspective of the
-          pregnant person. This involves working with the{" "}
-          <span className="underline">
-            <a href="https://casmi.northwestern.edu/" target="_blank">
-              Center for Advancing Safety of Machine Intelligence (CASMI)
-            </a>
-          </span>{" "}
-          to{" "}
-          <span className="underline">
-            <a
-              href="https://casmi.northwestern.edu/research/projects/prenatal-stress-reduction.html"
-              target="_blank"
-            >
-              Co-Design Patient-Facing Machine Learning for Prenatal Stress
-              Reduction.
-            </a>
-          </span>{" "}
-          I also investigate the use of ML and conversational agents to support
-          community members throughout their cancer journey.
+          healthcare contexts.
         </p>
         <p className="mt-4 leading-7">
           <span className="font-bold">Research interests/experience:</span>{" "}
-          Human-Computer Interaction; artificial intelligence/machine learning +
-          design; UX; digital interventions; behavioral science, participatory
-          design methods
+          Human-Computer Interaction; artificial intelligence/machine learning/GenAI + design;
+          UX; digital interventions; behavioral science, participatory design methods;
+          software engineering; applied research.
         </p>
       </div>
     </div>
