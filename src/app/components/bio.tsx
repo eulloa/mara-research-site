@@ -26,7 +26,20 @@ export const Bio = () => {
               Computer Science
             </a>
           </span>{" "}
-          (CS) at Northwestern University (NU). My work is advised by{" "}
+          (CS) at Northwestern University (NU).
+        </p>
+        <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
+          I specialize in using Human-Computer Interaction (HCI) methods to design,
+          engineer, and evaluate human-centered artificial intelligence (AI).
+        </p>
+        <p className="mt-4 leading-7">
+          I have worked with Microsoft on generative AI (GenAI) for Software Development; Northwestern
+          University on machine learning (ML) for healthcare; The NSF National Center for Atmospheric
+          Research on user experience (UX) for data visualization software.
+        </p>
+        <p className="mt-4 leading-7">
+          In my interdisciplinary doctoral research, I develop and apply participatory design methods to
+          co-design ML across varied health contexts. My work is advised by{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/jacobs-maia.html"
@@ -37,25 +50,10 @@ export const Bio = () => {
           </span>{" "}
           in the Personalized & Adaptive Technology for Health (NU-PATH) lab.{" "}
         </p>
-        <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
-          I specialize in using Human-Computer Interaction (HCI) methodologies
-          to design and evaluate human-centered Artificial
-          Intelligence(AI).
-        </p>
-        <p className="mt-4 leading-7">
-          I have worked with Microsoft on GenAI for Software Development; Northwestern
-          University on AI (broadly) for healthcare; The NSF National Center for Atmospheric
-          Research on UX for data visualization software.
-        </p>
-        <p className="mt-4 leading-7">
-          My ongoing interdisciplinary doctoral research focuses on developing and
-          applying participatory design methods to co-design ML across different
-          healthcare contexts.
-        </p>
         <p className="mt-4 leading-7">
           <span className="font-bold">Research interests/experience:</span>{" "}
           Human-Computer Interaction; artificial intelligence/machine learning/GenAI + design;
-          UX; digital interventions; behavioral science, participatory design methods;
+          UX; digital interventions; behavioral science, participatory design methods; future of work;
           software engineering; applied research.
         </p>
       </div>
