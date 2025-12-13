@@ -36,7 +36,7 @@ export const Publications = () => (
             Product Manager Practices for Delegating Work to Generative AI:&lsquo;Accountability
             must not be delegated to non-human actors&rsquo;
           </a>{" "}
-          <span>[UNDER REVIEW]</span>
+          <span>ACM/IEEE International Conference in Software Engineering, December 13, 2025</span>
         </span>
       </article>
       <article>

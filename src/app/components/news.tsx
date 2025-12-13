@@ -22,6 +22,53 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 01/2026 I am an instructor for{" "}
+            <Link
+              className="underline"
+              href="https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/329.html"
+              target="_blank"
+            >
+              Computer Science 329: Human-Computer Interaction (HCI) Studio
+            </Link>{" "}
+            at Northwestern University this Spring! &#127800;
+          </li>
+          <li onClick={(e) => handleClick(e)}>
+            &#127881; 12/2025 My first-author, Microsoft Research paper,{" "}
+            <Link
+              className="underline"
+              href="https://arxiv.org/abs/2510.02504"
+              target="_blank"
+            >
+              ‘Product Manager Practices for Delegating Work to Generative AI:&rsquo;Accountability must not be delegated to non-human actors&lsquo;
+            </Link>, has been accepted to the{" "}
+            <Link
+              className="underline"
+              href="https://conf.researchr.org/home/icse-2026"
+              target="_blank"
+            >
+              ACM/IEEE International Conference in Software Engineering (ICSE)
+            </Link> 
+            ; see you in Rio in April 2026 
+          </li>
+          <li onClick={(e) => handleClick(e)}>
+            &#127881; 10/2025 Our Microsoft Research paper,{" "}
+            <Link
+              className="underline"
+              href="https://arxiv.org/abs/2507.21280"
+              target="_blank"
+            >
+              &rsquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&lsquo;
+            </Link>, has been accepted to the{" "}
+            <Link
+              className="underline"
+              href="https://conf.researchr.org/home/icse-2026"
+              target="_blank"
+            >
+              ACM/IEEE International Conference in Software Engineering (ICSE)
+            </Link>{" "} 
+            , which will be held in Rio de Janeiro, Brazil &#x1F1E7;&#x1F1F7;
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#127881; 04/2025 I am working as an Applied Research Scientist with{" "}
             <Link
               className="underline"
