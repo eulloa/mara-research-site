@@ -30,8 +30,8 @@ export const News = () => (
             >
               Computer Science 329: Human-Computer Interaction (HCI) Studio
             </Link>{" "}
-            at Northwestern University this Spring! &#127800;
-          </li>
+            at Northwestern University this Winter
+           </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 12/2025 My first-author, Microsoft Research paper,{" "}
             <Link
@@ -66,7 +66,10 @@ export const News = () => (
             >
               ACM/IEEE International Conference in Software Engineering (ICSE)
             </Link>{" "} 
-            , which will be held in Rio de Janeiro, Brazil &#x1F1E7;&#x1F1F7;
+            , which will be held in Rio de Janeiro, Brazil. 
+          </li>
+          <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 05/2025 I attended the Microsoft-internal Machine Learning, AI, & Data Science (MLADS) conference{" "}
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 04/2025 I am working as an Applied Research Scientist with{" "}
