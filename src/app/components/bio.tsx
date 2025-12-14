@@ -38,8 +38,8 @@ export const Bio = () => {
           Research on user experience (UX) for data visualization software.
         </p>
         <p className="mt-4 leading-7">
-          In my interdisciplinary doctoral research, I develop and apply participatory design methods to
-          co-design ML across varied health contexts. My work is advised by{" "}
+          In my interdisciplinary doctoral research, I develop and apply participatory design methods to co-design ML across varied health contexts.{" "}
+          My work is advised by{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/jacobs-maia.html"
@@ -53,7 +53,7 @@ export const Bio = () => {
         <p className="mt-4 leading-7">
           <span className="font-bold">Research interests/experience:</span>{" "}
           Human-Computer Interaction; artificial intelligence/machine learning/GenAI + design;
-          UX; digital interventions; behavioral science, participatory design methods; future of work;
+          UX; digital interventions; behavioral science; participatory design methods; future of work;
           software engineering; applied research.
         </p>
       </div>

@@ -92,7 +92,7 @@ export const Publications = () => (
             Perceptions of Wearable Health Tools Post the COVID-19 Emergency in
             Low-Income Latin Communities: Qualitative Study&rdquo;
           </a>{" "}
-          <span className="italic">JMIR mHealth and uHealth (JMU).</span> USA,
+          <span className="italic">JMIR mHealth and uHealth (JMU).</span>{" "} 
           August 5, 2024.
         </span>
       </article>
@@ -112,7 +112,7 @@ export const Publications = () => (
             &ldquo;Invisible Clinical Labor Driving the Successful Integration
             of AI in Healthcare.&rdquo;
           </a>{" "}
-          <span className="italic">Frontiers in Computer Science.</span> USA,
+          <span className="italic">Frontiers in Computer Science.</span>{" "}
           December 1, 2022.
         </span>
       </article>
