@@ -33,10 +33,10 @@ export const Publications = () => (
             href="https://arxiv.org/abs/2510.02504"
             target="_blank"
           >
-            Product Manager Practices for Delegating Work to Generative AI:&lsquo;Accountability
-            must not be delegated to non-human actors&rsquo;
+            &ldquo;Product Manager Practices for Delegating Work to Generative AI: &lsquo;Accountability
+            must not be delegated to non-human actors&rsquo;&rdquo;
           </a>{" "}
-          <span>ACM/IEEE International Conference in Software Engineering, December 13, 2025</span>
+          <span>ACM/IEEE International Conference in Software Engineering(ICSE). December 13, 2025</span>
         </span>
       </article>
       <article>
@@ -51,7 +51,7 @@ export const Publications = () => (
             className="underline"
             target="_blank"
           >
-            &lsquo;Patients&rsquo; Expectations of ML-driven JITAI Support for Maternal Stress Management&rsquo;
+            &ldquo;Patients&rsquo; Expectations of ML-driven JITAI Support for Maternal Stress Management&rdquo;
           </a>{" "}
           <span>[UNDER REVIEW]</span>
         </span>
@@ -70,9 +70,9 @@ export const Publications = () => (
             href="https://arxiv.org/abs/2507.21280"
             target="_blank"
           >
-            &lsquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&rsquo;
+            &ldquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&rdquo;
           </a>.{" "}
-          <span>ACM/IEEE International Conference in Software Engineering, October 16, 2025.</span>
+          <span>ACM/IEEE International Conference in Software Engineering (ICSE). October 16, 2025.</span>
         </span>
       </article>
       <article>
