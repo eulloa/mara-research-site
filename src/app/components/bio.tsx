@@ -33,7 +33,7 @@ export const Bio = () => {
           engineer, and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
-          I have worked with Microsoft on generative AI (GenAI) for Software Development; Northwestern
+          I have worked with Microsoft on generative AI (genAI) for Software Development; Northwestern
           University on machine learning (ML) for healthcare; The NSF National Center for Atmospheric
           Research on user experience (UX) for data visualization software.
         </p>

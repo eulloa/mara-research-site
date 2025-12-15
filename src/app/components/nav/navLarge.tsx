@@ -11,7 +11,7 @@ export const NavLarge = () => {
         <Link href="/">
           <h1>
             <span className="dark:text-white font-bold text-xl">
-              Mara Ulloa{" "}
+              MARA ULLOA{" "}
             </span>
             <span className="font-light text-gray text-base">
               HCI Researcher
