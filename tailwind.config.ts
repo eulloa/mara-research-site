@@ -13,7 +13,7 @@ const config: Config = {
       darkBlue: "#687295",
       eggshell: "#d6dbdc",
       gray: "#909298",
-      lightBlue: "#adC2dc",
+      lightBlue: "#8cb5d8ff",
       navy: "#171d25",
       red: "#FA0808",
       white: "#ffffff"

@@ -14,7 +14,7 @@ export const DataVisualizationSoftware = () => (
   <Project
     href="/UX-Advanced-Data-Visualization-Software"
     label="Understanding the"
-    subLabel="UX of Advanced 3D Data Visualization Software"
+    subLabel="UX of Advanced 3D Data Visualization Software for the Geosciences"
     url="portfolio/vapor.jpg"
   />
 );

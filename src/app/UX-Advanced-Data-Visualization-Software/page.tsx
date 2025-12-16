@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "User interviews, Advanced data visualization, VAPOR, NSF, NCAR, Data Visualization, participatory design",
   ],
   title:
-    "Mara Ulloa: Understanding the User Experience (UX) of Advanced 3D Data Visualization Software",
+    "Mara Ulloa: Understanding the User Experience (UX) of Advanced 3D Data Visualization Software for the Geosciences",
 };
 
 export default function Page() {
