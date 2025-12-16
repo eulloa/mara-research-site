@@ -31,10 +31,10 @@ export default function Page() {
       <div className="bg-lightBlue rounded-lg p-4">
         <h1 className="font-semibold">Project overview</h1>
         <p className="mb-4">
-            Microsoft leadership wanted to investigate the use of Generative AI (GenAI) by product managers (PMs),
+            Microsoft leadership wanted to investigate the use of Generative AI (genAI) by product managers (PMs),
             a traditionally understudied user group. Previously, only software engineers had been involved
-            in the conversations about GenAI usage at the organization. As this was the organization&rsquo;s
-            first comprehensive study on PMs and GenAI, I designed a mixed methods study, distributing
+            in the conversations about genAI usage at the organization. As this was the organization&rsquo;s
+            first comprehensive study on PMs and genAI, I designed and led a mixed methods study, distributing
             a large scale, global survey (885 participants), in parallel with semi-structured
             interviews (15 participants) and triangulated with telemetry data.
         </p>
@@ -42,7 +42,7 @@ export default function Page() {
         <ul className="mb-4">
             <li>Internally validated research instruments with user group and other productivity researchers</li>
             <li>Led data collection</li>
-            <li>Collaborated across disciplines (data science, product management, software engineering and AI research)</li>
+            <li>Collaborated across disciplines (data science, product management, software engineering, and AI research)</li>
             <li>Qualitatively and quantitatively analyzed data across sources</li>
             <li>Developed Python charts to visualize quantitative and qualitative analytical findings</li>
             <li>Performed thematic analysis on interview and open-text survey questions</li>
@@ -51,8 +51,8 @@ export default function Page() {
         <h1 className="font-semibold">Deliverables</h1>
         <ul className="mb-4">
             <li>Presented findings and their implications to leadership (corporate vice presidents, managers, AI + marketing)</li>
-            <li>Produced a framework to depict how PMs delegate tasks to GenAI, currently being used to augment PM GenAI literacy</li>
-            <li>Currently authoring academic papers to disseminate findings and implications of this research</li>
+            <li>Produced a framework to depict how PMs delegate tasks to genAI, currently being used to augment PM genAI literacy and guide future work</li>
+            <li>First-authored academic papers to disseminate findings and implications of this research</li>
         </ul>
         <h1 className="font-semibold">Research Paper</h1>
         <a
@@ -62,7 +62,7 @@ export default function Page() {
         >
             Product Manager Practices for Delegating Work to Generative AI:{' '}&lsquo;Accountability
             must not be delegated to non-human actors&rsquo;
-        </a>{" "}
+        </a>; this paper has been accepted to ACM/IEEE ICSE 2027
         <p className="text-red">
           ⚠️ Under construction, more details to come soon
         </p>

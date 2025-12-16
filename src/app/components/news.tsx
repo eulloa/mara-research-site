@@ -66,7 +66,7 @@ export const News = () => (
             >
               ACM/IEEE International Conference in Software Engineering (ICSE)
             </Link>{" "} 
-            , which will be held in Rio de Janeiro, Brazil. 
+            , which will be held in Rio de Janeiro, Brazil
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 05/2025 I attended the Microsoft-internal Machine Learning, AI, & Data Science (MLADS) conference{" "}

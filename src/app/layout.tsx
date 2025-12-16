@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
   description: "Mara Ulloa's research website",
   keywords: [
-    "Obsmara, Obsmara Ulloa, Mara Ulloa, HCI researcher, PhD Candidate, participatory research, community-based, CS PhD Candidate, CS Student, Computer Science student, Northwestern PhD Candidate",
+    "Mara Ulloa, Obsmara, Obsmara Ulloa, HCI researcher, PhD Student, Computer Science, PhD Candidate, participatory research, community-based, CS PhD Candidate, CS Student, Artificial intelligence, machine learning, generative AI, Computer Science student, Northwestern PhD Candidate",
   ],
-  title: "Mara Ulloa - CS PhD Candidate, Northwestern University",
+  title: "Mara Ulloa - HCI Researcher, Northwestern University",
 };
 
 export const viewport: Viewport = {
