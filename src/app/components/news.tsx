@@ -33,7 +33,7 @@ export const News = () => (
             at Northwestern University this Winter
            </li>
           <li onClick={(e) => handleClick(e)}>
-            &#127881; 12/2025 My first-author, Microsoft Research paper,{" "}
+            &#127881; 12/2025 My first-author paper with Microsoft,{" "}
             <Link
               className="underline"
               href="https://arxiv.org/abs/2510.02504"
@@ -48,7 +48,7 @@ export const News = () => (
             >
               ACM/IEEE International Conference in Software Engineering (ICSE)
             </Link> 
-            ; see you in Rio in April 2026 
+            ; I will present this work in Rio in April 2026 
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 10/2025 Our Microsoft Research paper,{" "}
