@@ -52,7 +52,7 @@ export default function Page() {
         <ul className="mb-4">
             <li>Presented findings and their implications to leadership (corporate vice presidents, managers, AI + marketing)</li>
             <li>Produced a framework to depict how PMs delegate tasks to genAI, currently being used to augment PM genAI literacy and guide future work</li>
-            <li>First-authored academic papers to disseminate findings and implications of this research</li>
+            <li>First-authored the below academic paper to disseminate findings and implications of this research</li>
         </ul>
         <h1 className="font-semibold">Research Paper</h1>
         <a
@@ -62,10 +62,62 @@ export default function Page() {
         >
             Product Manager Practices for Delegating Work to Generative AI:{' '}&lsquo;Accountability
             must not be delegated to non-human actors&rsquo;
-        </a>; this paper has been accepted to ACM/IEEE ICSE 2027
+        </a>
         <p className="text-red">
-          ⚠️ Under construction, more details to come soon
+          🎉 this paper has been accepted to ACM/IEEE ICSE 2027
         </p>
+      </div>
+      <div className="mt-8 rounded-lg">
+        <h1 className="dark:text-white mb-4 font-bold">
+           PMs identified values at the individual, team, and organizational levels influencing task delegation to genAI
+        </h1>
+        <Image
+          className="rounded-lg mb-8"
+          blurDataURL="/img/portfolio/Figure_0.png"
+          src="/img/portfolio/Figure_0.png"
+          alt="The Selective Delegation Framework"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
+        <h1 className="dark:text-white mb-4 font-bold">
+          Survey analysis from 885 PMs, including both Indvidual Contributors and People Managers
+        </h1>
+        <Image
+          className="rounded-lg mb-8"
+          blurDataURL="/img/portfolio/Figure_2.png"
+          src="/img/portfolio/Figure_2.png"
+          alt="Survey analysis of 885 PMs on genAI job displacement cocerns and genAI usage encouragement"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
+        <h1 className="dark:text-white mb-4 font-bold">
+          Individual Contributor coded responses to the open-text question:
+          <i> Is there anything else you&rsquo;d like to tell us about barriers
+          to using GenAI more effectively in your role?</i>
+        </h1>
+        <Image
+          className="rounded-lg"
+          blurDataURL="/img/portfolio/Figure_3.png"
+          src="/img/portfolio/Figure_3.png"
+          alt="Individual Contributor coded responses to the open-text question: Is there anything else you would like to tell us about barriers to using GenAI more effectively in your role?"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
       </div>
       <SelectedProjects id="selected-projects" label="Selected Projects">
         <PrenatalStressReduction />
