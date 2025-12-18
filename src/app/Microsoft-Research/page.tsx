@@ -64,10 +64,26 @@ export default function Page() {
             must not be delegated to non-human actors&rsquo;
         </a>
         <p className="text-red">
-          🎉 this paper has been accepted to ACM/IEEE ICSE 2027
+          🎉 this paper has been accepted to ACM/IEEE International Conference in Software Engineering 2026
         </p>
       </div>
       <div className="mt-8 rounded-lg">
+        <h1 className="dark:text-white mb-4 font-bold">
+           I conducted informal interviews, 15 interviews, and gathered 885 survey responses. 731/885 survey participants consented to system telemetry data analysis.
+        </h1>
+        <Image
+          className="rounded-lg mb-8"
+          blurDataURL="/img/portfolio/Figure_1.png"
+          src="/img/portfolio/Figure_1.png"
+          alt="The study design"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
         <h1 className="dark:text-white mb-4 font-bold">
            PMs identified values at the individual, team, and organizational levels influencing task delegation to genAI
         </h1>
