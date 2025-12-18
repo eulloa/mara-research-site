@@ -101,7 +101,7 @@ export default function Page() {
           height={300}
         />
         <h1 className="dark:text-white mb-4 font-bold">
-          Individual Contributor coded responses to the open-text question:
+          Individual Contributor coded responses to the optional,open-text question:
           <i> Is there anything else you&rsquo;d like to tell us about barriers
           to using GenAI more effectively in your role?</i>
         </h1>
