@@ -30,7 +30,7 @@ export const News = () => (
             >
               Computer Science 329: Human-Computer Interaction (HCI) Studio
             </Link>{" "}
-            at Northwestern University this Winter
+            at Northwestern University this winter
            </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 12/2025 My first-author paper with Microsoft,{" "}
@@ -48,7 +48,7 @@ export const News = () => (
             >
               ACM/IEEE International Conference in Software Engineering (ICSE)
             </Link> 
-            ; I will present this work in Rio in April 2026 
+            ; I will present this work in Rio in April 2026
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 10/2025 Our Microsoft Research paper,{" "}
