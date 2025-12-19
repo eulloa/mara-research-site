@@ -48,7 +48,7 @@ export default function Page() {
         </p>
         <h1 className="font-semibold">Deliverables</h1>
         <p className="mb-4">
-          Design method to discuss ML with lay persons, academic posters and
+          Design method to discuss ML with lay persons, ML-driven, high-fidelity prototype, academic posters and
           papers. This multi-year project is part of my PhD dissertation—more
           updates to come.
         </p>
