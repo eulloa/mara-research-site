@@ -60,9 +60,6 @@ export default function Page() {
           JTBD Forces of progress diagrams, academic posters and podium
           presentations
         </p>
-        <p className="text-red">
-          ⚠️ Under construction, more details to come soon
-        </p>
       </div>
       <div className="mt-8 rounded-lg presentation">
         <h1 className="dark:text-white mb-4 font-bold">

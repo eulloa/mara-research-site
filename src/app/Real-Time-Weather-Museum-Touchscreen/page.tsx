@@ -51,9 +51,6 @@ export default function Page() {
           presentation to NCAR and National Oceanic and Atmospheric
           Administration (NOAA) scientific community
         </p>
-        <p className="text-red">
-          ⚠️ Under construction, more details to come soon
-        </p>
       </div>
       <div className="mt-8 rounded-lg">
         <h1 className="dark:text-white mb-4 font-bold">
