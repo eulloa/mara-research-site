@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import {
@@ -64,8 +65,42 @@ export default function Page() {
           </Link>
         </p>
         <p className="text-red">
-          ⚠️ Under construction, more details to come soon
+          🎉 This paper was published to Frontiers in Computer Science 2022
         </p>
+      </div>
+      <div className="mt-8 rounded-lg">
+        <h1 className="dark:text-white mb-4 font-bold">
+          A summary of the three case studies from our research, which we use to characterize examples of invisible clinician labor in the development of novel AI-clinical team tools
+        </h1>
+        <Image
+          className="rounded-lg mb-8"
+          blurDataURL="/img/portfolio/placeholder.png"
+          src="/img/portfolio/ML-clinician/Frontiers_Figure_1.jpg"
+          alt="A summary of the three case studies from our research, which we use to characterize examples of invisible clinician labor in the development of novel AI-clinical team tools."
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
+        <h1 className="dark:text-white mb-4 font-bold">
+          Four types of labor requiring clinical expertise at different developmental stages
+        </h1>
+        <Image
+          className="rounded-lg mb-8"
+          blurDataURL="/img/portfolio/placeholder.png"
+          src="/img/portfolio/ML-clinician/Frontiers_Figure_2.png"
+          alt="Four types of labor requiring clinical expertise at different developmental stages."
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
       </div>
       <SelectedProjects id="selected-projects" label="Selected Projects">
         <PrenatalStressReduction />
