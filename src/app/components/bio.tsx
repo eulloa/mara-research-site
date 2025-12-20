@@ -27,22 +27,21 @@ export const Bio = () => {
             </a>
           </span>{" "}
           (CS) at Northwestern University (NU).
-          Prior to joining NU, I graduated from Northeastern Illinois University (NEIU) with a B.S. in CS, with high honors. 
-          While at NEIU, I received two full scholarships: theDream.US National Scholarship and NEIU CS merit scholarship. 
-          I was also awarded the Abraham Lincoln Civic Engagement Award by the Governor of Illinois, 
-          for my <i> &ldquo;leadership and service in the pursuit of the betterment of humanity and for overall excellence in curricular and extracurricular activities.&rdquo;</i> 
+          Prior to joining NU, I graduated from Northeastern Illinois University (NEIU) with a B.S. in CS, with high honors.
+          While at NEIU, I was awarded two full scholarships&mdash;TheDream.US National Scholarship and NEIU CS Merit Scholarship&mdash;
+          and bestowed the Abraham Lincoln Civic Engagement Award by the Governor of Illinois,
+          for demonstrated <i> &ldquo;leadership and service in the pursuit of the betterment of humanity and for overall excellence in curricular and extracurricular activities.&rdquo;</i> 
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
           I specialize in using Human-Computer Interaction (HCI) methods to design,
           engineer, and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
-          I have worked with Microsoft on generative AI (genAI) for Software Development; Northwestern
-          University on machine learning (ML) for healthcare; The NSF National Center for Atmospheric
-          Research on user experience (UX) for data visualization software.
+          I have worked with Microsoft on Applied Research mentored by Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of Generative AI by software engineers and product managers; The NSF National Center for Atmospheric
+          Research on user experience (UX) for data visualization software; NU on the design of machine learning (ML) for health.
         </p>
         <p className="mt-4 leading-7">
-          In my interdisciplinary doctoral research, I develop and apply participatory design methods to co-design ML across varied health contexts.{" "}
+          In my interdiciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, with the goal of increasing transparency of ML to laypersons.{" "}
           My work is advised by{" "}
           <span className="underline">
             <a
@@ -61,7 +60,7 @@ export const Bio = () => {
           software engineering; applied research.
         </p>
         <p className="mt-4 leading-7">
-          <span className="font-bold">On the job market:</span>{" "}
+          <span className="font-bold text-red">On the job market:</span>{" "}
           I am currently seeking PhD Research Intern positions for Summer 2026.
           I will be on the industry research scientist and faculty track job markets (2027 - 2028).
         </p>
