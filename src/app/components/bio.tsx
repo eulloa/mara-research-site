@@ -27,7 +27,10 @@ export const Bio = () => {
             </a>
           </span>{" "}
           (CS) at Northwestern University (NU).
-          Prior to joining NU, I graduated from Northeastern Illinois University (NEIU) with a B.S. in CS, with high honors. While at NEIU, I received two full scholarships: theDream.US National Scholarship and NEIU CS merit scholarship. I was also awarded the Abraham Lincoln Civic Engagement Award by the Governor of Illinois.
+          Prior to joining NU, I graduated from Northeastern Illinois University (NEIU) with a B.S. in CS, with high honors. 
+          While at NEIU, I received two full scholarships: theDream.US National Scholarship and NEIU CS merit scholarship. 
+          I was also awarded the Abraham Lincoln Civic Engagement Award by the Governor of Illinois, 
+          for my <i> &ldquo;leadership and service in the pursuit of the betterment of humanity and for overall excellence in curricular and extracurricular activities.&rdquo;</i> 
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
           I specialize in using Human-Computer Interaction (HCI) methods to design,
