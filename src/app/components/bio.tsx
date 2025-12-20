@@ -28,8 +28,7 @@ export const Bio = () => {
           </span>{" "}
           (CS) at Northwestern University (NU).
           Prior to joining NU, I graduated from Northeastern Illinois University (NEIU) with a B.S. in CS, with high honors.
-          While at NEIU, I was awarded two full scholarships&mdash;TheDream.US National Scholarship and NEIU CS Merit Scholarship&mdash;
-          and bestowed the Abraham Lincoln Civic Engagement Award by the Governor of Illinois,
+          While at NEIU, I was awarded two full scholarships&mdash;TheDream.US National Scholarship and NEIU CS Merit Scholarship&mdash;and bestowed the Abraham Lincoln Civic Engagement Award by the Governor of Illinois,
           for demonstrated <i> &ldquo;leadership and service in the pursuit of the betterment of humanity and for overall excellence in curricular and extracurricular activities.&rdquo;</i> 
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
@@ -62,7 +61,7 @@ export const Bio = () => {
         <p className="mt-4 leading-7">
           <span className="font-bold text-red">On the job market:</span>{" "}
           I am currently seeking PhD Research Intern positions for Summer 2026.
-          I will be on the industry research scientist and faculty track job markets (2027 - 2028).
+          I will be on the industry research scientist and faculty track job markets during 2027 - 2028.
         </p>
       </div>
     </div>
