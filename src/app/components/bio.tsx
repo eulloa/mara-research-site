@@ -27,6 +27,7 @@ export const Bio = () => {
             </a>
           </span>{" "}
           (CS) at Northwestern University (NU).
+          Prior to joining NU, I graduated from Northeastern Illinois University (NEIU) with a B.S. in CS, with high honors. While at NEIU, I received two full scholarships: theDream.US National Scholarship and NEIU CS merit scholarship. I was also awarded the Abraham Lincoln Civic Engagement Award by the Governor of Illinois.
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
           I specialize in using Human-Computer Interaction (HCI) methods to design,
@@ -55,6 +56,11 @@ export const Bio = () => {
           Human-Computer Interaction; artificial intelligence/machine learning/GenAI + design;
           UX; digital interventions; behavioral science; participatory design methods; future of work;
           software engineering; applied research.
+        </p>
+        <p className="mt-4 leading-7">
+          <span className="font-bold">On the job market:</span>{" "}
+          I am currently seeking PhD Research Intern positions for Summer 2026.
+          I will be on the industry research scientist and faculty track job markets (2027 - 2028).
         </p>
       </div>
     </div>

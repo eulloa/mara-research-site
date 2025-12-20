@@ -29,10 +29,11 @@ export default function Page() {
       <div className="bg-lightBlue rounded-lg p-4">
         <h1 className="font-semibold">Project Overview</h1>
         <p className="mb-4">
+          Stress during pregnancy can have lasting impacts on maternal health, pregnancy outcomes, and child development across the lifespan.
           Next-day prenatal stress prediction algorithms have recently been
           developed, inferring personal moments of stress before they afflict
           the pregnant person and their child. However, for these machine
-          learning (ML) algorithms, and the Just in Time Adaptive Interventions
+          learning (ML) algorithms, and the Just-in-Time Adaptive Interventions
           (JITAIs) leveraging them, to better align with pregnant peoples&rsquo;
           needs and goals, we must engage pregnant people in defining system
           requirements.
@@ -43,12 +44,11 @@ export default function Page() {
           Semi-structured interviews, 20 Design sessions (scenario, reflective
           activities, and prototype feedback) with pregnant people, Affinity
           Diagrams, Quantitative and qualitative survey analysis, Thematic
-          analysis; essentially, User-centered design (UCD), ML + Design work,
-          and Multi-lingual research (English and Spanish)
+          analysis, prototyping, multi-lingual research (English and Spanish)
         </p>
         <h1 className="font-semibold">Deliverables</h1>
         <p className="mb-4">
-          Design method to discuss ML with lay persons, ML-driven, high-fidelity prototype, academic posters and
+          Design method to discuss ML with lay persons, ML-driven, high-fidelity prototype to test in-the-wild, academic posters and
           papers. This multi-year project is part of my PhD dissertation—more
           updates to come.
         </p>
