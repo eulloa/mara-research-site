@@ -28,26 +28,34 @@ export const Bio = () => {
           </span>{" "}
           (CS) at Northwestern University (NU).
           Prior to joining NU, I graduated from Northeastern Illinois University (NEIU) with a B.S. in CS, with high honors.
-          While at NEIU, I was awarded two full scholarships&mdash;TheDream.US National Scholarship and NEIU CS Merit Scholarship&mdash;and bestowed the Abraham Lincoln Civic Engagement Award by the Governor of Illinois,
-          for demonstrated <i> &ldquo;leadership and service in the pursuit of the betterment of humanity and for overall excellence in curricular and extracurricular activities.&rdquo;</i> 
+          While at NEIU, I was awarded two full scholarships&mdash;TheDream.US National Scholarship and NEIU CS Merit Scholarship&mdash;and bestowed the{" "}
+          <span className="underline">
+            <a
+              href="https://lincolnacademyillinois.org/students/"
+              target="_blank"
+            >
+              Abraham Lincoln Civic Engagement Award
+            </a>
+          </span>{" "}
+           by the Governor of Illinois, for demonstrated <i> &ldquo;leadership and service in the pursuit of the betterment of humanity and for overall excellence in curricular and extracurricular activities.&rdquo;</i>
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
           I specialize in using Human-Computer Interaction (HCI) methods to design,
           engineer, and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
-          I have worked with Microsoft on Applied Research mentored by Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of Generative AI by software engineers and product managers; The NSF National Center for Atmospheric
+          I have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of Generative AI by software engineers and product managers; The NSF National Center for Atmospheric
           Research on user experience (UX) for data visualization software; NU on the design of machine learning (ML) for health.
         </p>
         <p className="mt-4 leading-7">
-          In my interdiciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, with the goal of increasing transparency of ML to laypersons.{" "}
+          In my interdisciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, with the goal of increasing transparency of ML to laypersons.{" "}
           My work is advised by{" "}
           <span className="underline">
             <a
               href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/jacobs-maia.html"
               target="_blank"
             >
-              Maia L. Jacobs
+              Dr. Maia L. Jacobs
             </a>
           </span>{" "}
           in the Personalized & Adaptive Technology for Health (NU-PATH) lab.{" "}
