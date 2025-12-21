@@ -44,11 +44,11 @@ export const Bio = () => {
           engineer, and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
-          I have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of Generative AI by software engineers and product managers; The NSF National Center for Atmospheric
+          I have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of generative AI (genAI) by software engineers and product managers; The NSF National Center for Atmospheric
           Research on user experience (UX) for data visualization software; NU on the design of machine learning (ML) for health.
         </p>
         <p className="mt-4 leading-7">
-          In my interdisciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, with the goal of increasing transparency of ML to laypersons.{" "}
+          In my interdisciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, aiming to increase transparency of ML with and for laypersons.{" "}
           My work is advised by{" "}
           <span className="underline">
             <a
@@ -62,13 +62,13 @@ export const Bio = () => {
         </p>
         <p className="mt-4 leading-7">
           <span className="font-bold">Research interests/experience:</span>{" "}
-          Human-Computer Interaction; artificial intelligence/machine learning/GenAI + design;
+          Human-Computer Interaction; artificial intelligence/machine learning/genAI + design;
           UX; digital interventions; behavioral science; participatory design methods; future of work;
           software engineering; applied research.
         </p>
         <p className="mt-4 leading-7">
           <span className="font-bold text-red">On the job market:</span>{" "}
-          I am currently seeking PhD Research Intern positions for Summer 2026.
+          I am currently seeking PhD research internships for summer 2026.
           I will be on the industry research scientist and faculty track job markets during 2027 - 2028.
         </p>
       </div>
