@@ -48,7 +48,15 @@ export const News = () => (
             >
               ACM/IEEE International Conference in Software Engineering (ICSE)
             </Link> 
-            ; I will present this work in Rio in April 2026
+            ; This paper forms part of{" "}
+            <Link
+            className="underline"
+            href="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/12/New-Future-Of-Work-Report-2025.pdf"
+            target="_blank"
+            >
+            Microsoft's New Future of Work Report
+            </Link>
+            ; I will present this paper in Rio in April 2026
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 10/2025 Our Microsoft Research paper,{" "}
