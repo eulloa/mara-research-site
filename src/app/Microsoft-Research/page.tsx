@@ -33,7 +33,7 @@ export default function Page() {
         <p className="mb-4">
             Microsoft leadership wanted to investigate the use of Generative AI (genAI) by product managers (PMs),
             a traditionally understudied user group. Previously, only software engineers had been involved
-            in the conversations about genAI usage at the organization. As this was the organization&rsquo;s
+            in the conversations about genAI usage at the organization. As this was the
             first comprehensive study on PMs and genAI, I designed and led a mixed methods study, distributing
             a large scale, global survey (885 participants), in parallel with semi-structured
             interviews (15 participants) and triangulated with telemetry data.
@@ -51,7 +51,18 @@ export default function Page() {
         <h1 className="font-semibold">Deliverables</h1>
         <ul className="mb-4">
             <li>Presented findings and their implications to leadership (corporate vice presidents, managers, AI + marketing)</li>
-            <li>Produced a framework to depict how PMs delegate tasks to genAI, currently being used to augment PM genAI literacy and guide future work</li>
+            <li>Produced the Selective Delegation framework to depict how PMs delegate tasks to genAI</li>
+            <li>Reported on PM GenAI adoption rates, use cases, and perceived benefits and challenges</li>
+            <li>Guiding the production of a playbook to augment PM genAI literacy at the company</li>
+            <li>This work forms part of{' '}
+            <a
+              className="underline"
+              href="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/12/New-Future-Of-Work-Report-2025.pdf"
+              target="_blank"
+            >
+            Microsoft's New Future of Work Report
+            </a>
+            </li>
             <li>First-authored the below academic paper to disseminate findings and implications of this research</li>
         </ul>
         <h1 className="font-semibold">Research Paper</h1>
