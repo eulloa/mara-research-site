@@ -9,7 +9,7 @@ interface IProject {
 }
 
 export const Project = ({ href, label, subLabel, url }: IProject) => (
-  <Link className="grid" href={href}>
+  <Link className="grid min-h-full" href={href}>
     <div className="bg-lightBlue rounded-lg min-h-[400px]">
       <div
         className="min-h-[200px] rounded-t-lg lg:h-auto"
