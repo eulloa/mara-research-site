@@ -40,8 +40,7 @@ export const Bio = () => {
            by the Governor of Illinois, for demonstrated <i> &ldquo;leadership and service in the pursuit of the betterment of humanity and for overall excellence in curricular and extracurricular activities.&rdquo;</i>
         </p>
         <p className="mt-4 leading-7 p-2 bg-lightBlue text-navy rounded-lg">
-          I specialize in using Human-Computer Interaction (HCI) methods to design,
-          engineer, and evaluate human-centered artificial intelligence (AI).
+          I specialize in using Human-Computer Interaction (HCI) methods to design and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
           I have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of generative AI (genAI) by software engineers and product managers; The NSF National Center for Atmospheric
