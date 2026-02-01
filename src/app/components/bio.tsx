@@ -44,10 +44,10 @@ export const Bio = () => {
         </p>
         <p className="mt-4 leading-7">
           I have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of generative AI (genAI) by software engineers and product managers; The NSF National Center for Atmospheric
-          Research on user experience (UX) for data visualization software; NU on the design of machine learning (ML) for health.
+          Research on user experience (UX) for advanced data visualization software; NU on the design of machine learning (ML) for health.
         </p>
         <p className="mt-4 leading-7">
-          In my interdisciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, aiming to increase transparency of ML with and for laypersons.{" "}
+          In my interdisciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, aiming to increase transparency of ML-driven interventions with and for laypersons.{" "}
           My work is advised by{" "}
           <span className="underline">
             <a
