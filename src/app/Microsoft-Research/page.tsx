@@ -164,7 +164,7 @@ export default function Page() {
           height={300}
         />
         <h1 className="dark:text-white my-4 font-bold">
-          Individual Contributor responses to selection of responses to Likert questions posed to 735 ICs about their thoughts and beliefs on GenAI.
+          A selection of responses to Likert questions posed to 735 Individual Contributors about their thoughts and beliefs on GenAI.
         </h1>
         <Image
           className="rounded-lg"
