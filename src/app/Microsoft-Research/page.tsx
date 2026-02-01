@@ -145,6 +145,41 @@ export default function Page() {
           width={500}
           height={300}
         />
+        <h1 className="dark:text-white my-4 font-bold">
+          Individual Contributor coded responses to the optional,open-text question:
+          <i> In your opinion, what is the single biggest benefit you&rsquo;ve gained from using Generative AI, if any?</i>
+        </h1>
+        <Image
+          className="rounded-lg"
+          blurDataURL="/img/portfolio/GenAI-PM/Benefits.png"
+          src="/img/portfolio/GenAI-PM/Benefits.png"
+          alt="Individual Contributor coded responses to the optional,open-text question:
+          In your opinion, what is the single biggest benefit you've gained from using Generative AI (if any)?"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
+        <h1 className="dark:text-white my-4 font-bold">
+          Individual Contributor responses to selection of responses to Likert questions posed to 735 ICs about their thoughts and beliefs on GenAI.
+        </h1>
+        <Image
+          className="rounded-lg"
+          blurDataURL="/img/portfolio/GenAI-PM/Attitudes.png" 
+          src="/img/portfolio/GenAI-PM/Attitudes.png"
+          alt="Individual Contributor coded responses to the optional,open-text question:
+          In your opinion, what is the single biggest benefit you've gained from using Generative AI (if any)?"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
       </div>
       <SelectedProjects id="selected-projects" label="Selected Projects">
         <PrenatalStressReduction />
