@@ -21,6 +21,18 @@ export const News = () => (
       </div>
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
+          <li>
+            &#127881; 02/2026 I have been awarded the{" "}
+            <Link
+              className="underline"
+              href="https://www.pdc2026.polimi.it/david-hakken-pd-grant/"
+              target="_blank"
+            >
+              David Hakken Participatory Design Grant
+            </Link>{" "}
+            which is awarded to one PhD Student worldwide demonstrating PD practice and thought leadership, as well as alignment with Prof. Hakken’s philosophy. I
+            will attend the PD Conference from June 15 to 19, 2026 in Milan, Italy to share my work on ML-driven JITAIs for next day stress. 
+          </li>
           <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 01/2026 I am an instructor for{" "}
             <Link
@@ -31,7 +43,7 @@ export const News = () => (
               Computer Science 329: Human-Computer Interaction (HCI) Studio
             </Link>{" "}
             at Northwestern University this winter
-           </li>
+          </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 12/2025 My first-author paper with Microsoft,{" "}
             <Link
