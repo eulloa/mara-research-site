@@ -22,6 +22,25 @@ export const Publications = () => (
       </article> */}
       <article>
         <span className="dark:text-white">
+          Butler, J., 
+          <Spotlight
+            className="bg-lightBlue rounded-lg p-1 text-navy"
+            message="Ulloa, M."
+            options={{ type: "span" }}
+          />
+          , Storey M., Bird C.{" "}
+          <a
+            className="underline"
+            href="https://arxiv.org/abs/2510.02504"
+            target="_blank"
+          >
+            &ldquo;Climbing the AI Mountain : A “Hitchhiker’s" Guide for PMs&rsquo;&rdquo;
+          </a>{" "}
+          <span>[UNDER REVIEW]</span>
+        </span>
+      </article>
+      <article>
+        <span className="dark:text-white">
           <Spotlight
             className="bg-lightBlue rounded-lg p-1 text-navy"
             message="Ulloa, M."
