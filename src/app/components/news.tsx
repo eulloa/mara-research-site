@@ -28,9 +28,9 @@ export const News = () => (
               href="https://www.pdc2026.polimi.it/david-hakken-pd-grant/"
               target="_blank"
             >
-              David Hakken Participatory Design Grant
+              David Hakken Participatory Design Grant,
             </Link>{" "}
-            which is awarded to one PhD Student worldwide demonstrating PD practice and thought leadership, as well as alignment with Prof. Hakken’s philosophy. I
+            which is given to one PhD Student worldwide demonstrating PD practice and thought leadership, as well as alignment with Prof. Hakken’s philosophy. I
             will attend the PD Conference from June 15 to 19, 2026 in Milan, Italy to share my work on ML-driven JITAIs for next day stress. 
           </li>
           <li onClick={(e) => handleClick(e)}>
