@@ -22,6 +22,9 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li>
+            &#127891; 02/2025 I will be completing prospectus on Wednesday, 2/25/26! 
+          </li>
+          <li>
             &#127881; 02/2026 I have been awarded the{" "}
             <Link
               className="underline"
