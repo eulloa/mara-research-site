@@ -28,13 +28,13 @@ export const Publications = () => (
             message="Ulloa, M."
             options={{ type: "span" }}
           />
-          , Storey M., Bird C.{" "}
+          , Storey, M., Bird, C.{" "}
           <a
             className="underline"
-            href="https://arxiv.org/abs/2510.02504"
+            href=""
             target="_blank"
           >
-            &ldquo;Climbing the AI Mountain : A “Hitchhiker’s" Guide for PMs&rsquo;&rdquo;
+            &ldquo;Climbing the Generative AI Mountain &#9968;: A "Hitchhiker's" Guide for PMs&rdquo;
           </a>{" "}
           <span>[UNDER REVIEW]</span>
         </span>
@@ -46,7 +46,7 @@ export const Publications = () => (
             message="Ulloa, M."
             options={{ type: "span" }}
           />
-          ,  Butler J., Haniyur S., Miller C., Amos B., Sarkar, A., Storey M.{" "}
+          ,  Butler, J., Haniyur, S., Miller, C., Amos, B., Sarkar, A., Storey, M.{" "}
           <a
             className="underline"
             href="https://arxiv.org/abs/2510.02504"
