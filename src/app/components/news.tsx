@@ -21,6 +21,16 @@ export const News = () => (
       </div>
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
+          <li onClick={(e) => handleClick(e)}>
+            &#127881; 03/2026
+            <Link
+              className="underline"
+              href="https://arxiv.org/abs/2507.21280"
+              target="_blank"
+            >
+              &rsquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&lsquo;
+            </Link>, has received an ACM SIGSOFT Distinguished Paper Award.
+          </li>
           <li>
             &#127891; 02/2026 I have passed my prospectus in computer science!
           </li>
