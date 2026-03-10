@@ -91,7 +91,8 @@ export const Publications = () => (
           >
             &ldquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&rdquo;
           </a>.{" "}
-          <span>ACM/IEEE International Conference in Software Engineering (ICSE). October 16, 2025.</span>
+          <span>ACM/IEEE International Conference in Software Engineering (ICSE). October 16, 2025.</span>{" "}
+          <span className="font-bold text-red">Distinguished Paper Award &#127942;</span>{" "}
         </span>
       </article>
       <article>

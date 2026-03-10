@@ -22,7 +22,17 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
-            &#127881; 03/2026
+            &#127881; 03/2026 My doctoral consortium has been accepted to {" "}
+            <Link
+              className="underline"
+              href="https://ih.acm.org/"
+              target="_blank"
+            >
+              Interactive Health
+            </Link>, taking place in Porto, Portugal July 5 – 8, 2026.
+          </li>
+          <li onClick={(e) => handleClick(e)}>
+            &#127942; 03/2026{" "}
             <Link
               className="underline"
               href="https://arxiv.org/abs/2507.21280"
@@ -35,7 +45,7 @@ export const News = () => (
             &#127891; 02/2026 I have passed my prospectus in computer science!
           </li>
           <li>
-            &#127881; 02/2026 I have been awarded the{" "}
+            &#127942; 02/2026 I have been awarded the{" "}
             <Link
               className="underline"
               href="https://www.pdc2026.polimi.it/david-hakken-pd-grant/"
