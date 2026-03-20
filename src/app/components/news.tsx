@@ -22,13 +22,33 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
+            &#128227; 03/2026 I am giving the keynote speech at {" "}
+            <Link
+              className="underline"
+              href="https://ih.acm.org/"
+              target="_blank"
+            >
+              Northeastern Illinois University's Computer Science Alumni Day 2026
+            </Link>, on Wednesday, March 25.
+          </li>
+                    <li onClick={(e) => handleClick(e)}>
+            &#128227; 03/2026 I am giving a talk on my research at {" "}
+            <Link
+              className="underline"
+              href="https://www.roosevelt.edu/programs/bachelors-computer-science-bs"
+              target="_blank"
+            >
+              Roosevelt University
+            </Link> Computer Science on Thursday, March 26
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#127881; 03/2026 My doctoral consortium has been accepted to {" "}
             <Link
               className="underline"
               href="https://ih.acm.org/"
               target="_blank"
             >
-              Interactive Health
+              ACM Interactive Health
             </Link>, taking place in Porto, Portugal July 5 – 8, 2026.
           </li>
           <li onClick={(e) => handleClick(e)}>
