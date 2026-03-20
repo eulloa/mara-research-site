@@ -25,11 +25,11 @@ export const News = () => (
             &#128227; 03/2026 I am giving the keynote speech at {" "}
             <Link
               className="underline"
-              href="https://ih.acm.org/"
+              href="https://www.neiu.edu/academics/colleges-departments/business-and-technology/departments/computer-science"
               target="_blank"
             >
               Northeastern Illinois University's Computer Science Alumni Day 2026
-            </Link>, on Wednesday, March 25.
+            </Link> on Wednesday, March 25.
           </li>
                     <li onClick={(e) => handleClick(e)}>
             &#128227; 03/2026 I am giving a talk on my research at {" "}
