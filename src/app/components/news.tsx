@@ -22,7 +22,33 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
-            &#128227; 03/2026 I am giving the keynote speech at {" "}
+            &#128221; 03/2026 My first-author paper,{" "}
+            <Link
+              className="underline"
+              href=""
+              target="_blank"
+            >
+            &ldquo;I Don't Like Being Told Just What to Do; I Need to Know Why&rdquo;: Patient Expectations of Machine Learning-Driven JITAIs for Prenatal Stress Management
+            </Link>, has been accepted to the{" "}
+            <Link
+              className="underline"
+              href="https://ih.acm.org/"
+              target="_blank"
+            >
+              ACM Transactions on Computing for Healthcare (HEALTH)
+            </Link> journal, under the Special Issue on Human Centered Computing (HCI) in Healthcare. 
+            I will present this work at the inaugural {" "}
+            <Link
+            className="underline"
+            href="https://ih.acm.org/"
+            target="_blank"
+            >
+            ACM Interactive Health
+            </Link>{" "}
+            conference in Porto, Portugal in July 2026. 
+          </li>
+          <li onClick={(e) => handleClick(e)}>
+            &#128227; 03/2026 I gave the keynote speech at {" "}
             <Link
               className="underline"
               href="https://www.neiu.edu/academics/colleges-departments/business-and-technology/departments/computer-science"
@@ -32,14 +58,14 @@ export const News = () => (
             </Link> on Wednesday, March 25.
           </li>
                     <li onClick={(e) => handleClick(e)}>
-            &#128227; 03/2026 I am giving a talk on my research at {" "}
+            &#128227; 03/2026 I gave a talk on my research at {" "}
             <Link
               className="underline"
               href="https://www.roosevelt.edu/programs/bachelors-computer-science-bs"
               target="_blank"
             >
               Roosevelt University
-            </Link> Computer Science on Thursday, March 26
+            </Link> Computer Science on Thursday, March 26.
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#127881; 03/2026 My doctoral consortium has been accepted to {" "}
@@ -58,7 +84,7 @@ export const News = () => (
               href="https://arxiv.org/abs/2507.21280"
               target="_blank"
             >
-              &rsquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&lsquo;
+              &ldquo;Maybe We Need Some More Examples&rdquo;: Individual and Team Drivers of Developer GenAI Tool Use
             </Link>, has received an ACM SIGSOFT Distinguished Paper Award.
           </li>
           <li>
@@ -88,7 +114,7 @@ export const News = () => (
             at Northwestern University this winter
           </li>
           <li onClick={(e) => handleClick(e)}>
-            &#127881; 12/2025 My first-author paper with Microsoft,{" "}
+            &#128221; 12/2025 My first-author paper with Microsoft,{" "}
             <Link
               className="underline"
               href="https://arxiv.org/abs/2510.02504"
@@ -114,7 +140,7 @@ export const News = () => (
             ; I will present this paper in Rio in April 2026
           </li>
           <li onClick={(e) => handleClick(e)}>
-            &#127881; 10/2025 Our Microsoft Research paper,{" "}
+            &#128221; 10/2025 Our Microsoft Research paper,{" "}
             <Link
               className="underline"
               href="https://arxiv.org/abs/2507.21280"
@@ -129,7 +155,14 @@ export const News = () => (
             >
               ACM/IEEE International Conference in Software Engineering (ICSE)
             </Link>{" "} 
-            , which will be held in Rio de Janeiro, Brazil
+            , which will be held in Rio de Janeiro, Brazil. This paper forms part of{" "}
+            <Link
+            className="underline"
+            href="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/12/New-Future-Of-Work-Report-2025.pdf"
+            target="_blank"
+            >
+            Microsoft's New Future of Work Report
+            </Link>
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#128105;&#127995;&#8205;&#127979; 05/2025 I attended the Microsoft-internal Machine Learning, AI, & Data Science (MLADS) conference{" "}
