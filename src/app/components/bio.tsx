@@ -67,7 +67,6 @@ export const Bio = () => {
         </p>
         <p className="mt-4 leading-7">
           <span className="font-bold text-red">On the job market:</span>{" "}
-          I am currently seeking PhD research internships for summer 2026.
           I will be on the industry research scientist and faculty track job markets during 2027 - 2028.
         </p>
       </div>

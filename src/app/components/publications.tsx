@@ -55,7 +55,7 @@ export const Publications = () => (
             &ldquo;Product Manager Practices for Delegating Work to Generative AI: &lsquo;Accountability
             must not be delegated to non-human actors&rsquo;&rdquo;
           </a>{" "}
-          <span>ACM/IEEE International Conference in Software Engineering(ICSE). December 13, 2025</span>
+          <span>ACM/IEEE International Conference in Software Engineering(ICSE). December 13, 2025. Rio de Janeiro, Brazil.</span>
         </span>
       </article>
       <article>
@@ -70,9 +70,9 @@ export const Publications = () => (
             className="underline"
             target="_blank"
           >
-            &ldquo;Patients&rsquo; Expectations of ML-driven JITAI Support for Maternal Stress Management&rdquo;
+            &ldquo;I Don’t Like Being Told Just What to Do; I Need to Know Why&rdquo;: Patient Expectations of Machine Learning-Driven JITAIs for Prenatal Stress Management
           </a>{" "}
-          <span>[UNDER REVIEW]</span>
+          <span>ACM Transactions on Computing for Healthcare (HEALTH). 2026. Porto, Portugal. </span>
         </span>
       </article>
       <article>
