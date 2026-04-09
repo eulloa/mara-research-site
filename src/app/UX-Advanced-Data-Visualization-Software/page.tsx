@@ -73,8 +73,8 @@ export default function Page() {
         </h1>
         <Image
           className="rounded-lg"
-          blurDataURL="/img/placeholder.png"
-          src="/img/portfolio/poster.jpg"
+          blurDataURL="/img//placeholder.png"
+          src="/img/portfolio/UX-ncar/poster.jpg"
           alt="Final poster presentation of the project"
           sizes="100vw"
           style={{
