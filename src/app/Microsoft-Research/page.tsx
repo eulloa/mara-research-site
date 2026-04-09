@@ -84,8 +84,8 @@ export default function Page() {
         </h1>
         <Image
           className="rounded-lg mb-8"
-          blurDataURL="/img/portfolio/Figure_1.png"
-          src="/img/portfolio/Figure_1.png"
+          blurDataURL="/img/portfolio/GenAI-PM/Figure_1.png"
+          src="/img/portfolio/GenAI-PM/Figure_1.png"
           alt="The study design"
           sizes="100vw"
           style={{
@@ -100,8 +100,8 @@ export default function Page() {
         </h1>
         <Image
           className="rounded-lg mb-8"
-          blurDataURL="/img/portfolio/Figure_0.png"
-          src="/img/portfolio/Figure_0.png"
+          blurDataURL="/img/portfolio/GenAI-PM/Figure_0.png"
+          src="/img/portfolio/GenAI-PM/Figure_0.png"
           alt="The Selective Delegation Framework"
           sizes="100vw"
           style={{
@@ -116,8 +116,8 @@ export default function Page() {
         </h1>
         <Image
           className="rounded-lg mb-8"
-          blurDataURL="/img/portfolio/Figure_2.png"
-          src="/img/portfolio/Figure_2.png"
+          blurDataURL="/img/portfolio/GenAI-PM/Figure_2.png"
+          src="/img/portfolio/GenAI-PM/Figure_2.png"
           alt="Survey analysis of 885 PMs on genAI job displacement cocerns and genAI usage encouragement"
           sizes="100vw"
           style={{
@@ -134,8 +134,8 @@ export default function Page() {
         </h1>
         <Image
           className="rounded-lg"
-          blurDataURL="/img/portfolio/Figure_3.png"
-          src="/img/portfolio/Figure_3.png"
+          blurDataURL="/img/portfolio/GenAI-PM/Figure_3.png"
+          src="/img/portfolio/GenAI-PM/Figure_3.png"
           alt="Individual Contributor coded responses to the open-text question: Is there anything else you would like to tell us about barriers to using GenAI more effectively in your role?"
           sizes="100vw"
           style={{
@@ -172,6 +172,32 @@ export default function Page() {
           src="/img/portfolio/GenAI-PM/Attitudes.png"
           alt="Individual Contributor coded responses to the optional,open-text question:
           In your opinion, what is the single biggest benefit you've gained from using Generative AI (if any)?"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
+        <h1 className="dark:text-white my-4 font-bold">
+          I designed the below sticker to share this work in an accessible way with &#10024; everyone &#10024;. 
+          You can{" "}
+          <span className="underline">
+          <a
+            href="https://forms.gle/eGY5vG9mxZFTtfa28"
+            target="_blank"
+          >
+            request your sticker here
+          </a>
+          </span>{" "}
+          while supplies last. 
+        </h1>
+        <Image
+          className="rounded-lg"
+          blurDataURL="/img/portfolio/GenAI-PM/Catto.png" 
+          src="/img/portfolio/GenAI-PM/Catto.png"
+          alt="A fluffy oranage cat using a windows laptop with the text 'GenAI Delegation' above it and a quote 'Accountability must not be delegateed to non-human actors' below it. It also includes a qr code to the paper."
           sizes="100vw"
           style={{
             width: "100%",
