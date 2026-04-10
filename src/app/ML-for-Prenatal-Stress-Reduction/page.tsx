@@ -63,7 +63,7 @@ export default function Page() {
         <Image
           className="rounded-lg"
           blurDataURL="/img/placeholder.png"
-          src="/img/portfolio/affinity_diagram.jpg"
+          src="/img/portfolio/ML-patient/affinity_diagram.jpg"
           alt="Working on an affinity diagram post thematic analysis"
           sizes="100vw"
           style={{
