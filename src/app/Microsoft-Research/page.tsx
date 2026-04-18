@@ -184,7 +184,7 @@ export default function Page() {
           I presented our paper on this work at the{" "}
           <span className="underline">
           <a
-            href="https://forms.gle/eGY5vG9mxZFTtfa28"
+            href="https://conf.researchr.org/home/icse-2026"
             target="_blank"
           >
             Internaitonal Conference in Software Engineering (ICSE)
