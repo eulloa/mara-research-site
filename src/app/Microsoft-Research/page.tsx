@@ -181,6 +181,44 @@ export default function Page() {
           height={300}
         />
         <h1 className="dark:text-white my-4 font-bold">
+          I presented our paper on this work at the{" "}
+          <span className="underline">
+          <a
+            href="https://forms.gle/eGY5vG9mxZFTtfa28"
+            target="_blank"
+          >
+            Internaitonal Conference in Software Engineering (ICSE)
+          </a>
+          </span>{" "}
+          in April 2026. 
+        </h1>
+        <Image
+          className="rounded-lg"
+          blurDataURL="/img/portfolio/GenAI-PM/ICSE_00.jpeg" 
+          src="/img/portfolio/GenAI-PM/ICSE_00.jpeg"
+          alt="Mara Ulloa presenting the paper for this work facing the audience; the screen behind her has ICSE logos and shows the title slide."
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
+                <Image
+          className="rounded-lg"
+          blurDataURL="/img/portfolio/GenAI-PM/ICSE_01.jpeg" 
+          src="/img/portfolio/GenAI-PM/ICSE_01.jpeg"
+          alt="Mara Ulloa presenting the paper for this work facing projected slide behind her and bringing attention to it with her left hand; the screen behind her has ICSE logos and shows the slide on 'rethinking software engineering, as PMs move down the stack."
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+        />
+        <h1 className="dark:text-white my-4 font-bold">
           I designed the below sticker to share this work in an accessible way with &#10024; everyone &#10024;. 
           You can{" "}
           <span className="underline">
