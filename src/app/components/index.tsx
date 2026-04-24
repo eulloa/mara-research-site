@@ -3,6 +3,7 @@ export * from "./backToTop";
 export * from "./bio";
 export * from "./bluesky";
 export * from "./close";
+export * from "./collapsible";
 export * from "./footer";
 export * from "./github";
 export * from "./header";

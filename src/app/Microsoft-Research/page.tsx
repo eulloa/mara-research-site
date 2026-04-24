@@ -8,6 +8,7 @@ import {
   MuseumTouchscreen,
   SelectedProjects,
 } from "@/components/portfolio";
+import { Collapsible } from "@/components";
 
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
@@ -28,8 +29,7 @@ export default function Page() {
           Product Managers&rsquo; Integration of Generative AI into Knowledge Work 
       </h1>
       <h2 className="dark:text-white mb-4">April 2025 - June 2025 (12 weeks)</h2>
-      <div className="bg-lightBlue rounded-lg p-4">
-        <h1 className="font-semibold">Project overview</h1>
+      <Collapsible className="mb-4" title="Project overview" defaultOpen={true}>
         <p className="mb-4">
             Microsoft leadership wanted to investigate the use of Generative AI (genAI) by product managers (PMs),
             a traditionally understudied user group. Previously, only software engineers had been involved
@@ -38,7 +38,8 @@ export default function Page() {
             a large scale, global survey (885 participants), in parallel with semi-structured
             interviews (15 participants) and triangulated with telemetry data.
         </p>
-        <h1 className="font-semibold">Process and Methods</h1>
+      </Collapsible>
+      <Collapsible className="mb-4" title="Process and Methods">
         <ul className="mb-4">
             <li>Internally validated research instruments with user group and other productivity researchers</li>
             <li>Led data collection</li>
@@ -48,7 +49,8 @@ export default function Page() {
             <li>Performed thematic analysis on interview and open-text survey questions</li>
             <li>Conducted workshops with product managers to refine findings</li>
         </ul>
-        <h1 className="font-semibold">Deliverables</h1>
+      </Collapsible>
+      <Collapsible className="mb-4" title="Deliverables">
         <ul className="mb-4">
             <li>Presented findings and their implications to leadership (corporate vice presidents, managers, AI + marketing)</li>
             <li>Produced the Selective Delegation framework to depict how PMs delegate tasks to genAI</li>
@@ -65,7 +67,8 @@ export default function Page() {
             </li>
             <li>First-authored the below academic paper to disseminate findings and implications of this research</li>
         </ul>
-        <h1 className="font-semibold">Research Paper</h1>
+      </Collapsible>
+      <Collapsible className="mb-4" title="Research Paper + Magazine Article">
         <a
             className="underline"
             href="https://arxiv.org/abs/2510.02504"
@@ -77,7 +80,8 @@ export default function Page() {
         <p className="text-red">
           🎉 this paper has been accepted to ACM/IEEE International Conference in Software Engineering 2026
         </p>
-      </div>
+        <p>Magazine article coming soon</p>
+      </Collapsible>
       <div className="mt-8 rounded-lg">
         <h1 className="dark:text-white mb-4 font-bold">
            I conducted informal interviews, 15 interviews, and gathered 885 survey responses. 731/885 survey participants consented to system telemetry data analysis.
