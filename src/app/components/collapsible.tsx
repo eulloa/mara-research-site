@@ -2,19 +2,10 @@
 import { useState, ReactNode, FC, useRef, useEffect } from 'react';
 
 interface CollapsibleProps {
-  /** The header content (string, icon, etc.) */
   title: ReactNode;
-
-  /** Anything you want to show inside the panel */
   children: ReactNode;
-
-  /** Start collapsed (default is open) */
   defaultOpen?: boolean;
-
-  /** Called when the panel is toggled; receives the new state (true = open) */
   onToggle?: (open: boolean) => void;
-
-  /** Optional Tailwind classes for the wrapper */
   className?: string;
 }
 
@@ -27,6 +18,23 @@ export const Collapsible: FC<CollapsibleProps> = ({
 }) => {
   const [open, setOpen] = useState(defaultOpen);
   const contentRef = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState<number>(0);
+
+  // 1. Use ResizeObserver to track the actual rendered height of the children
+  useEffect(() => {
+    if (!contentRef.current) return;
+
+    const observer = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        // We measure the first child (the wrapper div) to get the true content height
+        const height = entry.target.scrollHeight;
+        setContentHeight(height);
+      }
+    });
+
+    observer.observe(contentRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   /* Notify parent when state changes */
   useEffect(() => {
@@ -35,51 +43,40 @@ export const Collapsible: FC<CollapsibleProps> = ({
 
   const toggle = () => setOpen((o) => !o);
 
-  /* We’ll use a CSS trick to animate the height:
-     - The inner div is `overflow-hidden`.
-     - The `max-h-[...px]` class is set based on the content’s scrollHeight.  */
-  const [maxHeight, setMaxHeight] = useState<number | null>(null);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      setMaxHeight(contentRef.current.scrollHeight);
-    }
-  }, [children]); // re‑measure if content changes
-
   return (
-    <div className={`border rounded-md ${className} bg-lightBlue`}>
-      {/* Header – always visible */}
+    <div className={`rounded-md overflow-hidden ${className} bg-lightBlue`}>
+      {/* Header */}
       <button
         type="button"
-        className="flex justify-between w-full px-4 py-2 text-left text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="flex justify-between items-center w-full px-4 py-3 text-left bg-gray-50 hover:bg-gray-100 transition-colors focus:outline-none"
         onClick={toggle}
         aria-expanded={open}
-        aria-controls="collapsible-content"
       >
-        <h1 className="font-semibold text-lg">{title}</h1>
+        <div className="font-semibold text-lg text-gray-800">{title}</div>
         <svg
-          className={`w-5 h-5 transition-transform duration-200 ${open ? 'transform rotate-180' : ''}`}
+          className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
           viewBox="0 0 20 20"
           fill="currentColor"
-          aria-hidden="true"
         >
           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.585l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clipRule="evenodd" />
         </svg>
       </button>
 
-      {/* Content – collapsible section */}
+      {/* Collapsible Section */}
       <div
-        id="collapsible-content"
         ref={contentRef}
-        className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
+        className="transition-[max-height] duration-300 ease-in-out overflow-hidden"
         style={{
-          maxHeight: open ? `${maxHeight}px` : 0,
+          // Use 'none' or a very large number if you want to disable 
+          // the transition limit once open, but contentHeight is safest.
+          maxHeight: open ? `${contentHeight}px` : '0px',
         }}
-        aria-hidden={!open}
       >
-        <div className="px-4 py-3 text-md text-gray-600">{children}</div>
+        {/* Internal wrapper helps ResizeObserver measure accurately without padding issues */}
+        <div className="px-4 py-4 text-gray-600">
+          {children}
+        </div>
       </div>
     </div>
   );
 };
-

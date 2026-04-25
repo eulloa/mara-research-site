@@ -7,6 +7,7 @@ export * from "./collapsible";
 export * from "./footer";
 export * from "./github";
 export * from "./header";
+export * from "./lightbox";
 export * from "./linkedIn";
 export * from "./news";
 export * from "./open";
