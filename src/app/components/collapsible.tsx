@@ -44,7 +44,7 @@ export const Collapsible: FC<CollapsibleProps> = ({
   const toggle = () => setOpen((o) => !o);
 
   return (
-    <div className={`rounded-md overflow-hidden ${className} bg-lightBlue`}>
+    <div className={`rounded-md overflow-hidden ${className} dark:bg-cerulean bg-lightBlue`}>
       {/* Header */}
       <button
         type="button"
@@ -52,7 +52,7 @@ export const Collapsible: FC<CollapsibleProps> = ({
         onClick={toggle}
         aria-expanded={open}
       >
-        <div className="font-semibold text-lg text-gray-800">{title}</div>
+        <div className="font-semibold text-lg dark:text-white text-gray-800">{title}</div>
         <svg
           className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
           viewBox="0 0 20 20"
@@ -73,7 +73,7 @@ export const Collapsible: FC<CollapsibleProps> = ({
         }}
       >
         {/* Internal wrapper helps ResizeObserver measure accurately without padding issues */}
-        <div className="px-4 py-4 text-gray-600">
+        <div className="px-4 py-4 text-gray-600 bg-lightBlue">
           {children}
         </div>
       </div>

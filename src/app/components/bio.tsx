@@ -8,8 +8,9 @@ export const Bio = () => {
         <Audio classes="hidden md:block lg:hidden" />
         <p className="leading-7">
           I am a{" "}
-          <span className="underline">
+          <span className="transition duration-300 bg-lightBlue">
             <a
+              className="group-hover:max-w-full transition-all duration-500 h-0.5 bg-cherry"
               href="https://new.nsf.gov/funding/opportunities/nsf-graduate-research-fellowship-program-grfp"
               target="_blank"
             >

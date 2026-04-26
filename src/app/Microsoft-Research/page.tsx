@@ -124,7 +124,7 @@ export default function Page() {
           <li>Guiding the production of a playbook to augment PM genAI literacy at the company</li>
           <li>This work forms part of{' '}
             <a
-              className="underline"
+              className="text-cherry underline"
               href="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/12/New-Future-Of-Work-Report-2025.pdf"
               target="_blank"
             >
