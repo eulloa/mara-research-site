@@ -25,7 +25,7 @@ export const News = () => (
             &#128221; 03/2026 My first-author paper,{" "}
             <Link
               className="underline"
-              href=""
+              href="https://doi.org/10.1145/3808695"
               target="_blank"
             >
             &ldquo;I Don't Like Being Told Just What to Do; I Need to Know Why&rdquo;: Patient Expectations of Machine Learning-Driven JITAIs for Prenatal Stress Management

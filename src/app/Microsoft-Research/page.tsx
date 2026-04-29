@@ -25,19 +25,19 @@ export const metadata: Metadata = {
 const interviews: LightboxImage = {
   src: "/img/portfolio/GenAI-PM/Figure_1.png",
   alt: "I conducted informal interviews, 15 interviews, and gathered 885 survey responses. 731/885 survey participants consented to system telemetry data analysis.",
-  title: "Informal Interviews",
+  title: "I conducted informal interviews, 15 interviews, and gathered 885 survey responses. 731/885 survey participants consented to system telemetry data analysis.",
 };
 
 const jobDisplacementConcerns: LightboxImage = {
   src: "/img/portfolio/GenAI-PM/Figure_2.png",
   alt: "GenAI Job Displacement Concerns",
-  title: "Survey analysis from 885 PMs, including both Indvidual Contributors and People Managers"
+  title: "Survey analysis from 885 product managers, including both Indvidual Contributors (ICs) and Managers"
 };
 
 const selectiveDelegationFramework: LightboxImage = {
   src: "/img/portfolio/GenAI-PM/Figure_0.png",
   alt: "The Selective Delegation Framework",
-  title: "PMs identified values at the individual, team, and organizational levels influencing task delegation to genAI"
+  title: "Product managers identified values at the individual, team, and organizational levels influencing task delegation to genAI"
 };
 
 const benefitsOfAdoption: LightboxImage = {
@@ -49,7 +49,7 @@ const benefitsOfAdoption: LightboxImage = {
 const genAIBenefits: LightboxImage = {
   src: "/img/portfolio/GenAI-PM/Benefits.png",
   alt:"Individual Contributor coded responses to the optional,open-text question: In your opinion, what is the single biggest benefit you've gained from using Generative AI (if any)?",
-  title: "Individual Contributor coded responses to the optional,open-text question: <i> In your opinion, what is the single biggest benefit you&rsquo;ve gained from using Generative AI, if any?</i>"
+  title: "Individual Contributor coded responses to the optional,open-text question: In your opinion, what is the single biggest benefit you've gained from using Generative AI, if any?"
 };
 
 const attitudesTowardUsage: LightboxImage = {
@@ -68,20 +68,20 @@ const deliverables: LightboxImage[] = [
 const awardPresentation: LightboxImage[] = [
   {
     src: "/img/portfolio/GenAI-PM/ICSE_00.jpeg",
-    title:"Mara Ulloa presenting the paper for this work facing the audience; the screen behind her has ICSE logos and shows the title slide.",
+    title:"Introducing the work at ICSE 2026",
     alt: "ICSE Presentation"
   },
   {
     src: "/img/portfolio/GenAI-PM/ICSE_01.jpeg",
     alt: "ISCE Presentation",
-    title:"Mara Ulloa presenting the paper for this work facing projected slide behind her and bringing attention to it with her left hand; the screen behind her has ICSE logos and shows the slide on 'rethinking software engineering, as PMs move down the stack."
+    title:"PMs are moving down the stack and SWEs up the stack"
   },
 ];
 
 const catto: LightboxImage = {
     src: "/img/portfolio/GenAI-PM/Catto.png",
     alt: "Catto",
-    title:"A fluffy oranage cat using a windows laptop with the text 'GenAI Delegation' above it and a quote 'Accountability must not be delegateed to non-human actors' below it. It also includes a qr code to the paper."
+    title:"=^.^="
 };
 
 export default function Page() {
@@ -111,9 +111,6 @@ export default function Page() {
           <li>Performed thematic analysis on interview and open-text survey questions</li>
           <li>Conducted workshops with product managers to refine findings</li>
         </ul>
-        <h1 className="mb-4 font-bold">
-           I conducted informal interviews, 15 interviews, and gathered 885 survey responses. 731/885 survey participants consented to system telemetry data analysis.
-        </h1>
            <Lightbox images={[interviews]} />
       </Collapsible>
       <Collapsible className="mb-4" title="Deliverables">
@@ -138,16 +135,13 @@ export default function Page() {
       <Collapsible className="mb-4" title="Research Paper + Magazine Article">
         <a
             className="underline"
-            href="https://arxiv.org/abs/2510.02504"
+            href="https://www.maraulloa.com/pms_genai.pdf"
             target="_blank"
         >
             Product Manager Practices for Delegating Work to Generative AI:{' '}&lsquo;Accountability
             must not be delegated to non-human actors&rsquo;
         </a>
-        <p className="text-red">
-          🎉 this paper has been accepted to ACM/IEEE International Conference in Software Engineering 2026
-        </p>
-        <p>Magazine article coming soon</p>
+        <p> 🎉 Magazine article coming soon</p>
         <h1 className="my-4 font-bold">
           I presented our paper on this work at the{" "}
           <span className="underline">
@@ -162,17 +156,7 @@ export default function Page() {
         </h1>
         <Lightbox images={awardPresentation} />
         <h1 className="my-4 font-bold">
-          I designed the below sticker to share this work in an accessible way with &#10024; everyone &#10024;. 
-          You can{" "}
-          <span className="underline">
-          <a
-            href="https://forms.gle/eGY5vG9mxZFTtfa28"
-            target="_blank"
-          >
-            request your sticker here
-          </a>
-          </span>{" "}
-          while supplies last. 
+          I designed the below sticker to share this work in an accessible way:
         </h1>
         <Lightbox images={[catto]} />
       </Collapsible>
