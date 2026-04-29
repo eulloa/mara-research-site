@@ -49,7 +49,7 @@ export const Publications = () => (
           ,  Butler, J., Haniyur, S., Miller, C., Amos, B., Sarkar, A., Storey, M.{" "}
           <a
             className="underline"
-            href="https://arxiv.org/abs/2510.02504"
+            href="https://www.maraulloa.com/pms_genai.pdf"
             target="_blank"
           >
             &ldquo;Product Manager Practices for Delegating Work to Generative AI: &lsquo;Accountability
@@ -68,6 +68,7 @@ export const Publications = () => (
           , Kamali, N., Fernandes, G., Soyemi, M., Beltzer, M., Alshufara, N., Jacobs, M.{" "}
           <a
             className="underline"
+            href="https://doi.org/10.1145/3808695"
             target="_blank"
           >
             &ldquo;I Don’t Like Being Told Just What to Do; I Need to Know Why&rdquo;: Patient Expectations of Machine Learning-Driven JITAIs for Prenatal Stress Management
@@ -86,7 +87,7 @@ export const Publications = () => (
           , Haniyur S., DeLine R., Storey M., Murphy-Hill E., Bird C., Butler J.{" "}
           <a
             className="underline"
-            href="https://arxiv.org/abs/2507.21280"
+            href="https://courtney-e-miller.github.io/papers/maybeWeNeedSomeMoreExamples.pdf"
             target="_blank"
           >
             &ldquo;Maybe We Need Some More Examples: Individual and Team Drivers of Developer GenAI Tool Use&rdquo;
