@@ -36,7 +36,7 @@ export const News = () => (
               target="_blank"
             >
               ACM Transactions on Computing for Healthcare (HEALTH)
-            </Link> journal, under the Special Issue on Human Centered Computing (HCI) in Healthcare. 
+            </Link> journal, under the Special Issue on Human Centered Computing in Healthcare. 
             I will present this work at the inaugural {" "}
             <Link
             className="underline"
@@ -51,7 +51,7 @@ export const News = () => (
             &#128227; 03/2026 I gave the keynote speech at {" "}
             <Link
               className="underline"
-              href="https://www.neiu.edu/academics/colleges-departments/business-and-technology/departments/computer-science"
+              href="https://www.linkedin.com/posts/xiweiwang_neiu-neiucbt-alumni-ugcPost-7442698311293149184--lDu?utm_source=share&utm_medium=member_desktop&rcm=ACoAABepyqEBopbe_gU6YZZo3KSrDCX5Y0fVaUY"
               target="_blank"
             >
               Northeastern Illinois University's Computer Science Alumni Day 2026

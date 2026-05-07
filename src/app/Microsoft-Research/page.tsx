@@ -61,6 +61,7 @@ const attitudesTowardUsage: LightboxImage = {
 const deliverables: LightboxImage[] = [
   jobDisplacementConcerns,
   selectiveDelegationFramework,
+  benefitsOfAdoption,
   genAIBenefits,
   attitudesTowardUsage
 ];
