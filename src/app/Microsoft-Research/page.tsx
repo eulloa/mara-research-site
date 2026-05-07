@@ -91,7 +91,7 @@ export default function Page() {
           Product Managers&rsquo; Integration of Generative AI into Knowledge Work 
       </h1>
       <h2 className="dark:text-white mb-4">April 2025 - June 2025 (12 weeks)</h2>
-      <Collapsible className="mb-4" title="Project overview" defaultOpen={true}>
+      <Collapsible analytics={{ page: 'microsoft_research', details: 'Project overview' }} className="mb-4" title="Project overview" defaultOpen={true}>
         <p className="mb-4">
             Microsoft leadership wanted to investigate the use of Generative AI (genAI) by product managers (PMs),
             a traditionally understudied user group. Previously, only software engineers had been involved
@@ -101,7 +101,7 @@ export default function Page() {
             interviews (15 participants) and triangulated with telemetry data.
         </p>
       </Collapsible>
-      <Collapsible className="mb-4" title="Process and Methods">
+      <Collapsible analytics={{ page: 'microsoft_research', details: 'Process and Methods' }} className="mb-4" title="Process and Methods">
         <ul className="mb-4">
           <li>Internally validated research instruments with user group and other productivity researchers</li>
           <li>Led data collection</li>
@@ -113,7 +113,7 @@ export default function Page() {
         </ul>
            <Lightbox images={[interviews]} />
       </Collapsible>
-      <Collapsible className="mb-4" title="Deliverables">
+      <Collapsible analytics={{ page: 'microsoft_research', details: 'Deliverables' }} className="mb-4" title="Deliverables">
         <ul className="mb-4">
           <li>Presented findings and their implications to leadership (corporate vice presidents, managers, AI + marketing)</li>
           <li>Produced the Selective Delegation framework to depict how PMs delegate tasks to genAI</li>
@@ -132,7 +132,7 @@ export default function Page() {
           <Lightbox images={deliverables} />
         </ul>
       </Collapsible>
-      <Collapsible className="mb-4" title="Research Paper + Magazine Article">
+      <Collapsible analytics={{ page: 'microsoft_research', details: 'Research Paper + Magazine Article' }} className="mb-4" title="Research Paper + Magazine Article">
         <a
             className="underline"
             href="https://www.maraulloa.com/pms_genai.pdf"

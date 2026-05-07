@@ -1,15 +1,24 @@
 "use client";
+
 import { useState, ReactNode, FC, useRef, useEffect } from 'react';
+import { sendGAEvent } from "@next/third-parties/google";
+
+interface AnalyticsProps {
+  page: string;
+  details: string;
+};
 
 interface CollapsibleProps {
-  title: ReactNode;
+  analytics?: AnalyticsProps;
   children: ReactNode;
+  className?: string;
   defaultOpen?: boolean;
   onToggle?: (open: boolean) => void;
-  className?: string;
+  title: ReactNode;
 }
 
 export const Collapsible: FC<CollapsibleProps> = ({
+  analytics,
   title,
   children,
   defaultOpen = false,
@@ -41,7 +50,13 @@ export const Collapsible: FC<CollapsibleProps> = ({
     if (onToggle) onToggle(open);
   }, [open, onToggle]);
 
-  const toggle = () => setOpen((o) => !o);
+  const toggle = () => {
+    setOpen((o) => !o);
+
+    if (analytics) {
+      sendGAEvent(analytics?.page, analytics?.details);
+    }
+  }
 
   return (
     <div className={`rounded-md overflow-hidden ${className} bg-lightBlue`}>
