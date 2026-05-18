@@ -28,6 +28,12 @@ const interviews: LightboxImage = {
   title: "I conducted informal interviews, 15 interviews, and gathered 885 survey responses. 731/885 survey participants consented to system telemetry data analysis.",
 };
 
+const climb: LightboxImage = {
+  src: "/img/portfolio/GenAI-PM/climb.jpeg",
+  alt: "Climbing the generative AI mountain which has 0 - 5 steps",
+  title: "Two product managers at different stages in the GenAI adoption journey; see more in the article",
+};
+
 const jobDisplacementConcerns: LightboxImage = {
   src: "/img/portfolio/GenAI-PM/Figure_2.png",
   alt: "GenAI Job Displacement Concerns",
@@ -133,7 +139,7 @@ export default function Page() {
           <Lightbox images={deliverables} />
         </ul>
       </Collapsible>
-      <Collapsible analytics={{ page: 'microsoft_research', details: 'Research Paper + Magazine Article' }} className="mb-4" title="Research Paper + Magazine Article">
+      <Collapsible analytics={{ page: 'microsoft_research', details: 'Research Paper + Magazine Article' }} className="mb-4" title="Research Paper + Practicioner Article">
         <a
             className="underline"
             href="https://www.maraulloa.com/pms_genai.pdf"
@@ -142,7 +148,6 @@ export default function Page() {
             Product Manager Practices for Delegating Work to Generative AI:{' '}&lsquo;Accountability
             must not be delegated to non-human actors&rsquo;
         </a>
-        <p> 🎉 Magazine article coming soon</p>
         <h1 className="my-4 font-bold">
           I presented our paper on this work at the{" "}
           <span className="underline">
@@ -157,7 +162,19 @@ export default function Page() {
         </h1>
         <Lightbox images={awardPresentation} />
         <h1 className="my-4 font-bold">
-          I designed the below sticker to share this work in an accessible way:
+          To reach practitioners beyond academic audiences, we also wrote an ACM Queue article titled: {" "}
+          <span className="underline">
+          <a
+            href="https://doi.org/10.1145/3807965"
+            target="_blank"
+          >
+            Climbing the Generative AI Mountain A “hitchhiker's guide” for product managers 
+          </a>
+          </span>{" "}
+        </h1>
+        <Lightbox images={[climb]} />
+        <h1 className="my-4 font-bold">
+          I designed the below sticker to share this work in a fun and accessible way:
         </h1>
         <Lightbox images={[catto]} />
       </Collapsible>

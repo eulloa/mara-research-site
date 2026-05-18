@@ -36,7 +36,7 @@ export const Publications = () => (
           >
             &ldquo;Climbing the Generative AI Mountain &#9968;: A "Hitchhiker's" Guide for PMs&rdquo;
           </a>{" "}
-          <span>[UNDER REVIEW]</span>
+          <span>ACM Queue. May 18, 2026. USA.</span>
         </span>
       </article>
       <article>
@@ -55,7 +55,7 @@ export const Publications = () => (
             &ldquo;Product Manager Practices for Delegating Work to Generative AI: &lsquo;Accountability
             must not be delegated to non-human actors&rsquo;&rdquo;
           </a>{" "}
-          <span>ACM/IEEE International Conference in Software Engineering(ICSE). December 13, 2025. Rio de Janeiro, Brazil.</span>
+          <span>ACM/IEEE International Conference in Software Engineering(ICSE). April 12 - 18, 2026. Rio de Janeiro, Brazil.</span>
         </span>
       </article>
       <article>
