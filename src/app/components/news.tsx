@@ -22,13 +22,30 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
+            &#128221; 05/2026 Our article {" "}
+            <Link
+              className="underline"
+              href="https://doi.org/10.1145/3807965"
+              target="_blank"
+            >
+            Climbing the Generative AI Mountain A &ldquo;hitchhiker&apos;s guide&rdquo; for product managers
+            </Link> has been accepted to the{" "}
+            <Link
+              className="underline"
+              href="https://spawn-queue.acm.org/"
+              target="_blank"
+            >
+              ACM Queue
+            </Link> journal, under the Special Issue on Human Centered Computing in Healthcare. 
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#128221; 03/2026 My first-author paper,{" "}
             <Link
               className="underline"
               href="https://doi.org/10.1145/3808695"
               target="_blank"
             >
-            &ldquo;I Don't Like Being Told Just What to Do; I Need to Know Why&rdquo;: Patient Expectations of Machine Learning-Driven JITAIs for Prenatal Stress Management
+            &ldquo;I Don&apos;t Like Being Told Just What to Do; I Need to Know Why&rdquo;: Patient Expectations of Machine Learning-Driven JITAIs for Prenatal Stress Management
             </Link>, has been accepted to the{" "}
             <Link
               className="underline"
