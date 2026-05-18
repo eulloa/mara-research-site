@@ -36,7 +36,7 @@ export const News = () => (
               target="_blank"
             >
               ACM Queue
-            </Link> journal, under the Special Issue on Human Centered Computing in Healthcare. 
+            </Link> journal.
           </li>
           <li onClick={(e) => handleClick(e)}>
             &#128221; 03/2026 My first-author paper,{" "}

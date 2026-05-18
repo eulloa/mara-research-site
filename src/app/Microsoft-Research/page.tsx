@@ -29,7 +29,7 @@ const interviews: LightboxImage = {
 };
 
 const climb: LightboxImage = {
-  src: "/img/portfolio/GenAI-PM/climb.jpeg",
+  src: "/img/portfolio/GenAI-PM/Climb.jpeg",
   alt: "Climbing the generative AI mountain which has 0 - 5 steps",
   title: "Two product managers at different stages in the GenAI adoption journey; see more in the article",
 };
