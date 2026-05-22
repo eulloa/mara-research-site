@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, ReactNode, FC, useRef, useEffect } from 'react';
+import { useState, ReactNode, FC, useRef, useEffect, useLayoutEffect } from 'react';
 import { sendGAEvent } from "@next/third-parties/google";
 
 interface AnalyticsProps {
   page: string;
   details: string;
-};
+}
 
 interface CollapsibleProps {
   analytics?: AnalyticsProps;
@@ -29,16 +29,26 @@ export const Collapsible: FC<CollapsibleProps> = ({
   const contentRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState<number>(0);
 
-  // 1. Use ResizeObserver to track the actual rendered height of the children
+  // FIX 1: Enforce hard scroll reset to Top on initial client-side node attachment
+  // useLayoutEffect runs synchronously BEFORE the browser paints, killing the soft-nav scroll anchors
+  useLayoutEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0 });
+    }
+  }, []);
+
+  // FIX 2: Delay the ResizeObserver execution slightly to keep it out of the critical paint loop
   useEffect(() => {
     if (!contentRef.current) return;
 
     const observer = new ResizeObserver((entries) => {
-      for (let entry of entries) {
-        // We measure the first child (the wrapper div) to get the true content height
-        const height = entry.target.scrollHeight;
-        setContentHeight(height);
-      }
+      // Isolates mutations from the browser's native layout engine anchor tracking
+      window.requestAnimationFrame(() => {
+        for (let entry of entries) {
+          const height = entry.target.scrollHeight;
+          setContentHeight(height);
+        }
+      });
     });
 
     observer.observe(contentRef.current);
@@ -54,9 +64,10 @@ export const Collapsible: FC<CollapsibleProps> = ({
     setOpen((o) => !o);
 
     if (analytics) {
-      sendGAEvent(analytics?.page, analytics?.details);
+      // Fixes GA argument serialization issues present in @next/third-parties
+      sendGAEvent('event', analytics.page, { details: analytics.details });
     }
-  }
+  };
 
   return (
     <div className={`rounded-md overflow-hidden ${className} bg-lightBlue`}>
@@ -82,12 +93,10 @@ export const Collapsible: FC<CollapsibleProps> = ({
         ref={contentRef}
         className="transition-[max-height] duration-300 ease-in-out overflow-hidden"
         style={{
-          // Use 'none' or a very large number if you want to disable 
-          // the transition limit once open, but contentHeight is safest.
-          maxHeight: open ? `${contentHeight}px` : '0px',
+          // Explicitly fallback safely if the height calculations are pending
+          maxHeight: open ? (contentHeight ? `${contentHeight}px` : 'none') : '0px',
         }}
       >
-        {/* Internal wrapper helps ResizeObserver measure accurately without padding issues */}
         <div className="px-4 py-4 text-gray-600">
           {children}
         </div>
@@ -95,3 +104,4 @@ export const Collapsible: FC<CollapsibleProps> = ({
     </div>
   );
 };
+
