@@ -9,6 +9,8 @@ import {
   SelectedProjects,
 } from "@/components/portfolio";
 
+import { Collapsible, Lightbox, LightboxImage } from "@/components";
+
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
   description: "Mara Ulloa's research website",
@@ -19,6 +21,18 @@ export const metadata: Metadata = {
     "Mara Ulloa: Designing Clinician-Facing Machine Learning for Advanced Heart Failure Detection",
 };
 
+const figureOne: LightboxImage = {
+    src: "/img/portfolio/ML-clinician/Frontiers_Figure_1.jpg",
+    alt: "I designed and developed a participatory design method",
+    title: "A summary of the three case studies from our research, which we use to characterize examples of invisible clinician labor in the development of novel AI-clinical team tools"
+};
+
+const figureTwo: LightboxImage = {
+  src: "/img/portfolio/ML-clinician/Frontiers_Figure_2.png",
+  alt: "Four types of labor requiring clinical expertise at different developmental stages",
+  title: "Four types of labor requiring clinical expertise at different developmental stages"
+};
+
 export default function Page() {
   return (
     <div id="project" className="mt-8">
@@ -27,8 +41,7 @@ export default function Page() {
         Detection
       </h1>
       <h2 className="dark:text-white mb-4">Jan 2022 - Nov 2022 (11 months)</h2>
-      <div className="bg-lightBlue rounded-lg p-4">
-        <h1 className="font-semibold">Project overview</h1>
+      <Collapsible analytics={{ page: 'advanced_heart_failure_detection', details: 'Project Overview' }} className="mb-4" title="Project Overview" defaultOpen={true}>
         <p className="mb-4">
           Untreated heart failure (HF) tends to progress over time. A machine
           learning (ML) tool has been developed to identify when a
@@ -45,13 +58,15 @@ export default function Page() {
           clinicians in using ML algorithms within the electronic health record
           (EHR) to identify patients with advanced heart failure (HF).
         </p>
-        <h1 className="font-semibold">Process and Methods</h1>
+      </Collapsible>
+      <Collapsible analytics={{ page: 'advanced_heart_failure_detection', details: 'Process and Methods' }} className="mb-4" title="Process and Methods">
         <p className="mb-4">
           Thematic analysis, Interdisciplinary literature reviews,
           Semi-structured interviews with nurses, primary care physicians,
           cardiologists, administrators, and quality and data experts.
         </p>
-        <h1 className="font-semibold">Deliverables</h1>
+      </Collapsible>
+      <Collapsible analytics={{ page: 'advanced_heart_failure_detection', details: 'Deliverables' }} className="mb-4" title="Deliverables">
         <p className="mb-4">
           Understanding of end user requirements of clinical-ML, academic case
           study paper around the{" "}
@@ -64,44 +79,11 @@ export default function Page() {
             healthcare.
           </Link>
         </p>
-        <p className="text-red">
+        <p className="text-red mb-4">
           🎉 This paper was published to Frontiers in Computer Science 2022
         </p>
-      </div>
-      <div className="mt-8 rounded-lg">
-        <h1 className="dark:text-white mb-4 font-bold">
-          A summary of the three case studies from our research, which we use to characterize examples of invisible clinician labor in the development of novel AI-clinical team tools
-        </h1>
-        <Image
-          className="rounded-lg mb-8"
-          blurDataURL="/img/portfolio/placeholder.png"
-          src="/img/portfolio/ML-clinician/Frontiers_Figure_1.jpg"
-          alt="A summary of the three case studies from our research, which we use to characterize examples of invisible clinician labor in the development of novel AI-clinical team tools."
-          sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          width={500}
-          height={300}
-        />
-        <h1 className="dark:text-white mb-4 font-bold">
-          Four types of labor requiring clinical expertise at different developmental stages
-        </h1>
-        <Image
-          className="rounded-lg mb-8"
-          blurDataURL="/img/portfolio/placeholder.png"
-          src="/img/portfolio/ML-clinician/Frontiers_Figure_2.png"
-          alt="Four types of labor requiring clinical expertise at different developmental stages."
-          sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          width={500}
-          height={300}
-        />
-      </div>
+        <Lightbox images={[figureOne, figureTwo]} />
+      </Collapsible>
       <SelectedProjects id="selected-projects" label="Selected Projects">
         <PrenatalStressReduction />
         <DataVisualizationSoftware />
