@@ -10,6 +10,8 @@ import {
   SelectedProjects,
 } from "@/components/portfolio";
 
+import { Collapsible, Lightbox, LightboxImage } from "@/components";
+
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
   description: "Mara Ulloa's research website",
@@ -20,6 +22,12 @@ export const metadata: Metadata = {
     "Mara Ulloa: Understanding the User Experience (UX) of Advanced 3D Data Visualization Software for the Geosciences",
 };
 
+const figureOne: LightboxImage = {
+  src: "/img/portfolio/UX-ncar/poster.jpg",
+  alt: "Final poster presentation of the project",
+  title: "Final poster presentation of the project"
+};
+
 export default function Page() {
   return (
     <div id="project" className="mt-8">
@@ -28,9 +36,8 @@ export default function Page() {
         Software
       </h1>
       <h2 className="dark:text-white mb-4">May 2024 - Aug 2024 (11 weeks)</h2>
-      <div className="bg-lightBlue rounded-lg p-4">
-        <h1 className="font-semibold">Project Overview</h1>
-        <p className="mb-4">
+      <Collapsible analytics={{ page: '3d-data-viz', details: 'Project Overview' }} className="mb-4" title="Project Overview" defaultOpen={true}>
+        <p>
           The Visualization Services and Research (ViSR) group, at NSF&rsquo;s
           National Center for Atmospheric Research (NCAR) supports the earth
           science research community by enhancing data visualization workflows
@@ -49,42 +56,22 @@ export default function Page() {
           community. However, to expand VAPOR&rsquo;s impact, understanding
           end-user needs, preferences, and pain points is imperative.
         </p>
-        <h1 className="font-semibold">Process and Methods</h1>
-        <p className="mb-4">
+      </Collapsible>
+      <Collapsible analytics={{ page: '3d-data-viz', details: 'Process and Methods' }} className="mb-4" title="Process and Methods" defaultOpen={false}>
+        <p>
           Jobs to be Done (JTBD) framework, JTBD&rsquo;s clustering method,
           Understand VAPOR users&rsquo; perspectives through JTBD user
           interviews and exploratory research
         </p>
-        <h1 className="font-semibold">Deliverables</h1>
+      </Collapsible>
+      <Collapsible analytics={{ page: '3d-data-viz', details: 'Deliverables' }} className="mb-4" title="Deliverables" defaultOpen={false}>
         <p className="mb-4">
           JTBD Forces of progress diagrams, academic posters and podium
           presentations
         </p>
-      </div>
-      <div className="mt-8 rounded-lg presentation">
-        <h1 className="dark:text-white mb-4 font-bold">
-          Final podium presentation of the project at NSF NCAR in Boulder, CO
-        </h1>
         <Presentation />
-      </div>
-      <div className="mt-8 rounded-lg">
-        <h1 className="dark:text-white mb-4 font-bold">
-          Final poster presentation of the project
-        </h1>
-        <Image
-          className="rounded-lg"
-          blurDataURL="/img//placeholder.png"
-          src="/img/portfolio/UX-ncar/poster.jpg"
-          alt="Final poster presentation of the project"
-          sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          width={500}
-          height={300}
-        />
-      </div>
+        <Lightbox images={[figureOne]} />
+      </Collapsible>
       <SelectedProjects id="selected-projects" label="Selected Projects">
         <PrenatalStressReduction />
         <AdvancedHeartFailureDetection />
