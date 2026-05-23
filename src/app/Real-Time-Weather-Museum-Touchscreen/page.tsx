@@ -8,6 +8,8 @@ import {
   SelectedProjects,
 } from "@/components/portfolio";
 
+import { Collapsible, Lightbox, LightboxImage } from "@/components";
+
 export const metadata: Metadata = {
   applicationName: "Mara Ulloa's research website",
   description: "Mara Ulloa's research website",
@@ -17,6 +19,18 @@ export const metadata: Metadata = {
   title: "Mara Ulloa: Developing a Real-Time Weather Museum Touchscreen",
 };
 
+const figureOne: LightboxImage = {
+  src: "/img/portfolio/touchscreen.jpg",
+  alt: "Final display on the floor at NCAR",
+  title: "Final display on the floor at NCAR"
+};
+
+const figureTwo: LightboxImage = {
+  src: "/img/portfolio/kiosk.jpg",
+  alt: "Final Museum Touchscreen Installation at NSF NCAR in Boulder, CO",
+  title: "Final Museum Touchscreen Installation at NSF NCAR in Boulder, CO",
+};
+
 export default function Page() {
   return (
     <div id="project" className="mt-8">
@@ -24,8 +38,7 @@ export default function Page() {
         Developing a Real-Time Weather Museum Touchscreen
       </h1>
       <h2 className="dark:text-white mb-4">May 2020 - Aug 2020 (11 weeks)</h2>
-      <div className="bg-lightBlue rounded-lg p-4">
-        <h1 className="font-semibold">Project overview</h1>
+      <Collapsible analytics={{ page: 'real-time-weather-touchscreen', details: 'Project Overview' }} className="mb-4" title="Project Overview" defaultOpen={true}>
         <p className="mb-4">
           Staff from the UCAR Center for Science Education, Unidata, and the
           Computational & Information Systems Lab were interested in developing
@@ -39,50 +52,22 @@ export default function Page() {
           at the visitor centers of the NSF NCAR Mesa Lab in Boulder, CO, and at
           the NWSC Visitor Center in Cheyenne, WY.
         </p>
-        <h1 className="font-semibold">Process and Methods</h1>
+      </Collapsible>
+      <Collapsible analytics={{ page: 'real-time-weather-touchscreen', details: 'Process and Methods' }} className="mb-4" title="Process and Methods" defaultOpen={false}>
         <p className="mb-4">
           Stakeholder and end user interviews, adapting legacy software
           developed in Java to meet new design requirements
         </p>
-        <h1 className="font-semibold">Deliverables</h1>
+      </Collapsible>
+      <Collapsible analytics={{ page: 'real-time-weather-touchscreen', details: 'Deliverables' }} className="mb-4" title="Deliverables" defaultOpen={false}>
         <p className="mb-4">
           Mock-ups, educational and interactive touchscreen display for lab
           visitors to learn about weather patterns, and academic poster and
           presentation to NCAR and National Oceanic and Atmospheric
           Administration (NOAA) scientific community
         </p>
-      </div>
-      <div className="mt-8 rounded-lg">
-        <h1 className="dark:text-white mb-4 font-bold">
-          Final Museum Touchscreen Installation at NSF NCAR in Boulder, CO
-        </h1>
-        <Image
-          className="rounded-lg mb-8"
-          blurDataURL="/img/placeholder.png"
-          src="/img/portfolio/kiosk.jpg"
-          alt="Final Museum Touchscreen Installation at NSF NCAR in Boulder, CO"
-          sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          width={500}
-          height={300}
-        />
-        <Image
-          className="rounded-lg"
-          blurDataURL="/img/placeholder.png"
-          src="/img/portfolio/touchscreen.jpg"
-          alt="Final Museum Touchscreen Installation at NSF NCAR in Boulder, CO"
-          sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          width={500}
-          height={300}
-        />
-      </div>
+        <Lightbox images={[figureOne, figureTwo]} />
+      </Collapsible>
       <SelectedProjects id="selected-projects" label="Selected Projects">
         <PrenatalStressReduction />
         <DataVisualizationSoftware />
