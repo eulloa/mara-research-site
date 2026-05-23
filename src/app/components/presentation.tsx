@@ -17,7 +17,7 @@ export const Presentation = () => {
     <iframe
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen
-      className="rounded-lg"
+      className="rounded-lg mb-4"
       height="315"
       title="2024 SIParCS Presentation Mara Ulloa"
       referrerPolicy="strict-origin-when-cross-origin"
