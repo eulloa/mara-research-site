@@ -22,6 +22,16 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
+            &#127822; 05/2026 I have started my PhD research internship with {" "}
+            <Link
+              className="underline"
+              href="https://www.apple.com/"
+              target="_blank"
+            >
+            Apple
+            </Link> in Cupertino, CA!
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#128221; 05/2026 Our article {" "}
             <Link
               className="underline"
