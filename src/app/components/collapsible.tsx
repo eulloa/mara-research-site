@@ -65,7 +65,7 @@ export const Collapsible: FC<CollapsibleProps> = ({
 
     if (analytics) {
       // Fixes GA argument serialization issues present in @next/third-parties
-      sendGAEvent('event', analytics.page, { details: analytics.details });
+      sendGAEvent('event', `page: ${analytics.page} | details: ${analytics.details}`);
     }
   };
 
