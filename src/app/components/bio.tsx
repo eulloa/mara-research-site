@@ -43,7 +43,7 @@ export const Bio = () => {
           I specialize in using Human-Computer Interaction (HCI) methods to design and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
-          I have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of generative AI (genAI) by software engineers and product managers; The NSF National Center for Atmospheric
+          I am currently working with Apple on research and have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of generative AI (genAI) by software engineers and product managers; The NSF National Center for Atmospheric
           Research on user experience (UX) for advanced data visualization software; NU on the design of machine learning (ML) for health.
         </p>
         <p className="mt-4 leading-7">
