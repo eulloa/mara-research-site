@@ -32,6 +32,17 @@ export const News = () => (
             </Link> in Cupertino, CA!
           </li>
           <li onClick={(e) => handleClick(e)}>
+             &#127942; 05/2026 I received a PhD Student Research Award for significant research contributions through innovative 
+            and impactful research, showcasing excellence in scholarly work from {" "}
+            <Link
+              className="underline"
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7467706285749104640/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7467706285749104640&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAABepyqEBopbe_gU6YZZo3KSrDCX5Y0fVaUY"
+              target="_blank"
+            >
+            Northwestern University CS
+            </Link>.
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#128221; 05/2026 Our article {" "}
             <Link
               className="underline"
