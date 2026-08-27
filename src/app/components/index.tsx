@@ -10,6 +10,7 @@ export * from "./header";
 export * from "./lightbox";
 export * from "./linkedIn";
 export * from "./news";
+export * from "./orcid";
 export * from "./open";
 export * from "./presentation";
 export * from "./publications";
