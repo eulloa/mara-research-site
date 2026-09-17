@@ -43,8 +43,17 @@ export const Bio = () => {
           I specialize in using Human-Computer Interaction (HCI) methods to design and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
-          I am currently working with Apple on research and have worked with Microsoft on applied research mentored by Dr. Jenna L. Butler, studying the future of work in software engineering, particularly the adoption of generative AI (genAI) by software engineers and product managers; The NSF National Center for Atmospheric
-          Research on user experience (UX) for advanced data visualization software; NU on the design of machine learning (ML) for health.
+          I am have worked with Apple on HCI research; Microsoft on applied research mentored by{" "} 
+                    <span className="underline">
+            <a
+              href="https://www.microsoft.com/en-us/research/people/jennbu/"
+              target="_blank"
+            >
+                Dr. Jenna L. Butler 
+            </a>
+          </span>,
+          studying the future of work in software engineering, particularly the adoption of generative AI (genAI) by software engineers and product managers; 
+          The NSF National Center for Atmospheric Research on user experience (UX) for advanced data visualization software; NU on the design of machine learning (ML) for health.
         </p>
         <p className="mt-4 leading-7">
           In my interdisciplinary doctoral work at NU, I develop and apply participatory design methods to co-design ML across varied health contexts, aiming to increase transparency of ML-driven interventions with and for laypersons.{" "}
@@ -67,7 +76,7 @@ export const Bio = () => {
         </p>
         <p className="mt-4 leading-7">
           <span className="font-bold text-red">On the job market:</span>{" "}
-          I will be on the industry research scientist and faculty track job markets during 2026 - 2027.
+          I am on the industry research scientist and faculty track job markets; I will complete my PhD in Summer 2027. 
         </p>
       </div>
     </div>

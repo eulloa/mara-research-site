@@ -22,6 +22,16 @@ export const News = () => (
       <div className="content p-6 dark:text-white leading-8">
         <ul className="news space-y-4">
           <li onClick={(e) => handleClick(e)}>
+            &#128105;&#127995;&#8205;&#127979; 09/2026 I am taking the {" "}
+            <Link
+              className="underline"
+              href="https://cra.org/ur2phd/for-graduate-students/graduate-student-mentor-training-course/"
+              target="_blank"
+            >
+            Computer Research Assciation (CRA) Graduate Student Mentor Training Course
+            </Link> this fall.
+          </li>
+          <li onClick={(e) => handleClick(e)}>
             &#127822; 05/2026 I have started my PhD research internship with {" "}
             <Link
               className="underline"
@@ -29,7 +39,7 @@ export const News = () => (
               target="_blank"
             >
             Apple
-            </Link> in Cupertino, CA!
+            </Link> in Cupertino, CA.
           </li>
           <li onClick={(e) => handleClick(e)}>
              &#127942; 05/2026 I received a PhD Student Research Award for significant research contributions through innovative 
