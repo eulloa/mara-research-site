@@ -43,7 +43,7 @@ export const Bio = () => {
           I specialize in using Human-Computer Interaction (HCI) methods to design and evaluate human-centered artificial intelligence (AI).
         </p>
         <p className="mt-4 leading-7">
-          I am have worked with Apple on HCI research; Microsoft on applied research mentored by{" "} 
+          I have worked with Apple on HCI research; Microsoft on applied research mentored by{" "} 
                     <span className="underline">
             <a
               href="https://www.microsoft.com/en-us/research/people/jennbu/"
