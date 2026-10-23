@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
-import { BlueSky, Github, LinkedIn, Scholar } from "@/components";
+import { BlueSky, Github, LinkedIn, Orcid, Scholar } from "@/components";
 
 export const Socials = ({
   children,
@@ -38,13 +38,22 @@ export const Socials = ({
           <Github />
         </Link>
       </li>
-      <li>
+      <li className="pr-8">
         <Link
           className="BlueSky"
           href="https://bsky.app/profile/mara-ulloa.bsky.social"
           target="_blank"
         >
           <BlueSky />
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="Orcid"
+          href="https://orcid.org/0009-0005-4442-4520"
+          target="_blank"
+        >
+          <Orcid />
         </Link>
       </li>
       {children && <li>{children}</li>}
